@@ -36,7 +36,6 @@ a {
 header {
     display: flex;
     justify-content: center; 
-    position: fixed; /* Får headeren til at blive ved scroll */
     width: 100%; /* Sikrer, at navigationsbaren er placeret midt på skærmen */
 }
 
