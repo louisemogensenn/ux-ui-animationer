@@ -105,3 +105,61 @@ header {
     vertical-align: text-bottom; /* Sikrer at ikonet er centreret med teksten */
 }
 
+
+
+/* ---- FOOTER ---- */
+
+footer {
+    border-top: solid var(--sekundaereFarve) 0.3px; /* Streg, der viser her starter footer*/
+}
+
+/* Stylling - footer */
+.footer-generelt {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px; /*Afstand til streg, der definerer footeren*/
+}
+  
+/* Placering - styrer placeringen af logo*/
+.footer-logo {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/* Styling - logo i footer*/
+.footer-logo img {
+    max-width: 120px;
+    height: auto;
+
+}
+
+/* Placering - kolonnerne med tekst*/
+.kolonne {
+    flex: 1;
+    text-align: left; /* Venstrejusterer kolonnerne */
+}
+
+
+/* Styling - den individuelle kolonne*/
+.kolonne a {
+    text-decoration: none;
+    font-family:'Dela Gothic One'; /*Font - overskrift*/
+    font-size: 13px;
+}
+
+/* Styling - bundtekst, nippon*/
+.footer-bundtekst p {
+    font-size: 14px; 
+    display: flex;
+    justify-content: center; /* Centrer teksten vandret*/
+    align-items: center; /* Centrer teksten vertikalt*/
+}
+
+/* Styling - bundtekst, ninja ikon*/
+.footer-bundtekst img {
+    width: 20px;
+    height: auto;
+    margin-left: 5px;
+}
