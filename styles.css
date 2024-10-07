@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap'); /* Brødtekst */
 /* IMPORTER NAGOMI-FONT HER - FONT TIL CTA-KNAPPER */
 
+
+
+/* BASIS FOR HTML */
+
 :root {
     --primaereFarve: #F5F5CD;
     --sekundaereFarve: #7B0005;
@@ -30,3 +34,5 @@ a {
     width:20vh;
     height: 20vh;
 }
+
+
