@@ -29,35 +29,28 @@
             </nav>
         </header>
 
-        <main id="blandSelvIndhold">
-            <section id="alleBlandSelvRetter">
-                <article class="retOversigt">
-                    <h2>FRIED RICE</h2>
-                    <img class="billedeAfRet" src="images/ret2.webp" alt="Nippons Fried Rice">
-                    <br> <!-- dette er et no go -->
-                    <button type="button" onclick="visDetaljer()">Se detaljer</button>
-                    <p>20kr. pr. person</p>
-                    <button type="button">Tilføj til kurv</button>
-                </article>
-            </section>
+        <h1 style="text-align: center;">BLAND SELV MÅLTIDER</h1>
 
-            <aside id="bestillingsoversigt">
+        <main id="blandSelvOgKvitteringIndhold">
+            <div id="blandSelvContainer">
+                <div class="oversigtOverBlandSelvRetter">
+                    <div class="blandSelvRet">
+                        <h2>MÅLTID 1</h2>
+                        <img src="images/favoritter.webp" alt="Nippons favoritikon">
+                        <img src="images/ret1.webp" alt="Nippons måltider">
+                        <button type="button" onclick="visDetajler()">Vis detaljer</button>
+                        <p>45,- pr. person</p>
+                        <button type="button" onclick="tilfoejTilKurv()">Tilføj til kurv</button>
+                    </div>
+                </div>
+            </div>
+
+            <aside id="blandSelvKvittering">
                 <h2>DIN BESTILLING</h2>
-                <p></p> <!-- retten, der er tilføjer -->
-                <p>pris for retten</p>
-                <!-- her vil det give mening at have en skraldespand, så man kan slette retten fra bestillingen -->
-                <h3>PRIS I ALT</h3>
-                <p></p> <!-- prisen i alt lagt sammen -->
-                <button type="button">BESTIL</button>
+                <p></p>
+                <p></p>
             </aside>
         </main>
-
-        <section id="popUp">
-            <h2></h2> <!-- her skal rettens overskrift stå -->
-            <p></p> <!-- her skal beskrivelsen af retten stå -->
-            <p></p> <!-- her skal indholdet stå (ingredienslisten) -->
-            <button type="button" onclick="lukPopUp()">OK</button> <!-- ved klik skal pop-up-vinudet lukkes-->
-        </section>
         
     </body>
     
@@ -101,37 +94,36 @@
 
     <style>
 
-        #blandSelvIndhold {
+        #blandSelvOgKvitteringIndhold {
             display: flex;
             justify-content: space-around;
         }
 
-        #alleBlandSelvRetter {
-            display: flex; /* alle firkanterne med retterne og deres indhold er i flex */
-            text-align: center; /* al indhold i firkanterne placeres i midten af boksen */
+        #blandSelvContainer {
+            display: flex;
+            justify-content: space-around;
         }
 
-        .billedeAfRet {
-            width: 15vh;
-            height: 15vh;
+        .oversigtOverBlandSelvRetter {
+            /* dette skal sikre, at retterne står tre på række i fire kolonner*/
         }
 
-        .prisOgTilfoej {
-            display: block;
+        .blandSelvRet {
+            flex-direction: column;
+            text-align: center;
         }
 
     </style>
 
     <script>
-        function visDetaljer() {
 
+        function visDetajler() {
+            /* skriv funktionen her, der skal vises beskrivelsen af hver ret */
         }
 
-        const popUpVindue = document.getElementById(popUp).innerHTML;
-
-        function lukPopUp() {
-            document.getElementById(popUpVindue)
+        function tilfoejTilKurv() {
+            /* skriv funktionen her, der skal ændre indholdet i kvitteringen til det der lægges i kurven */
         }
-        
+
     </script>
 </html>
