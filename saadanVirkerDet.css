@@ -106,12 +106,47 @@ header {
 
 
 
+
+/*process baren*/
+.progress-bar-container {
+    position: fixed; /* Fast positionering */
+    left: 200px; /* Placeret lidt væk fra venstre side */
+    top: 200px;
+    width: 2px; /* Smal bredde */
+    background-color: #000; /* Farve på linjen */
+    height: 100%; /* Strækker sig over hele siden */
+    z-index: 100; /* Sørger for at den ligger over alt indhold */
+}
+
+/* Progress-bar - fyldes ikke, men fungerer som baggrundslinje */
+.progress-bar {
+    width: 100%;
+    height: 100%; /* Fuld højde af containeren */
+    background-color: #000;
+    position: absolute;
+}
+
+/* Cirklen, der bevæger sig langs linjen */
+.progress-circle {
+    position: absolute; /* Placeres relativt til progress-bar-container */
+    left: 50%; /* Centrerer cirklen på linjen */
+    transform: translateX(-50%); /* Justerer for centreringen */
+    width: 12px; /* Cirklen's bredde */
+    height: 12px; /* Cirklen's højde */
+    background-color: #000; /* Cirklen's farve */
+    border-radius: 50%; /* Gør den rund */
+    transition: top 0.25s; /* Glat overgang når cirklen bevæger sig */
+}
+
+
+
+
 /* ---- 'BODY-DELEN' ---- */
 
 /* Placerering og styling */
 h1{
     text-align: center; /* Placerer teksten i midten */
-    padding: 15% 0% 2% 0%; /* Giver dem padding */
+    padding: 10% 0% 2% 0%; /* Giver dem padding */
     font-size: 64px; /* Definerer font størrelsen */
     font-family: 'Dela Gothic One'; /*Definerer fonten*/
     font-style: normal;
@@ -132,7 +167,7 @@ p{
 }
 
 
-.Bestil, .Pak, .Vaelg, .Server{
+#saadanvirkerdet{
     display: flex;
     margin: 5% 0 5% 5%;
     gap: 7%;
@@ -140,12 +175,12 @@ p{
     max-width: 50%;
 }
 
-.Bestil h2, .Pak h2, .Vaelg h2, .Server h2{
+#saadanvirkerdet h2{
     padding-top: 2%;
 }
 
 
-#abonnementsbetignelser, #framelder, #bindingsperiode, #allergener{
+#oftestilledespoergesmaal{
     display: flex;
     margin: 5% 0 5% 5%;
     gap: 7%;
@@ -153,13 +188,9 @@ p{
     max-width: 50%;
 }
 
-.abonnementsbetignelser{
-    display: flex;
-    flex-direction: row;
-}
 
 #kontaktos{
-    padding-left: 20%;
+    padding-left: 19%;
     display: flex;
     flex-direction: column;
     max-width: 60%;
@@ -181,6 +212,7 @@ p{
 /*Styling*/
 #Besked {
     padding: 25px;
+    padding-bottom: 150px;
     background: none;
     margin: 1% 0% 4% 25%;
     max-width: 50%;
