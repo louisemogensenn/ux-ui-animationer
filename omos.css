@@ -1,33 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap'); /* Overskrift */
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap'); /* Brødtekst */
-
 /* IMPORTER NAGOMI-FONT HER - FONT TIL CTA-KNAPPER */
 
 
+
 /* BASIS FOR HTML */
-*,
-*::before,
-*::after {
-    margin: 0; /*fjerner alt margin, som basis*/
-    padding: 0; /*fjerner alt padding, som basis*/
-    color: var(--skriftfarve); /* angiver basis tekst-farve*/
-    line-height: 1.5; /* angiver linjeafstand for alt tekst*/
-    background-color: var(--primaereFarve); /*angiver basis baggrundsfarve*/
-    font-family:'Epilogue'; /* Som standard font */
+html{
+ background-color: var(--primaereFarve);
 }
 
-
-
-/* ---- GENERELT ---- */
-
-/* Farvepalette */
 :root {
     --primaereFarve: #FEF6E1;
     --sekundaereFarve: #7B0005;
     --skriftfarve: #401A16;
 }
 
-/* Styling - a-tags/links */
 a {
     text-decoration: none; /* fjerner streger under links */
     color: inherit; /* bevarer den definerede tekstfarve */
@@ -106,58 +93,78 @@ header {
 }
 
 
-
-/* ---- FOOTER ---- */
-
-/* Styling - generelt*/
-footer {
-    border-top: solid var(--sekundaereFarve) 0.3px; /* Streg, der viser her starter footer*/
+h1{
+    text-align: center;
+    font-size: 64px;
+    font-family: 'Dela Gothic One';
+    font-style: normal;
+    font-weight: 400;
+    color: var(--skriftfarve);
 }
 
-/* Styling - footer */
-.footer-generelt {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 30px; /*Afstand til streg, der definerer footeren*/
+h2 {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 300;
 }
 
-/* Placering - styrer placeringen af logo*/
-.footer-logo {
-    flex: 1;
-    display: flex;
-    justify-content: center; /* centrer logoet indenfor sin boks*/
+h3 {
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 300;
 }
 
-/* Styling - logo i footer*/
-.footer-logo img {
-    max-width: 100px; /*Angiver størrelse på img*/
-    height: auto;
+p{
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 400;
+    width: 800px; 
+    word-spacing: 5px;
+    line-height: 2.5;
+    font-size: 20px;
 }
 
-/* Placering - kolonnerne med tekst*/
-.kolonne {
-    flex: 1;
-    text-align: left; /* Venstrejusterer kolonnerne */
+br{  
+    content: "A";
+    display: block ;
+    margin-bottom: 1.7em ;
 }
 
-/* Styling - den individuelle kolonne*/
-.kolonne a {
-    text-decoration: none; /*Fjerner streg under links*/
-    font-family:'Dela Gothic One'; /*Font - overskrift*/
-    font-size: 13px;
+#omostext{
+justify-content: center;
+display: flex;
 }
 
-/* Styling - bundtekst, nippon*/
-.footer-bundtekst p {
-    font-size: 14px; 
-    display: flex;
-    justify-content: center; /* Centrer teksten vandret*/
-    align-items: center; /* Centrer teksten vertikalt*/
+
+
+.progress-bar-container {
+    position: fixed; /* Fast positionering */
+    left: 200px; /* Placeret lidt væk fra venstre side */
+    top: 200px;
+    width: 2px; /* Smal bredde */
+    background-color: #000; /* Farve på linjen */
+    height: 100%; /* Strækker sig over hele siden */
+    z-index: 100; /* Sørger for at den ligger over alt indhold */
 }
 
-/* Styling - bundtekst, ninja ikon*/
-.footer-bundtekst img {
-    width: 20px;
-    height: auto;
-    margin-left: 5px;
+/* Progress-bar - fyldes ikke, men fungerer som baggrundslinje */
+.progress-bar {
+    width: 100%;
+    height: 100%; /* Fuld højde af containeren */
+    background-color: #000;
+    position: absolute;
+}
+
+/* Cirklen, der bevæger sig langs linjen */
+.progress-circle {
+    position: absolute; /* Placeres relativt til progress-bar-container */
+    left: 50%; /* Centrerer cirklen på linjen */
+    transform: translateX(-50%); /* Justerer for centreringen */
+    width: 12px; /* Cirklen's bredde */
+    height: 12px; /* Cirklen's højde */
+    background-color: #000; /* Cirklen's farve */
+    border-radius: 50%; /* Gør den rund */
+    transition: top 0.25s; /* Glat overgang når cirklen bevæger sig */
 }
