@@ -123,7 +123,7 @@ footer {
 
 /* Placering - styrer placeringen af logo*/
 .footer-logo {
-    flex: 1;
+    flex: 1; /*Sikrer at elementet vil vokse til at fylde al tilgængelig plads i boksen*/
     display: flex;
     justify-content: center; /*centerer logoet indefor sin boks*/
     padding-right: 20px;
@@ -137,16 +137,35 @@ footer {
 
 /* Placering - kolonnerne med tekst*/
 .kolonne {
-    flex: 1;
+    flex: 1; /*Sikrer at elementet vil vokse til at fylde al tilgængelig plads i boksen*/
     text-align: left; /* Venstrejusterer kolonnerne */
     padding: 0 40px 0 25px;
 }
 
 /* Styling - den individuelle kolonne*/
-.kolonne a {
+.kolonne h3 a {
     text-decoration: none; /*Fjerner streg under links*/
     font-family:'Dela Gothic One'; /*Font - overskrift*/
     font-size: 13px;
+}
+
+/* Styling - underpunkter, i kolonnerne*/
+.kolonne p {
+    padding-top: 17px; /*Afstand mellem tekst*/
+}
+
+/* Effekter - hover */
+.kolonne p :hover {
+    transform: scale(1.04); /* Forstørrer ved hover */
+    font-weight: bold; /* Tykkelse på font ved hover */
+}
+
+/* Styling - streg under overskrift*/
+.layout-streg {
+    border-bottom: 0.7px solid var(--skriftfarve); /* Tynd linje under overskriften*/
+    width: 90%; /* Fylder hele bredden af sin container */
+    margin: 1px 0; /* Giver afstand over og under linjen */
+    display: block; /* Sørger for, at linjen vises korrekt */
 }
 
 /* Styling - bundtekst, nippon*/
@@ -165,14 +184,3 @@ footer {
     margin-left: 5px; /*Afstand mellem billede og tekst*/
 }
 
-.kolonne p {
-    padding-top: 17px; /*Afstand mellem tekst*/
-}
-
-/* Styling - streg under overskrift*/
-.layout-streg {
-    border-bottom: 0.7px solid var(--skriftfarve); /* Tynd linje under overskriften*/
-    width: 90%; /* Fylder hele bredden af sin container */
-    margin: 1px 0; /* Giver afstand over og under linjen */
-    display: block; /* Sørger for, at linjen vises korrekt */
-}
