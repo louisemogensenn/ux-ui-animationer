@@ -1,33 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap'); /* Overskrift */
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap'); /* Brødtekst */
-
 /* IMPORTER NAGOMI-FONT HER - FONT TIL CTA-KNAPPER */
 
 
+
 /* BASIS FOR HTML */
-*,
-*::before,
-*::after {
-    margin: 0; /*fjerner alt margin, som basis*/
-    padding: 0; /*fjerner alt padding, som basis*/
-    color: var(--skriftfarve); /* angiver basis tekst-farve*/
-    line-height: 1.5; /* angiver linjeafstand for alt tekst*/
-    background-color: var(--primaereFarve); /*angiver basis baggrundsfarve*/
-    font-family:'Epilogue'; /* Som standard font */
+html{
+ background-color: var(--primaereFarve);
 }
 
-
-
-/* ---- GENERELT ---- */
-
-/* Farvepalette */
 :root {
     --primaereFarve: #FEF6E1;
     --sekundaereFarve: #7B0005;
     --skriftfarve: #401A16;
 }
 
-/* Styling - a-tags/links */
 a {
     text-decoration: none; /* fjerner streger under links */
     color: inherit; /* bevarer den definerede tekstfarve */
@@ -106,71 +93,64 @@ header {
 }
 
 
-
-/* ---- FOOTER ---- */
-
-footer {
-    border-top: solid var(--sekundaereFarve) 0.3px; /* Streg, der viser her starter footer*/
+h1{
+    text-align: center;
+    font-size: 64px;
+    font-family: 'Dela Gothic One';
+    font-style: normal;
+    font-weight: 400;
+    color: var(--skriftfarve);
 }
 
-/* Stylling - footer */
-.footer-generelt {
+h2 {
+    font-size: 30px;
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 400;
+    word-spacing: 1%;
+    line-height: 1.5;
+    text-align: right;
+}
+
+h3 {
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 300;
+}
+
+
+#top{
     display: flex;
-    justify-content: space-between;
-    padding-top: 30px; /*Afstand til streg, der definerer footeren*/
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 2%;
+    
 }
-  
-/* Placering - styrer placeringen af logo*/
-.footer-logo {
-    flex: 1;
+
+#text{
+    width: 550px;
+    padding-top: 200px;
+}
+
+.shape {
+	width: 700px;
+	height: 700px;
+    position: absolute;
+    top: 150px;
+    left: -10%;
+	background:var(--sekundaereFarve);
+    border-radius: 50%; /* Gør den rund */
+    z-index: -1;
+}
+
+img{
+    width: 120%;
+}
+
+.navigationImage{
+    width: auto;
+}
+
+button{
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-
-/* Styling - logo i footer*/
-.footer-logo img {
-    max-width: 120px;
-    height: auto;
-
-}
-
-/* Placering - kolonnerne med tekst*/
-.kolonne {
-    flex: 1;
-    text-align: left; /* Venstrejusterer kolonnerne */
-}
-
-
-/* Styling - den individuelle kolonne*/
-.kolonne a {
-    text-decoration: none;
-    font-family:'Dela Gothic One'; /*Font - overskrift*/
-    font-size: 13px;
-}
-
-/* Styling - bundtekst, nippon*/
-.footer-bundtekst p {
-    font-size: 14px; 
-    display: flex;
-    justify-content: center; /* Centrer teksten vandret*/
-    align-items: center; /* Centrer teksten vertikalt*/
-}
-
-/* Styling - bundtekst, ninja ikon*/
-.footer-bundtekst img {
-    width: 20px;
-    height: auto;
-    margin-left: 5px;
-}
-
-p{
-    padding-top: 20px;
-}
-
-#br {
-    border-top: 1px solid #6b6b6b; /* Tynd, grå linje */
-    width: 90%; /* Fylder hele bredden af sin container */
-    margin: 1px 0; /* Giver afstand over og under linjen */
-    display: block; /* Sørger for, at linjen vises korrekt */
 }
