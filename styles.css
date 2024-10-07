@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap'); /* Overskrift */
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap'); /* Brødtekst */
-/* IMPORTER NAGOMI-FONT HER - FONT TIL CTA-KNAPPER */
 
+/* IMPORTER NAGOMI-FONT HER - FONT TIL CTA-KNAPPER */
 
 
 /* BASIS FOR HTML */
@@ -13,12 +13,12 @@
     color: var(--skriftfarve); /* angiver basis tekst-farve*/
     line-height: 1.5; /* angiver linjeafstand for alt tekst*/
     background-color: var(--primaereFarve); /*angiver basis baggrundsfarve*/
+    font-family:'Epilogue'; /* Som standard font */
 }
 
 
 
-
-/* GENERELT */
+/* ---- GENERELT ---- */
 
 /* Farvepalette */
 :root {
