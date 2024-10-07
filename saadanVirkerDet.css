@@ -149,9 +149,9 @@ h1{
     padding: 10% 0% 2% 0%; /* Giver dem padding */
     font-size: 64px; /* Definerer font størrelsen */
     font-family: 'Dela Gothic One'; /*Definerer fonten*/
-    font-style: normal;
-    font-weight: 400;
-    color: var(--skriftfarve);
+    font-style: normal; /*Sætter stylen til normal*/
+    font-weight: 400; /* Sætter vægten til 400*/
+    color: var(--skriftfarve); /* Vælger en tidligere defineret CSS variabel til at bestemme farven på teksten*/
 }
 
 h2 {
@@ -166,59 +166,49 @@ p{
     font-style: normal;
 }
 
-
-#saadanvirkerdet{
-    display: flex;
-    margin: 5% 0 5% 5%;
-    gap: 7%;
-    padding-left: 20%;
-    max-width: 50%;
+/*Placering*/
+#saadanvirkerdet, #oftestilledespoergesmaal{
+    display: flex; /*Bruger flexbox til at arrangere elementerne*/
+    margin: 5% 0 5% 5%; /*Tilføjer margener omkring sektionen*/
+    gap: 7%; /* Tilføjer en afstand på 7% mellem de enkelte flex-elementer */
+    padding-left: 20%; /* Tilføjer 20% padding til venstre */
+    max-width: 50%; /* Begrænser bredden af kontaktsektionen til 60% */
 }
 
 #saadanvirkerdet h2{
-    padding-top: 2%;
+    padding-top: 2%; /* Tilføjer 2% padding ovenfor h2-overskriften*/
 }
-
-
-#oftestilledespoergesmaal{
-    display: flex;
-    margin: 5% 0 5% 5%;
-    gap: 7%;
-    padding-left: 20%;
-    max-width: 50%;
-}
-
 
 #kontaktos{
-    padding-left: 19%;
+    padding-left: 19%; /*Tilføjer venstre padding*/
     display: flex;
-    flex-direction: column;
-    max-width: 60%;
+    flex-direction: column; /* Arrangere elementerne lodret*/
+    max-width: 60%; 
     text-align: center;
 }
 
 #kontaktos p{
-    text-align: center;
-    padding-bottom: 5%;
+    text-align: center; /*Centrerer teksten*/
+    padding-bottom: 5%; /*Tilføjer padding under teksten*/
 }
 
 #Navn, #E-mail{
     padding: 25px;
-    background: none;
+    background: none;/* Fjerner standard baggrunden*/
     margin: 1% 0% 4% 25%;
-    max-width: 50%;
+    max-width: 50%; /*Begrænser bredden af inputfelterne */
 }
 
 /*Styling*/
 #Besked {
     padding: 25px;
-    padding-bottom: 150px;
+    padding-bottom: 150px; /*Tilføjer ekstra padding i bunden, så det indikerer er mere skrive plads*/
     background: none;
     margin: 1% 0% 4% 25%;
     max-width: 50%;
 }
 
-
+/*Styler knappen*/
 .indsend{
     padding: 30px;
     margin: 1% 0% 4% 25%;
