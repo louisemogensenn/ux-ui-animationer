@@ -2,16 +2,101 @@
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap'); /* Brødtekst */
 /* IMPORTER NAGOMI-FONT HER - FONT TIL CTA-KNAPPER */
 
+
+/*Definerer baggrundsfarven*/
+html{
+    background-color: var(--primaereFarve);
+   }
+
+/*NAVIGATIONSBARDELEN*/
 :root {
-    --primaereFarve: #F5F5CD;
+    --primaereFarve: #FEF6E1;
     --sekundaereFarve: #7B0005;
     --skriftfarve: #401A16;
 }
 
+header {
+    display: flex;
+    justify-content: center;
+    position: fixed; /* Får headeren til at blive ved scroll */
+    width: 100%; /* Sikrer, at navigationsbaren er placeret midt på skærmen */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: var(--skriftfarve);
+}
+
+.navigationImage {
+    width:20vh;
+    height: 20vh;
+}
 
 
-/*Placerer alle h1'er i midten af sitet*/
+/*BODY-DELEN*/
+
+/*Placerer alle h1'er i midten af sitet, giver dem font mv.*/
 h1{
+    text-align: center;
+    padding-top: 15%;
+    padding-bottom: 2%;
+    font-size: 64px;
+    font-family: 'Dela Gothic One';
+    font-style: normal;
+    font-weight: 400;
+    color: var(--skriftfarve);
+}
+
+h2 {
+    font-size: 30px;
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 300;
+}
+
+p{
+    font-family: 'Epilogue';
+    font-style: normal;
+}
+
+#saadanvirkerdet{
+    padding-left: 20%;
+}
+
+
+#oftestilledespørgsmål{
+    padding-left: 20%;
+}
+
+.abonnementsbetignelser{
+    display: flex;
+    flex-direction: row;
+}
+
+#kontaktos{
+    padding-left: 20%;
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
     text-align: center;
 }
 
+#kontaktos p{
+    text-align: center;
+    max-width: 75%;
+}
+
+#Navn, #E-mail, #Besked{
+    padding: 15px;
+    background: none;
+    margin: 2% 2% 2% 2%;
+}
+
+.indsend{
+    padding: 15px;
+}
