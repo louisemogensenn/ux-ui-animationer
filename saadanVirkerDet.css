@@ -214,3 +214,83 @@ p{
     margin: 1% 0% 4% 25%;
     max-width: 56%;
 }
+
+
+/* ---- FOOTER ---- */
+
+/* Styling - generelt*/
+footer {
+    border-top: solid var(--sekundaereFarve) 0.3px; /* Streg, der viser her starter footer*/
+}
+
+/* Styling - footer */
+.footer-generelt {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px; /*Afstand til streg, der definerer footeren*/
+}
+
+/* Placering - styrer placeringen af logo*/
+.footer-logo {
+    flex: 1; /*Sikrer at elementet vil vokse til at fylde al tilgængelig plads i boksen*/
+    display: flex;
+    justify-content: center; /*centerer logoet indefor sin boks*/
+    padding-right: 20px;
+}
+
+/* Styling - logo i footer*/
+.footer-logo img {
+    max-height: 110px; /*Angiver størrelse på img*/
+    max-width: auto;
+}
+
+/* Placering - kolonnerne med tekst*/
+.kolonne {
+    flex: 1; /*Sikrer at elementet vil vokse til at fylde al tilgængelig plads i boksen*/
+    text-align: left; /* Venstrejusterer kolonnerne */
+    padding: 0 40px 0 25px;
+}
+
+/* Styling - den individuelle kolonne*/
+.kolonne h3 a {
+    text-decoration: none; /*Fjerner streg under links*/
+    font-family:'Dela Gothic One'; /*Font - overskrift*/
+    font-size: 13px;
+}
+
+/* Styling - underpunkter, i kolonnerne*/
+.kolonne p {
+    padding-top: 17px; /*Afstand mellem tekst*/
+}
+
+/* Effekter - hover */
+.kolonne p :hover {
+    transform: scale(1.04); /* Forstørrer ved hover */
+    font-weight: bold; /* Tykkelse på font ved hover */
+}
+
+/* Styling - streg under overskrift*/
+.layout-streg {
+    border-bottom: 0.7px solid var(--skriftfarve); /* Tynd linje under overskriften*/
+    width: 90%; /* Fylder hele bredden af sin container */
+    margin: 1px 0; /* Giver afstand over og under linjen */
+    display: block; /* Sørger for, at linjen vises korrekt */
+}
+
+/* Styling - bundtekst, nippon*/
+.footer-bundtekst p {
+    font-size: 14px; 
+    display: flex;
+    justify-content: center; /* Centrer teksten vandret*/
+    align-items: center; /* Centrer teksten vertikalt*/
+    padding-top: 60px; /*Afstand til ovenforstående bokse*/
+}
+
+/* Styling - bundtekst, ninja ikon*/
+.footer-bundtekst img {
+    width: 20px;
+    height: auto;
+    margin-left: 5px; /*Afstand mellem billede og tekst*/
+}
+
+
