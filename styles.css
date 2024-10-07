@@ -109,11 +109,12 @@ header {
 
 /* ---- FOOTER ---- */
 
+/* Styling - generelt*/
 footer {
     border-top: solid var(--sekundaereFarve) 0.3px; /* Streg, der viser her starter footer*/
 }
 
-/* Stylling - footer */
+/* Styling - footer */
 .footer-generelt {
     display: flex;
     justify-content: space-between;
@@ -142,7 +143,7 @@ footer {
 
 /* Styling - den individuelle kolonne*/
 .kolonne a {
-    text-decoration: none;
+    text-decoration: none; /*Fjerner streg under links*/
     font-family:'Dela Gothic One'; /*Font - overskrift*/
     font-size: 13px;
 }
