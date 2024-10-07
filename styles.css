@@ -109,42 +109,41 @@ header {
 
 /* ---- FOOTER ---- */
 
+/* Styling - generelt*/
 footer {
     border-top: solid var(--sekundaereFarve) 0.3px; /* Streg, der viser her starter footer*/
 }
 
-/* Stylling - footer */
+/* Styling - footer */
 .footer-generelt {
     display: flex;
     justify-content: space-between;
     padding-top: 30px; /*Afstand til streg, der definerer footeren*/
 }
-  
+
 /* Placering - styrer placeringen af logo*/
 .footer-logo {
     flex: 1;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center; /*centerer logoet indefor sin boks*/
 }
 
 /* Styling - logo i footer*/
 .footer-logo img {
-    max-width: 120px;
+    max-width: 90px; /*Angiver størrelse på img*/
     height: auto;
-
 }
 
 /* Placering - kolonnerne med tekst*/
 .kolonne {
     flex: 1;
     text-align: left; /* Venstrejusterer kolonnerne */
+    padding-left: 20px;
 }
-
 
 /* Styling - den individuelle kolonne*/
 .kolonne a {
-    text-decoration: none;
+    text-decoration: none; /*Fjerner streg under links*/
     font-family:'Dela Gothic One'; /*Font - overskrift*/
     font-size: 13px;
 }

@@ -3,50 +3,117 @@
 /* IMPORTER NAGOMI-FONT HER - FONT TIL CTA-KNAPPER */
 
 
-/*Definerer baggrundsfarven*/
-html{
-    background-color: var(--primaereFarve);
-   }
+/* BASIS FOR HTML */
+*,
+*::before,
+*::after {
+    margin: 0; /*fjerner alt margin, som basis*/
+    padding: 0; /*fjerner alt padding, som basis*/
+    color: var(--skriftfarve); /* angiver basis tekst-farve*/
+    line-height: 1.5; /* angiver linjeafstand for alt tekst*/
+    background-color: var(--primaereFarve); /*angiver basis baggrundsfarve*/
+    font-family:'Epilogue'; /* Som standard font */
+}
 
-/*NAVIGATIONSBARDELEN*/
+
+/* ---- GENERELT ---- */
+
+/* Farvepalette */
 :root {
     --primaereFarve: #FEF6E1;
     --sekundaereFarve: #7B0005;
     --skriftfarve: #401A16;
 }
 
+/* Styling - a-tags/links */
+a {
+    text-decoration: none; /* fjerner streger under links */
+    color: inherit; /* bevarer den definerede tekstfarve */
+}
+
 header {
     display: flex;
-    justify-content: center;
+    justify-content: center; 
     position: fixed; /* Får headeren til at blive ved scroll */
     width: 100%; /* Sikrer, at navigationsbaren er placeret midt på skærmen */
 }
 
-nav {
-    display: flex;
-    justify-content: center;
-}
 
-a {
-    text-decoration: none;
-    color: var(--skriftfarve);
-}
 
+/* ---- NAVIGATION ---- */
+
+/* Styling - logo */
 .navigationImage {
-    width:20vh;
-    height: 20vh;
+    max-height: 68px; /* størrelse på logo*/
+}
+
+/* Styling - navigationsbaren - ul */
+.nav-styling {
+    display: flex;
+    justify-content: space-between; /* Centerer ul-elementer */
+    align-items: center; /* Vertikalt centerering */
+    list-style: none;
+}
+
+/* Styling - navigationsbaren - li */
+.nav-styling li {
+    margin: 20px 30px; /* Afstand mellem li-elementer */
+    position: relative; /* Angiver korrekt placering af dropdown*/
+    transition: transform 0.3s, font-weight 0.3s; /* Overgangseffekt - gør teksten federe, i bevægelse */
+}
+
+/* Effekter - navigationsbaren */
+.nav-styling li:hover {
+    transform: scale(1.04); /* Forstørrer ved hover */
+    font-weight: bold; /* Tykkelse på font ved hover */
+}
+
+/* Effekter - Skjul dropdown-menuen som standard */
+.dropdown {
+    display: none; /* Skjuler */
+    position: absolute;
+    list-style: none; /* Fjerner prikker fra liste*/
+    z-index: 1000; /*Høj værdi, for at sikre at dropdown overgår andre elementer*/
+}
+
+/* Effekter - Vis dropdown-menuen ved hover */
+.nav-styling li:hover .dropdown {
+    display: block; /* Viser elementer*/
+    font-weight: 200; /* Tykkelse på font ved hover - ændres efter skrifttype er defineret*/
+}
+
+/* Styling - Dropdown li */
+.dropdown li {
+    margin: 0; /* fjerner den margin, som er angivet for navigationsbaren */
+    padding-top: 15px; /* Afstand til ovenforstående element*/
+    padding-bottom: 2px;
+}
+
+/* Placering - Ikoner i dropdown */
+.dropdown li a {
+    display: flex; /* Sikrer, at ikoner og tekst forbliver på samme linje */
+    align-items: center; /* Vertikal justering af ikoner og tekst */
+    white-space: nowrap; /* Forhindrer tekstombrydning */
+}
+
+/* Styling - Ikoner i dropdown*/
+.dropdown li a img {
+    width: 20px; /* ikonernes størrelse */
+    height: auto;
+    margin-right: 10px; /* Afstand mellem ikon og tekst */
+    vertical-align: text-bottom; /* Sikrer at ikonet er centreret med teksten */
 }
 
 
-/*BODY-DELEN*/
 
-/*Placerer alle h1'er i midten af sitet, giver dem font mv.*/
+/* ---- 'BODY-DELEN' ---- */
+
+/* Placerering og styling */
 h1{
-    text-align: center;
-    padding-top: 15%;
-    padding-bottom: 2%;
-    font-size: 64px;
-    font-family: 'Dela Gothic One';
+    text-align: center; /* Placerer teksten i midten */
+    padding: 15% 0% 2% 0%; /* Giver dem padding */
+    font-size: 64px; /* Definerer font størrelsen */
+    font-family: 'Dela Gothic One'; /*Definerer fonten*/
     font-style: normal;
     font-weight: 400;
     color: var(--skriftfarve);
@@ -64,13 +131,26 @@ p{
     font-style: normal;
 }
 
-#saadanvirkerdet{
+
+.Bestil, .Pak, .Vaelg, .Server{
+    display: flex;
+    margin: 5% 0 5% 5%;
+    gap: 7%;
     padding-left: 20%;
+    max-width: 50%;
+}
+
+.Bestil h2, .Pak h2, .Vaelg h2, .Server h2{
+    padding-top: 2%;
 }
 
 
-#oftestilledespørgsmål{
+#abonnementsbetignelser, #framelder, #bindingsperiode, #allergener{
+    display: flex;
+    margin: 5% 0 5% 5%;
+    gap: 7%;
     padding-left: 20%;
+    max-width: 50%;
 }
 
 .abonnementsbetignelser{
@@ -88,15 +168,27 @@ p{
 
 #kontaktos p{
     text-align: center;
-    max-width: 75%;
+    padding-bottom: 5%;
 }
 
-#Navn, #E-mail, #Besked{
-    padding: 15px;
+#Navn, #E-mail{
+    padding: 25px;
     background: none;
-    margin: 2% 2% 2% 2%;
+    margin: 1% 0% 4% 25%;
+    max-width: 50%;
 }
+
+/*Styling*/
+#Besked {
+    padding: 25px;
+    background: none;
+    margin: 1% 0% 4% 25%;
+    max-width: 50%;
+}
+
 
 .indsend{
-    padding: 15px;
+    padding: 30px;
+    margin: 1% 0% 4% 25%;
+    max-width: 56%;
 }
