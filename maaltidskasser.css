@@ -18,7 +18,6 @@ html{
 header {
     display: flex;
     justify-content: center;
-    position: fixed; /* Får headeren til at blive ved scroll */
     width: 100%; /* Sikrer, at navigationsbaren er placeret midt på skærmen */
 }
 
@@ -34,12 +33,25 @@ a {
 
 h1{
     text-align: center;
-    padding-top: 15%;
     font-size: 64px;
     font-family: 'Dela Gothic One';
     font-style: normal;
     font-weight: 400;
     color: var(--skriftfarve);
+}
+
+h2 {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 300;
+}
+
+h3 {
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 300;
 }
 
 .navigationImage {
@@ -48,8 +60,13 @@ h1{
 }
 
 #maaltidskasser{
-    display: flex;
+    display: flex; /* viser dem vandret */
     justify-content: center;
     align-items: center;
     padding-top: 1%;
+    justify-content: space-evenly; /* giver white space mellem boksne */
+}
+
+img{
+    width: 350px; /* giver billederne en bredte */
 }
