@@ -126,19 +126,20 @@ footer {
     flex: 1;
     display: flex;
     justify-content: center; /*centerer logoet indefor sin boks*/
+    padding-right: 20px;
 }
 
 /* Styling - logo i footer*/
 .footer-logo img {
-    max-width: 90px; /*Angiver størrelse på img*/
-    height: auto;
+    max-height: 110px; /*Angiver størrelse på img*/
+    max-width: auto;
 }
 
 /* Placering - kolonnerne med tekst*/
 .kolonne {
     flex: 1;
     text-align: left; /* Venstrejusterer kolonnerne */
-    padding-left: 20px;
+    padding: 0 40px 0 25px;
 }
 
 /* Styling - den individuelle kolonne*/
@@ -161,11 +162,11 @@ footer {
 .footer-bundtekst img {
     width: 20px;
     height: auto;
-    margin-left: 5px;
+    margin-left: 5px; /*Afstand mellem billede og tekst*/
 }
 
 .kolonne p {
-    padding-top: 20px;
+    padding-top: 17px; /*Afstand mellem tekst*/
 }
 
 /* Styling - streg under overskrift*/
