@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap'); /* Overskrift */
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap'); /* Brødtekst */
-/* IMPORTER NAGOMI-FONT HER - FONT TIL CTA-KNAPPER */
 
+/* IMPORTER NAGOMI-FONT HER - FONT TIL CTA-KNAPPER */
 
 
 /* BASIS FOR HTML */
@@ -13,12 +13,12 @@
     color: var(--skriftfarve); /* angiver basis tekst-farve*/
     line-height: 1.5; /* angiver linjeafstand for alt tekst*/
     background-color: var(--primaereFarve); /*angiver basis baggrundsfarve*/
+    font-family:'Epilogue'; /* Som standard font */
 }
 
 
 
-
-/* GENERELT */
+/* ---- GENERELT ---- */
 
 /* Farvepalette */
 :root {
@@ -44,7 +44,7 @@ header {
 
 /* ---- NAVIGATION ---- */
 
-/* Styling af logo */
+/* Styling - logo */
 .navigationImage {
     max-height: 68px; /* størrelse på logo*/
 }
@@ -84,11 +84,25 @@ header {
     font-weight: 200; /* Tykkelse på font ved hover - ændres efter skrifttype er defineret*/
 }
 
-/* Styling - dropdown li */
+/* Styling - Dropdown li */
 .dropdown li {
     margin: 0; /* fjerner den margin, som er angivet for navigationsbaren */
     padding-top: 15px; /* Afstand til ovenforstående element*/
     padding-bottom: 2px;
 }
 
+/* Placering - Ikoner i dropdown */
+.dropdown li a {
+    display: flex; /* Sikrer, at ikoner og tekst forbliver på samme linje */
+    align-items: center; /* Vertikal justering af ikoner og tekst */
+    white-space: nowrap; /* Forhindrer tekstombrydning */
+}
+
+/* Styling - Ikoner i dropdown*/
+.dropdown li a img {
+    width: 20px; /* ikonernes størrelse */
+    height: auto;
+    margin-right: 10px; /* Afstand mellem ikon og tekst */
+    vertical-align: text-bottom; /* Sikrer at ikonet er centreret med teksten */
+}
 
