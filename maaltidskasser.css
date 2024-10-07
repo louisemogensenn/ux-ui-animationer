@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap'); /* Overskrift */
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap'); /* Brødtekst */
+/* IMPORTER NAGOMI-FONT HER - FONT TIL CTA-KNAPPER */
+
+
+
+/* BASIS FOR HTML */
+html{
+ background-color: var(--primaereFarve);
+}
+
+:root {
+    --primaereFarve: #FEF6E1;
+    --sekundaereFarve: #7B0005;
+    --skriftfarve: #401A16;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    position: fixed; /* Får headeren til at blive ved scroll */
+    width: 100%; /* Sikrer, at navigationsbaren er placeret midt på skærmen */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: var(--skriftfarve);
+}
+
+h1{
+    text-align: center;
+    padding-top: 15%;
+    font-size: 64px;
+    font-family: 'Dela Gothic One';
+    font-style: normal;
+    font-weight: 400;
+    color: var(--skriftfarve);
+}
+
+.navigationImage {
+    width:20vh;
+    height: 20vh;
+}
+
+#maaltidskasser{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1%;
+}
