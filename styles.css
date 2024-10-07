@@ -6,7 +6,6 @@
     --primaereFarve: #F5F5CD;
     --sekundaereFarve: #7B0005;
     --skriftfarve: #401A16;
-
 }
 
 header {
@@ -30,3 +29,5 @@ a {
     width:20vh;
     height: 20vh;
 }
+
+/* OVENSTÅENDE ER STYLING AF HEADER - BRUG HTML-SIDEN TIL AT STYLE MIDLERTIDIGT */
