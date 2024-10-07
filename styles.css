@@ -154,6 +154,7 @@ footer {
     display: flex;
     justify-content: center; /* Centrer teksten vandret*/
     align-items: center; /* Centrer teksten vertikalt*/
+    padding-top: 60px; /*Afstand til ovenforstående bokse*/
 }
 
 /* Styling - bundtekst, ninja ikon*/
@@ -163,12 +164,13 @@ footer {
     margin-left: 5px;
 }
 
-p{
+.kolonne p {
     padding-top: 20px;
 }
 
-#br {
-    border-top: 1px solid #6b6b6b; /* Tynd, grå linje */
+/* Styling - streg under overskrift*/
+.layout-streg {
+    border-bottom: 0.7px solid var(--skriftfarve); /* Tynd linje under overskriften*/
     width: 90%; /* Fylder hele bredden af sin container */
     margin: 1px 0; /* Giver afstand over og under linjen */
     display: block; /* Sørger for, at linjen vises korrekt */
