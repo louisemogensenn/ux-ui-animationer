@@ -141,20 +141,30 @@ display: flex;
 
 .progress-bar-container {
     position: fixed; /* Fast positionering */
-    left: 100px; /* Placeret lidt væk fra højre side */
+    left: 200px; /* Placeret lidt væk fra venstre side */
     top: 200px;
-    width: 1px; /* Smal bredde */
-    background-color: #191919; /* Baggrundsfarve */
+    width: 2px; /* Smal bredde */
+    background-color: #000; /* Farve på linjen */
     height: 100%; /* Strækker sig over hele siden */
-    border-radius: 4px;
     z-index: 100; /* Sørger for at den ligger over alt indhold */
 }
 
-/* Selve progress-baren, som ændrer højde ved scrolling */
+/* Progress-bar - fyldes ikke, men fungerer som baggrundslinje */
 .progress-bar {
-    width: 100%; /* Fuld bredde indenfor containeren */
-    background-color: #ffcc00; /* Farven på progress-baren */
-    height: 0%; /* Starter med 0% højde */
-    border-radius: 4px;
-    transition: height 0.25s; /* Glat overgang ved ændring */
+    width: 100%;
+    height: 100%; /* Fuld højde af containeren */
+    background-color: #000;
+    position: absolute;
+}
+
+/* Cirklen, der bevæger sig langs linjen */
+.progress-circle {
+    position: absolute; /* Placeres relativt til progress-bar-container */
+    left: 50%; /* Centrerer cirklen på linjen */
+    transform: translateX(-50%); /* Justerer for centreringen */
+    width: 12px; /* Cirklen's bredde */
+    height: 12px; /* Cirklen's højde */
+    background-color: #000; /* Cirklen's farve */
+    border-radius: 50%; /* Gør den rund */
+    transition: top 0.25s; /* Glat overgang når cirklen bevæger sig */
 }
