@@ -44,7 +44,7 @@ header {
 
 /* ---- NAVIGATION ---- */
 
-/* Styling af logo */
+/* Styling - logo */
 .navigationImage {
     max-height: 68px; /* størrelse på logo*/
 }
@@ -89,6 +89,13 @@ header {
     margin: 0; /* fjerner den margin, som er angivet for navigationsbaren */
     padding-top: 15px; /* Afstand til ovenforstående element*/
     padding-bottom: 2px;
+}
+
+/* Placering - Ikoner i dropdown */
+.dropdown li a {
+    display: flex; /* Sikrer, at ikoner og tekst forbliver på samme linje */
+    align-items: center; /* Vertikal justering af ikoner og tekst */
+    white-space: nowrap; /* Forhindrer tekstombrydning */
 }
 
 /* Styling - Ikoner i dropdown*/
