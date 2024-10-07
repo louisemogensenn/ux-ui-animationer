@@ -125,12 +125,12 @@ footer {
 .footer-logo {
     flex: 1;
     display: flex;
-    justify-content: center; /* centrer logoet indenfor sin boks*/
+    justify-content: center; /*centerer logoet indefor sin boks*/
 }
 
 /* Styling - logo i footer*/
 .footer-logo img {
-    max-width: 100px; /*Angiver størrelse på img*/
+    max-width: 90px; /*Angiver størrelse på img*/
     height: auto;
 }
 
@@ -138,6 +138,7 @@ footer {
 .kolonne {
     flex: 1;
     text-align: left; /* Venstrejusterer kolonnerne */
+    padding-left: 20px;
 }
 
 /* Styling - den individuelle kolonne*/
