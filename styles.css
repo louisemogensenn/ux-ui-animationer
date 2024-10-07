@@ -84,11 +84,18 @@ header {
     font-weight: 200; /* Tykkelse på font ved hover - ændres efter skrifttype er defineret*/
 }
 
-/* Styling - dropdown li */
+/* Styling - Dropdown li */
 .dropdown li {
     margin: 0; /* fjerner den margin, som er angivet for navigationsbaren */
     padding-top: 15px; /* Afstand til ovenforstående element*/
     padding-bottom: 2px;
 }
 
+/* Styling - Ikoner i dropdown*/
+.dropdown li a img {
+    width: 20px; /* ikonernes størrelse */
+    height: auto;
+    margin-right: 10px; /* Afstand mellem ikon og tekst */
+    vertical-align: text-bottom; /* Sikrer at ikonet er centreret med teksten */
+}
 
