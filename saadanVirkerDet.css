@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap'); /* Overskrift */
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap'); /* Brødtekst */
+/* IMPORTER NAGOMI-FONT HER - FONT TIL CTA-KNAPPER */
+
+:root {
+    --primaereFarve: #F5F5CD;
+    --sekundaereFarve: #7B0005;
+    --skriftfarve: #401A16;
+}
+
+
+
+/*Placerer alle h1'er i midten af sitet*/
+h1{
+    text-align: center;
+}
+
