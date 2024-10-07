@@ -137,34 +137,10 @@ justify-content: center;
 display: flex;
 }
 
-
-
-.progress-bar-container {
-    position: fixed; /* Fast positionering */
-    left: 200px; /* Placeret lidt væk fra venstre side */
-    top: 200px;
-    width: 2px; /* Smal bredde */
-    background-color: #000; /* Farve på linjen */
-    height: 100%; /* Strækker sig over hele siden */
-    z-index: 100; /* Sørger for at den ligger over alt indhold */
+#top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* Progress-bar - fyldes ikke, men fungerer som baggrundslinje */
-.progress-bar {
-    width: 100%;
-    height: 100%; /* Fuld højde af containeren */
-    background-color: #000;
-    position: absolute;
-}
 
-/* Cirklen, der bevæger sig langs linjen */
-.progress-circle {
-    position: absolute; /* Placeres relativt til progress-bar-container */
-    left: 50%; /* Centrerer cirklen på linjen */
-    transform: translateX(-50%); /* Justerer for centreringen */
-    width: 12px; /* Cirklen's bredde */
-    height: 12px; /* Cirklen's højde */
-    background-color: #000; /* Cirklen's farve */
-    border-radius: 50%; /* Gør den rund */
-    transition: top 0.25s; /* Glat overgang når cirklen bevæger sig */
-}
