@@ -125,13 +125,12 @@ footer {
 .footer-logo {
     flex: 1;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center; /* centrer logoet indenfor sin boks*/
 }
 
 /* Styling - logo i footer*/
 .footer-logo img {
-    max-width: 120px; /*Angiver størrelse på img*/
+    max-width: 100px; /*Angiver størrelse på img*/
     height: auto;
 }
 
