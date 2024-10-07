@@ -10,7 +10,6 @@
     --primaereFarve: #F5F5CD;
     --sekundaereFarve: #7B0005;
     --skriftfarve: #401A16;
-
 }
 
 header {
@@ -35,4 +34,8 @@ a {
     height: 20vh;
 }
 
+<<<<<<< HEAD
 
+=======
+/* OVENSTÅENDE ER STYLING AF HEADER - BRUG HTML-SIDEN TIL AT STYLE MIDLERTIDIGT */
+>>>>>>> b8a80c975947b33e6f7175d7c0dbdb5a66308af6
