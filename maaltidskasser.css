@@ -5,9 +5,12 @@
 
 
 /* BASIS FOR HTML */
+html{
+ background-color: var(--primaereFarve);
+}
 
 :root {
-    --primaereFarve: #F5F5CD;
+    --primaereFarve: #FEF6E1;
     --sekundaereFarve: #7B0005;
     --skriftfarve: #401A16;
 }
@@ -29,7 +32,24 @@ a {
     color: var(--skriftfarve);
 }
 
+h1{
+    text-align: center;
+    padding-top: 15%;
+    font-size: 64px;
+    font-family: 'Dela Gothic One';
+    font-style: normal;
+    font-weight: 400;
+    color: var(--skriftfarve);
+}
+
 .navigationImage {
     width:20vh;
     height: 20vh;
+}
+
+#maaltidskasser{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1%;
 }
