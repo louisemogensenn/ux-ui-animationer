@@ -234,12 +234,13 @@ p{
     cursor: pointer;
     overflow: hidden;
     transition: background 1s;
+    background-position: 200% 0;
 }
 
 .indsend.submiting {
-    background: linear-gradient(to right, #7B0005 50%, #FEF6E1 50%); /* Gradient fra mørkerød til lys beige */
+    background: linear-gradient(to right, #F1EAD6 50%, #7B0005 50%); /* Gradient fra mørkerød til lys beige */
     background-size: 200% 100%; /* Dobbelt størrelse for at muliggøre animation */
-    background-position: 100% 0; /* Startposition for baggrund */
+    background-position: 100% 0; /* Slutposition for baggrund */
 }
 
 
