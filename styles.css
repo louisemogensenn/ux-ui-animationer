@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap'); /* Overskrift */
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap'); /* Brødtekst */
+@import url("https://use.typekit.net/wdg4dhh.css");
 
 /* IMPORTER NAGOMI-FONT HER - FONT TIL CTA-KNAPPER */
 
@@ -15,8 +16,6 @@
     background-color: var(--primaereFarve); /*angiver basis baggrundsfarve*/
     font-family:'Epilogue'; /* Som standard font */
 }
-
-
 
 /* ---- GENERELT ---- */
 
@@ -50,6 +49,10 @@ h1{
 }
 
 /* Styling h2 - Overskrifter*/
+
+h2 {
+    font-family: 'Nagomi', 'Times New Roman', Times, serif;
+}
 
 
 /* Styling h3 - Alle underoverskrifter*/
@@ -134,20 +137,20 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-top: 2%;
 }
 
 /* Placering - Forside tekst */
 #text{
-    width: 550px; /*Placering på skærm*/
+    width: 850px; /*Placering på skærm*/
     padding-top: 180px; /*Afstand fra top*/
+    padding-right: 100px;
     text-align: right; /*Højrestiller teksten*/
 }
 
 /* Placering - Måltidskassen, stor*/
 #billede img{
-    width: 115%; /*Hvis siden skal være responsiv, skal dette ændres til eks. px*/
-    padding-bottom: 50px; /*Luft under kassen, før footer*/
+    width: 95%; /*Hvis siden skal være responsiv, skal dette ændres til eks. px*/
+    padding-bottom: 100px; /*Luft under kassen, før footer*/
 }
 
 /* Placering - Knap*/
@@ -163,6 +166,7 @@ h3 {
     word-spacing: 1%; /*Afstand mellem ord*/
     line-height: 1.5; /*Linjehøjde*/
 }
+
 
 
 /* ---- FOOTER ---- */
@@ -233,6 +237,7 @@ footer {
     justify-content: center; /* Centrer teksten vandret*/
     align-items: center; /* Centrer teksten vertikalt*/
     padding-top: 60px; /*Afstand til ovenforstående bokse*/
+    padding-bottom: 20px;
 }
 
 /* Styling - bundtekst, ninja ikon*/

@@ -225,24 +225,23 @@ p{
 .indsend{
     width: 500px;
     height: 100px;
-    background-color: bisque;
+    background-color: #F1EAD6;
     color: black;
     font-size: 30px;
     font: 'Nagomi';
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    padding: 30px; /*eller skriv position: relative; */
-    transition: .3s ease-in-out;
+    overflow: hidden;
+    transition: background 1s;
 }
 
-.indsend:hover{
-    opacity: .9;
+.indsend.submiting {
+    background: linear-gradient(to right, #7B0005 50%, #FEF6E1 50%); /* Gradient fra mørkerød til lys beige */
+    background-size: 200% 100%; /* Dobbelt størrelse for at muliggøre animation */
+    background-position: 100% 0; /* Startposition for baggrund */
 }
 
-.indsend.submiting{
-    height: 28px;
-}
 
 /* ---- FOOTER ---- */
 
