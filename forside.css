@@ -4,27 +4,7 @@
 
 
 
-/* BASIS FOR HTML */
-html{
- background-color: var(--primaereFarve);
-}
 
-:root {
-    --primaereFarve: #FEF6E1;
-    --sekundaereFarve: #7B0005;
-    --skriftfarve: #401A16;
-}
-
-a {
-    text-decoration: none; /* fjerner streger under links */
-    color: inherit; /* bevarer den definerede tekstfarve */
-}
-
-header {
-    display: flex;
-    justify-content: center; 
-    width: 100%; /* Sikrer, at navigationsbaren er placeret midt på skærmen */
-}
 
 
 
