@@ -32,38 +32,11 @@ a {
     text-decoration: none; /* fjerner streger under links */
     color: inherit; /* bevarer den definerede tekstfarve */
 }
-/* Placering - navigationsbar*/
+
 header {
     display: flex;
     justify-content: center; 
     width: 100%; /* Sikrer, at navigationsbaren er placeret midt på skærmen */
-}
-
-/* Styling h1 - Titler*/
-h1{
-    text-align: center;
-    font-size: 64px;
-    font-family: 'Dela Gothic One';
-    font-style: normal;
-    font-weight: 400;
-    color: var(--skriftfarve);
-}
-
-/* Styling h2 - Overskrifter*/
-h2 {
-    font-size: 30px;
-    font-family: 'Epilogue';
-    font-style: normal;
-    font-weight: 400;
-    word-spacing: 1%;
-    line-height: 1.5;
-}
-
-/* Styling h3 - Alle underoverskrifter*/
-h3 {
-    font-family: 'Epilogue';
-    font-style: normal;
-    font-weight: 300;
 }
 
 
@@ -133,111 +106,119 @@ h3 {
 }
 
 
-/* ---- FORSIDE ---- */
 
-#top{
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap'); /* Overskrift */
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap'); /* Brødtekst */
+/* IMPORTER NAGOMI-FONT HER - FONT TIL CTA-KNAPPER */
+
+
+
+/* BASIS FOR HTML */
+html{
+ background-color: var(--primaereFarve);
+}
+
+:root {
+    --primaereFarve: #FEF6E1;
+    --sekundaereFarve: #7B0005;
+    --skriftfarve: #401A16;
+}
+
+a {
+    text-decoration: none; /* fjerner streger under links */
+    color: inherit; /* bevarer den definerede tekstfarve */
+}
+
+
+h1{
+    text-align: center;
+    font-size: 64px;
+    font-family: 'Dela Gothic One';
+    font-style: normal;
+    font-weight: 400;
+    color: var(--skriftfarve);
+}
+
+h2 {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 300;
+}
+
+h3 {
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.row {
+    padding-top: 5%;
+    padding-left: 10%;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-top: 2%;
-    
+    gap: 5%; /* Mellemrum mellem kolonner */
+    justify-content: flex-start; /* Fordeler kolonnerne jævnt */
 }
 
-/* Placering - Forside tekst */
-#text{
-    width: 550px; /*Placering på skærm*/
-    padding-top: 200px; /*Afstand fra top*/
-    text-align: right; /*Højrestiller teksten*/
+.column {
+
+    padding: 10px;
 }
 
-/* Placering - Måltidskassen, stor*/
-#billede img{
-    width: 120%; /*Hvis siden skal være responsiv, skal dette ændres til eks. px*/
-    padding-bottom: 50px; /*Luft under kassen, før footer*/
+.kort{
+    justify-content: center;
+    padding-bottom: 50px;
 }
 
-/* Placering - Knap*/
-button{
-    display: flex; /* Følger id "text"*/
+#hjerte{
+    width: 30px;
 }
 
-
-
-
-/* ---- FOOTER ---- */
-
-/* Styling - generelt*/
-footer {
-    border-top: solid var(--sekundaereFarve) 0.3px; /* Streg, der viser her starter footer*/
+.kort p {
+    font-size: 10px;
+    margin: 5px 0;
 }
 
-/* Styling - footer */
-.footer-generelt {
+.order-box {
+    position: fixed;
+    top: 150px; 
+    right: 40px; /* Placerer boksen lidt væk fra højre side */
+    background-color: #FEF6E1;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Fast bredde */
+    height: 500px; /* Fast højde */
     display: flex;
-    justify-content: space-between;
-    padding-top: 30px; /*Afstand til streg, der definerer footeren*/
+    flex-direction: column;
 }
 
-/* Placering - styrer placeringen af logo*/
-.footer-logo {
-    flex: 1; /*Sikrer at elementet vil vokse til at fylde al tilgængelig plads i boksen*/
+.order-content {
+    /* Indholdet øverst i boksen */
+}
+
+.nederest {
     display: flex;
-    justify-content: center; /*centerer logoet indefor sin boks*/
-    padding-right: 20px;
+    justify-content: space-between; /* Sørger for, at teksten og prisen står på hver sin side */
+    margin-top: auto; /* Skubber sektionen ned til bunden */
+    margin-bottom: 10px; /* Afstand til knappen */
 }
 
-/* Styling - logo i footer*/
-.footer-logo img {
-    max-height: 110px; /*Angiver størrelse på img*/
-    max-width: auto;
+.order-button {
+    background-color: var(--primaereFarve);
+    border: 1px solid #7B0005;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
-/* Placering - kolonnerne med tekst*/
-.kolonne {
-    flex: 1; /*Sikrer at elementet vil vokse til at fylde al tilgængelig plads i boksen*/
-    text-align: left; /* Venstrejusterer kolonnerne */
-    padding: 0 40px 0 25px;
+.order-button:hover {
+    background-color: var(--primaereFarve);
+    transform: scale(1.05);
 }
-
-/* Styling - den individuelle kolonne*/
-.kolonne h3 a {
-    text-decoration: none; /*Fjerner streg under links*/
-    font-family:'Dela Gothic One'; /*Font - overskrift*/
-    font-size: 13px;
-}
-
-/* Styling - underpunkter, i kolonnerne*/
-.kolonne p {
-    padding-top: 17px; /*Afstand mellem tekst*/
-}
-
-/* Effekter - hover */
-.kolonne p :hover {
-    transform: scale(1.04); /* Forstørrer ved hover */
-    font-weight: bold; /* Tykkelse på font ved hover */
-}
-
-/* Styling - streg under overskrift*/
-.layout-streg {
-    border-bottom: 0.7px solid var(--skriftfarve); /* Tynd linje under overskriften*/
-    width: 90%; /* Fylder hele bredden af sin container */
-    margin: 1px 0; /* Giver afstand over og under linjen */
-    display: block; /* Sørger for, at linjen vises korrekt */
-}
-
-/* Styling - bundtekst, nippon*/
-.footer-bundtekst p {
-    font-size: 14px; 
-    display: flex;
-    justify-content: center; /* Centrer teksten vandret*/
-    align-items: center; /* Centrer teksten vertikalt*/
-    padding-top: 60px; /*Afstand til ovenforstående bokse*/
-}
-
-/* Styling - bundtekst, ninja ikon*/
-.footer-bundtekst img {
-    width: 20px;
-    height: auto;
-    margin-left: 5px; /*Afstand mellem billede og tekst*/
-}
-
