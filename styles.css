@@ -127,6 +127,12 @@ h3 {
     vertical-align: text-bottom; /* Sikrer at ikonet er centreret med teksten */
 }
 
+/* ---- 404 - SIDE ----- */
+
+
+
+
+
 
 /* ---- FORSIDE ---- */
 
@@ -179,6 +185,7 @@ h3 {
 }
 
 /* STYLING AF SÆSONENS MÅLTIDER */
+
 /* placerer overskrift og billede i midten og ovenpå hinanden */
 #topSaesonensMaaltider{
     display: flex;
