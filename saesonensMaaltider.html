@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nippon måltidskasser ~ Om os</title> <!-- Titel i faneblad -->
     <meta name="description" content="Nippon tilbyder måltidskasser med inspiration fra det japanske køkken. Få smagen af Japan leveret direkte til din dør med Nippon måltidskasser!"> <!-- SEO beskrivelse, vises i søgeresultatet-->
-    <link rel="stylesheet" href="seasonsmaaltidskasser.css"> <!-- Linkter til den samlede CSS -->
+    <link rel="stylesheet" href="styles.css"> <!-- Linkter til den samlede CSS -->
     <link rel="icon" href="images/nippon-logo.webp" type="image/x-icon"/> <!-- Lille ikon i tab -->
     <script src="omos.js" defer></script>
 </head>
@@ -36,12 +36,12 @@
     </header>
 
     <section id="top">
-        <img src="images/seasonsmaaltidskasse.webp" alt="maaltidskasse">
-        <h1>SÆSONS MÅLTIDSKASSER</h1>
+        <h1>SÆSONENS MÅLTIDSKASSER</h1>
+        <img id="saesonensBilledeId" src="images/seasonsmaaltidskasse.webp" alt="maaltidskasse">
     </section>  
 
-    <section id="omostext">
-        <p>
+    <section class="beskrivendeTekst">
+        <p class="tekstIndhold">
             Er du <b>træt</b> af at bruge tid på at <b>handle</b> og finde på nye idéer til aftensmaden? Måske synes du, det er svært at få <b>variation</b> i hverdagsretterne, eller du mangler tid til at stå i køkkenet i en <b>travl hverdag</b>. Det kender vi godt! <br>
 
             Med vores <b>måltidskasse</b> slipper du for besværet med at planlægge og handle. Hver uge får du nye opskrifter og <b>friske ingredienser</b> leveret direkte til din dør, så du hurtigt kan tilberede <b>spændende japanske retter</b> uden stress. Det er nemt, hurtigt og passer perfekt ind i en <b>travl hverdag</b>. <br>
@@ -55,11 +55,6 @@
             
         </p>
     </section>
-    
-    <div class="progress-bar-container">
-        <div class="progress-bar" id="progress-bar"></div>
-        <div class="progress-circle" id="progress-circle"></div>
-    </div>
     
     <footer><!-- FOOTER-->
         
@@ -101,7 +96,30 @@
     </footer>
 </body>
 
+<style>
 
+.beskrivendeTekst{ /* placerer indholdet midt på skærmen */
+    justify-content: center;
+    display: flex;
+}
 
+.tekstIndhold {
+    width: 800px; /* placerer indholdet i midten af skærmen */
+    word-spacing: 5px; /* skaber en god afstand mellem hver ord, så skriften er lettere at tyde */
+    line-height: 2.5; /* skaber en god afstand mellem linjerne, så skriften er lettere at læse */
+    font-size: 20px; /* gør skriften lidt større, så det er lettere at læse*/
+}
+
+#top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#saesonensBilledeId {
+    width: 350px;
+}
+
+</style>
 
 </html>
