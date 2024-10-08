@@ -221,6 +221,28 @@ p{
     max-width: 56%;
 }
 
+/* Forsøg med CTA-knapper */
+.indsend{
+    width: 500px;
+    height: 100px;
+    background-color: bisque;
+    color: black;
+    font-size: 30px;
+    font: 'Nagomi';
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 30px; /*eller skriv position: relative; */
+    transition: .3s ease-in-out;
+}
+
+.indsend:hover{
+    opacity: .9;
+}
+
+.indsend.submiting{
+    height: 28px;
+}
 
 /* ---- FOOTER ---- */
 

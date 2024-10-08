@@ -9,3 +9,6 @@ window.addEventListener('scroll', () => {
     // Opdaterer top-positionen af cirklen
     document.getElementById('progress-circle').style.top = newPosition;
 });
+
+
+// Forsøg med CTA knapper
