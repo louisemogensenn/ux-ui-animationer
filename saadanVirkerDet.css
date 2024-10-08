@@ -166,6 +166,8 @@ p{
     font-style: normal;
 }
 
+/* ---SÅDAN VIRKER DET & OFTE STILLEDE SPØRGSMÅL--- */
+
 /*Placering*/
 .saadanvirkerdet, .oftestilledespoergesmaal{
     display: flex; /*Bruger flexbox til at arrangere elementerne*/
@@ -178,6 +180,9 @@ p{
 .saadanvirkerdet h2{
     padding-top: 2%; /* Tilføjer 2% padding ovenfor h2-overskriften*/
 }
+
+
+/* ---KONTAKT OS--- */
 
 .kontaktos{
     padding-left: 19%; /*Tilføjer venstre padding*/
@@ -192,6 +197,7 @@ p{
     padding-bottom: 5%; /*Tilføjer padding under teksten*/
 }
 
+/* Styling*/
 #Navn, #E-mail{
     padding: 25px;
     background: none;/* Fjerner standard baggrunden*/
