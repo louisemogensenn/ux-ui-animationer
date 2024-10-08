@@ -278,33 +278,30 @@ p{
     max-width: 50%;
 }
 
-/*Styler knappen*/
+
+/* Styler knappen */
 .indsend{
     padding: 30px;
-    margin: 1% 0% 4% 25%;
-    max-width: 56%;
-}
-
-/* Forsøg med CTA-knapper */
-.indsend{
-    width: 500px;
-    height: 100px;
-    background-color: #F1EAD6;
-    color: black;
+    margin: 1% 0% 4% 25%; /* Tilføjer margin */
+    max-width: 56%; /*Angiver max bredde */
+    width: 500px; /* Giver knappen en bredde */
+    height: 100px; /*Giver knappen en højde */
+    background-color: #F1EAD6; /* Giver knappen en farve */
     font-size: 30px;
-    font: 'Nagomi';
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    overflow: hidden;
-    transition: background 1s;
+    border: none; /* Fjerner kant om knappen */
+    border-radius: 8px; /* Gør hjørnerne runde med */
+    cursor: pointer; /* Skifter musens markør til en 'hånd', når man holder musen over knappen */
+    overflow: hidden; /* Sørger for man ikke kan se knappen/farven der 'rykker sig' */
+    transition: background 1s; /*Tilføjer en transition*/
+    background-position: 200% 0; /* Indstiller baggrundens startposition til at være langt ude til højre for at kunne flytte ved animation */
 }
 
 .indsend.submiting {
-    background: linear-gradient(to right, #7B0005 50%, #FEF6E1 50%); /* Gradient fra mørkerød til lys beige */
+    background: linear-gradient(to right, #F1EAD6 50%, #7B0005 50%); /* Gradient fra mørkerød til lys beige */
     background-size: 200% 100%; /* Dobbelt størrelse for at muliggøre animation */
-    background-position: 100% 0; /* Startposition for baggrund */
+    background-position: 100% 0; /* Slutposition for baggrund - flytter den til venstre, så man kan se den røde farve*/
 }
+
 </style>
 
 </html>
