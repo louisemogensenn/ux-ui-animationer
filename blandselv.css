@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap'); /* Overskrift */
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap'); /* Brødtekst */
+
+/* IMPORTER NAGOMI-FONT HER - FONT TIL CTA-KNAPPER */
+
+
+/* BASIS FOR HTML */
+*,
+*::before,
+*::after {
+    margin: 0; /*fjerner alt margin, som basis*/
+    padding: 0; /*fjerner alt padding, som basis*/
+    color: var(--skriftfarve); /* angiver basis tekst-farve*/
+    line-height: 1.5; /* angiver linjeafstand for alt tekst*/
+    background-color: var(--primaereFarve); /*angiver basis baggrundsfarve*/
+    font-family:'Epilogue'; /* Som standard font */
+}
+
+
+
+/* ---- GENERELT ---- */
+
+/* Farvepalette */
+:root {
+    --primaereFarve: #FEF6E1;
+    --sekundaereFarve: #7B0005;
+    --skriftfarve: #401A16;
+}
+
+/* Styling - a-tags/links */
+a {
+    text-decoration: none; /* fjerner streger under links */
+    color: inherit; /* bevarer den definerede tekstfarve */
+}
+
+header {
+    display: flex;
+    justify-content: center; 
+    width: 100%; /* Sikrer, at navigationsbaren er placeret midt på skærmen */
+}
+
+
+
+/* ---- NAVIGATION ---- */
+
+/* Styling - logo */
+.navigationImage {
+    max-height: 68px; /* størrelse på logo*/
+}
+
+/* Styling - navigationsbaren - ul */
+.nav-styling {
+    display: flex;
+    justify-content: space-between; /* Centerer ul-elementer */
+    align-items: center; /* Vertikalt centerering */
+    list-style: none;
+}
+
+/* Styling - navigationsbaren - li */
+.nav-styling li {
+    margin: 20px 30px; /* Afstand mellem li-elementer */
+    position: relative; /* Angiver korrekt placering af dropdown*/
+    transition: transform 0.3s, font-weight 0.3s; /* Overgangseffekt - gør teksten federe, i bevægelse */
+}
+
+/* Effekter - navigationsbaren */
+.nav-styling li:hover {
+    transform: scale(1.04); /* Forstørrer ved hover */
+    font-weight: bold; /* Tykkelse på font ved hover */
+}
+
+/* Effekter - Skjul dropdown-menuen som standard */
+.dropdown {
+    display: none; /* Skjuler */
+    position: absolute;
+    list-style: none; /* Fjerner prikker fra liste*/
+    z-index: 1000; /*Høj værdi, for at sikre at dropdown overgår andre elementer*/
+}
+
+/* Effekter - Vis dropdown-menuen ved hover */
+.nav-styling li:hover .dropdown {
+    display: block; /* Viser elementer*/
+    font-weight: 200; /* Tykkelse på font ved hover - ændres efter skrifttype er defineret*/
+}
+
+/* Styling - Dropdown li */
+.dropdown li {
+    margin: 0; /* fjerner den margin, som er angivet for navigationsbaren */
+    padding-top: 15px; /* Afstand til ovenforstående element*/
+    padding-bottom: 2px;
+}
+
+/* Placering - Ikoner i dropdown */
+.dropdown li a {
+    display: flex; /* Sikrer, at ikoner og tekst forbliver på samme linje */
+    align-items: center; /* Vertikal justering af ikoner og tekst */
+    white-space: nowrap; /* Forhindrer tekstombrydning */
+}
+
+/* Styling - Ikoner i dropdown*/
+.dropdown li a img {
+    width: 20px; /* ikonernes størrelse */
+    height: auto;
+    margin-right: 10px; /* Afstand mellem ikon og tekst */
+    vertical-align: text-bottom; /* Sikrer at ikonet er centreret med teksten */
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap'); /* Overskrift */
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap'); /* Brødtekst */
+/* IMPORTER NAGOMI-FONT HER - FONT TIL CTA-KNAPPER */
+
+
+
+/* BASIS FOR HTML */
+html{
+ background-color: var(--primaereFarve);
+}
+
+:root {
+    --primaereFarve: #FEF6E1;
+    --sekundaereFarve: #7B0005;
+    --skriftfarve: #401A16;
+}
+
+a {
+    text-decoration: none; /* fjerner streger under links */
+    color: inherit; /* bevarer den definerede tekstfarve */
+}
+
+
+h1{
+    text-align: center;
+    font-size: 64px;
+    font-family: 'Dela Gothic One';
+    font-style: normal;
+    font-weight: 400;
+    color: var(--skriftfarve);
+}
+
+h2 {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 300;
+}
+
+h3 {
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.row {
+    padding-top: 5%;
+    padding-left: 10%;
+    display: flex;
+    gap: 5%; /* Mellemrum mellem kolonner */
+    justify-content: flex-start; /* Fordeler kolonnerne jævnt */
+}
+
+.column {
+
+    padding: 10px;
+}
+
+.kort{
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+#hjerte{
+    width: 30px;
+}
+
+.kort p {
+    font-size: 10px;
+    margin: 5px 0;
+}
+
+.order-box {
+    position: fixed;
+    top: 150px; 
+    right: 40px; /* Placerer boksen lidt væk fra højre side */
+    background-color: #FEF6E1;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Fast bredde */
+    height: 500px; /* Fast højde */
+    display: flex;
+    flex-direction: column;
+}
+
+.order-content {
+    /* Indholdet øverst i boksen */
+}
+
+.nederest {
+    display: flex;
+    justify-content: space-between; /* Sørger for, at teksten og prisen står på hver sin side */
+    margin-top: auto; /* Skubber sektionen ned til bunden */
+    margin-bottom: 10px; /* Afstand til knappen */
+}
+
+.order-button {
+    background-color: var(--primaereFarve);
+    border: 1px solid #7B0005;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.order-button:hover {
+    background-color: var(--primaereFarve);
+    transform: scale(1.05);
+}
