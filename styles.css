@@ -127,9 +127,22 @@ h3 {
     vertical-align: text-bottom; /* Sikrer at ikonet er centreret med teksten */
 }
 
+
+
+
 /* ---- 404 - SIDE ----- */
 
+/* Styling - Generelt for sidens indhold*/
+.side-404 {
+    align-items: center; /* Vertikal justering af billede */
+    text-align: center;/* Vertikal justering af tekst */
+}
 
+/* Styling - den tomme kasse img */
+.fejlside-kasse  {
+    width: 450px; /* Størrelse på billede af den tomme kasse*/
+    padding: 40px 0 40px;
+}
 
 
 
