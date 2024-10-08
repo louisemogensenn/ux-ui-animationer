@@ -1,33 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap'); /* Overskrift */
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap'); /* Brødtekst */
-
 /* IMPORTER NAGOMI-FONT HER - FONT TIL CTA-KNAPPER */
 
 
+
 /* BASIS FOR HTML */
-*,
-*::before,
-*::after {
-    margin: 0; /*fjerner alt margin, som basis*/
-    padding: 0; /*fjerner alt padding, som basis*/
-    color: var(--skriftfarve); /* angiver basis tekst-farve*/
-    line-height: 1.5; /* angiver linjeafstand for alt tekst*/
-    background-color: var(--primaereFarve); /*angiver basis baggrundsfarve*/
-    font-family:'Epilogue'; /* Som standard font */
+html{
+ background-color: var(--primaereFarve);
 }
 
-
-
-/* ---- GENERELT ---- */
-
-/* Farvepalette */
 :root {
     --primaereFarve: #FEF6E1;
     --sekundaereFarve: #7B0005;
     --skriftfarve: #401A16;
 }
 
-/* Styling - a-tags/links */
 a {
     text-decoration: none; /* fjerner streger under links */
     color: inherit; /* bevarer den definerede tekstfarve */
@@ -106,140 +93,49 @@ header {
 }
 
 
-/* BASIS FOR HTML */
-html{
- background-color: var(--primaereFarve);
-}
-
-:root {
-    --primaereFarve: #FEF6E1;
-    --sekundaereFarve: #7B0005;
-    --skriftfarve: #401A16;
-}
-
-a {
-    text-decoration: none; /* fjerner streger under links */
-    color: inherit; /* bevarer den definerede tekstfarve */
-}
-
-
 h1{
     text-align: center;
-    font-size: 64px;
+    font-size: 124px;
     font-family: 'Dela Gothic One';
     font-style: normal;
     font-weight: 400;
     color: var(--skriftfarve);
+    margin: 0;
 }
 
 h2 {
-    text-align: center;
-    font-size: 40px;
+    font-size: 30px;
     font-family: 'Epilogue';
     font-style: normal;
-    font-weight: 300;
+    font-weight: 400;
+    word-spacing: 1%;
+    line-height: 1.5;
+    text-align: center;
 }
 
 h3 {
     font-family: 'Epilogue';
     font-style: normal;
     font-weight: 300;
-    font-size: 30px;
 }
 
-.row {
-    padding-top: 5%;
-    padding-left: 10%;
-    display: flex;
-    gap: 5%; /* Mellemrum mellem kolonner */
-    justify-content: flex-start; /* Fordeler kolonnerne jævnt */
+
+.navigationImage{
+    width: auto;
 }
 
-.column {
-
-    padding: 10px;
-}
-
-.kort{
-    justify-content: center;
-    padding-bottom: 50px;
-}
-
-#hjerte{
-    max-width: 25px;
-    max-height: 25px;
-}
-
-.column img{
-    width: 200px;
-    height: 200px;
-}
-
-.kort p {
-    font-size: 12px;
-    margin: 5px 0;
-}
-
-.order-box {
-    position: fixed;
-    top: 150px; 
-    right: 40px; /* Placerer boksen lidt væk fra højre side */
-    background-color: #FEF6E1;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 300px; /* Fast bredde */
-    height: 500px; /* Fast højde */
+.skrift{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
-.tilfoj{
+img{
+    width: 400px;
+}
+
+#tomkasse{
     display: flex;
-    justify-content: space-between;
-}
-
-
-.nederest {
-    display: flex;
-    justify-content: space-between; /* Sørger for, at teksten og prisen står på hver sin side */
-    margin-top: auto; /* Skubber sektionen ned til bunden */
-    margin-bottom: 10px; /* Afstand til knappen */
-}
-
-.order-button {
-    background-color: var(--primaereFarve);
-    border: 1px solid #7B0005;
-    padding: 10px;
-    text-align: center;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-.order-button:hover {
-    background-color: var(--primaereFarve);
-    transform: scale(1.05);
-}
-
-p.tilfoj {
-    font-size: 20px;
-}
-
-#tilfojknap {
-    background-color: transparent; /* Gør baggrunden gennemsigtig */
-    border: 1px solid #7B0005; /* En tynd kant med en mørkerød farve */
-    color: #7B0005; /* Farve på teksten, samme som kantfarven */
-    padding: 5px 15px; /* Giver lidt luft omkring teksten */
-    font-size: 12px; /* Størrelse på teksten */
-    font-family: 'Epilogue', sans-serif; /* Matcher fonten til resten af siden */
-    cursor: pointer; /* Gør det tydeligt, at knappen kan klikkes */
-    transition: background-color 0.3s, color 0.3s; /* Glidende overgang ved hover */
-}
-
-#tilfojknap:hover {
-    background-color: #7B0005; /* Skifter baggrunden til rød ved hover */
-    color: #FEF6E1; /* Skifter tekstfarven til en lys farve ved hover */
+    flex-direction: column-reverse;
+    align-items: center;
 }

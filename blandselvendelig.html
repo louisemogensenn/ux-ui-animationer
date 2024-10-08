@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nippon måltidskasser ~ Om os</title> <!-- Titel i faneblad -->
     <meta name="description" content="Nippon tilbyder måltidskasser med inspiration fra det japanske køkken. Få smagen af Japan leveret direkte til din dør med Nippon måltidskasser!"> <!-- SEO beskrivelse, vises i søgeresultatet-->
-    <link rel="stylesheet" href="blandselv.css"> <!-- Linkter til den samlede CSS -->
+    <link rel="stylesheet" href="blandselvendelig.css"> <!-- Linkter til den samlede CSS -->
     <link rel="icon" href="images/nippon-logo.webp" type="image/x-icon"/> <!-- Lille ikon i tab -->
     <script src="test.js" defer></script>
 </head>
@@ -24,102 +24,123 @@
 
                 <li><a href="saadanVirkerDet.html">SÅDAN VIRKER DET</a></li>
                 <li>
-                    <a href="#">LOG IND</a>
+                    <a href="404.html">LOG IND</a>
                         <ul class="dropdown">
-                            <li><a href="#"><img src="images/kurv.webp" alt="Kurv ikon"> KURV</a></li>
-                            <li><a href="#"><img src="images/konto.webp" alt="Konto ikon"> KONTO</a></li>
-                            <li><a href="#"><img src="images/favoritter.webp" alt="Favoritter ikon"> FAVORITTER</a></li>
+                            <li><a href="404.html"><img src="images/kurv.webp" alt="Kurv ikon"> KURV</a></li>
+                            <li><a href="404.html"><img src="images/konto.webp" alt="Konto ikon"> KONTO</a></li>
+                            <li><a href="404.html"><img src="images/favoritter.webp" alt="Favoritter ikon"> FAVORITTER</a></li>
                         </ul>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <h1>Blandselv</h1>
 
-    <section class="row">
-        <section class="column">
-            <article class="kort">
-                <h3>RAMEN <img id="hjerte" src="images/favoritter.webp" alt="hjerte"></h3>
+    <!-- blandselv og filter knap -->
+    <h1>Blandselv</h1>
+    <section class="filterikon">
+        <img src="images/Filtrer - ikon_.webp" alt="filterikon" onclick="toggleFilterForm()"> <!-- igang sætter og åbner filtermenuen  -->
+        <div id="filterForm" class="hidden">
+            <label for="priceFilter">Vis retter under:</label>
+            <input type="number" id="priceFilter" placeholder="Pris i kr."> <!-- vælg pris til filter -->
+            <button onclick="applyPriceFilter()">Anvend filter</button> <!-- starter pris filtering -->
+        </div>
+    </section>
+    
+
+    <section class="rowbland">
+        <section class="columnbland">
+            <article class="kortbland" data-price="30"> <!-- data-price angiver prisen for hver ret -->
+                <h3>RAMEN <img id="hjerte1" class="hjerte" src="images/favoritter.webp" alt="hjerte" onclick="toggleHjerte('hjerte1')"></h3>
                 <img src="images/ret1.webp" alt="ramenret">
                 <p>Dette er en beskrivelse. <a href="#"><b>Læs mere!</b></a></p>
                 <p class="tilfoj">30 kr. pr. <button id="tilfojknap" onclick="tilfojRet('RAMEN', 30)">Tilføj</button></p>
             </article>
-            <article class="kort">
-                <h3>SUSHI <img id="hjerte" src="images/favoritter.webp" alt="hjerte"></h3>
+    
+            <article class="kortbland" data-price="45">
+                <h3>SUSHI <img id="hjerte2" class="hjerte" src="images/favoritter.webp" alt="hjerte" onclick="toggleHjerte('hjerte2')"></h3>
                 <img src="images/ret2.webp" alt="sushiret">
                 <p>Dette er en beskrivelse. <a href="#"><b>Læs mere!</b></a></p>
                 <p class="tilfoj">45 kr. pr. <button id="tilfojknap" onclick="tilfojRet('SUSHI', 45)">Tilføj</button></p>
             </article>
-            <article class="kort">
-                <h3>TEMPURA <img id="hjerte" src="images/favoritter.webp" alt="hjerte"></h3>
+    
+            <article class="kortbland" data-price="50">
+                <h3>TEMPURA <img id="hjerte3" class="hjerte" src="images/favoritter.webp" alt="hjerte" onclick="toggleHjerte('hjerte3')"></h3>
                 <img src="images/ret3.webp" alt="tempuraret">
                 <p>Dette er en beskrivelse. <a href="#"><b>Læs mere!</b></a></p>
                 <p class="tilfoj">50 kr. pr. <button id="tilfojknap" onclick="tilfojRet('TEMPURA', 50)">Tilføj</button></p>
             </article>
-            <article class="kort">
-                <h3>TONKATSU <img id="hjerte" src="images/favoritter.webp" alt="hjerte"></h3>
+    
+            <article class="kortbland" data-price="25">
+                <h3>TONKATSU <img id="hjerte4" class="hjerte" src="images/favoritter.webp" alt="hjerte" onclick="toggleHjerte('hjerte4')"></h3>
                 <img src="images/ret4.webp" alt="tonkatsuret">
                 <p>Dette er en beskrivelse. <a href="#"><b>Læs mere!</b></a></p>
                 <p class="tilfoj">25 kr. pr. <button id="tilfojknap" onclick="tilfojRet('TONKATSU', 25)">Tilføj</button></p>
             </article>
         </section>
     
-        <section class="column">
-            <article class="kort">
-                <h3>UDON <img id="hjerte" src="images/favoritter.webp" alt="hjerte"></h3>
+        <section class="columnbland">
+            <article class="kortbland" data-price="40">
+                <h3>UDON <img id="hjerte5" class="hjerte" src="images/favoritter.webp" alt="hjerte" onclick="toggleHjerte('hjerte5')"></h3>
                 <img src="images/ret5.webp" alt="udonret">
                 <p>Dette er en beskrivelse. <a href="#"><b>Læs mere!</b></a></p>
                 <p class="tilfoj">40 kr. pr. <button id="tilfojknap" onclick="tilfojRet('UDON', 40)">Tilføj</button></p>
             </article>
-            <article class="kort">
-                <h3>OKONOMIYAKI <img id="hjerte" src="images/favoritter.webp" alt="hjerte"></h3>
+    
+            <article class="kortbland" data-price="45">
+                <h3>OKONOMIYAKI <img id="hjerte6" class="hjerte" src="images/favoritter.webp" alt="hjerte" onclick="toggleHjerte('hjerte6')"></h3>
                 <img src="images/ret6.webp" alt="okonomiyakiret">
                 <p>Dette er en beskrivelse. <a href="#"><b>Læs mere!</b></a></p>
-                <p class="tilfoj">47 kr. pr. <button id="tilfojknap" onclick="tilfojRet('OKONOMIYAKI', 47)">Tilføj</button></p>
+                <p class="tilfoj">47 kr. pr. <button id="tilfojknap" onclick="tilfojRet('OKONOMIYAKI', 45)">Tilføj</button></p>
             </article>
-            <article class="kort">
-                <h3>KARAAGE <img id="hjerte" src="images/favoritter.webp" alt="hjerte"></h3>
+    
+            <article class="kortbland" data-price="29">
+                <h3>KARAAGE <img id="hjerte7" class="hjerte" src="images/favoritter.webp" alt="hjerte" onclick="toggleHjerte('hjerte7')"></h3>
                 <img src="images/ret7.webp" alt="karaageret">
                 <p>Dette er en beskrivelse. <a href="#"><b>Læs mere!</b></a></p>
                 <p class="tilfoj">29 kr. pr. <button id="tilfojknap" onclick="tilfojRet('KARAAGE', 29)">Tilføj</button></p>
             </article>
-            <article class="kort">
-                <h3>GYOZA <img id="hjerte" src="images/favoritter.webp" alt="hjerte"></h3>
+    
+            <article class="kortbland" data-price="15">
+                <h3>GYOZA <img id="hjerte8" class="hjerte" src="images/favoritter.webp" alt="hjerte" onclick="toggleHjerte('hjerte8')"></h3>
                 <img src="images/ret8.webp" alt="gyozaret">
                 <p>Dette er en beskrivelse. <a href="#"><b>Læs mere!</b></a></p>
                 <p class="tilfoj">15 kr. pr. <button id="tilfojknap" onclick="tilfojRet('GYOZA', 15)">Tilføj</button></p>
             </article>
         </section>
     
-        <section class="column">
-            <article class="kort">
-                <h3>DONBURI <img id="hjerte" src="images/favoritter.webp" alt="hjerte"></h3>
+        <section class="columnbland">
+            <article class="kortbland" data-price="59">
+                <h3>DONBURI <img id="hjerte9" class="hjerte" src="images/favoritter.webp" alt="hjerte" onclick="toggleHjerte('hjerte9')"></h3>
                 <img src="images/ret9.webp" alt="donburiret">
                 <p>Dette er en beskrivelse. <a href="#"><b>Læs mere!</b></a></p>
                 <p class="tilfoj">59 kr. pr. <button id="tilfojknap" onclick="tilfojRet('DONBURI', 59)">Tilføj</button></p>
             </article>
-            <article class="kort">
-                <h3>MISO SUPPE <img id="hjerte" src="images/favoritter.webp" alt="hjerte"></h3>
+    
+            <article class="kortbland" data-price="25">
+                <h3>MISO SUPPE <img id="hjerte10" class="hjerte" src="images/favoritter.webp" alt="hjerte" onclick="toggleHjerte('hjerte10')"></h3>
                 <img src="images/ret10.webp" alt="misosupperet">
                 <p>Dette er en beskrivelse. <a href="#"><b>Læs mere!</b></a></p>
                 <p class="tilfoj">25 kr. pr. <button id="tilfojknap" onclick="tilfojRet('MISO SUPPE', 25)">Tilføj</button></p>
             </article>
-            <article class="kort">
-                <h3>TAMAGOYAKI <img id="hjerte" src="images/favoritter.webp" alt="hjerte"></h3>
+    
+            <article class="kortbland" data-price="50">
+                <h3>TAMAGOYAKI <img id="hjerte11" class="hjerte" src="images/favoritter.webp" alt="hjerte" onclick="toggleHjerte('hjerte11')"></h3>
                 <img src="images/ret11.webp" alt="tamagoyakiret">
                 <p>Dette er en beskrivelse. <a href="#"><b>Læs mere!</b></a></p>
                 <p class="tilfoj">50 kr. pr. <button id="tilfojknap" onclick="tilfojRet('TAMAGOYAKI', 50)">Tilføj</button></p>
             </article>
-            <article class="kort">
-                <h3>YAKITORI <img id="hjerte" src="images/favoritter.webp" alt="hjerte"></h3>
+    
+            <article class="kortbland" data-price="45">
+                <h3>YAKITORI <img id="hjerte12" class="hjerte" src="images/favoritter.webp" alt="hjerte" onclick="toggleHjerte('hjerte12')"></h3>
                 <img src="images/ret12.webp" alt="yakitoriret">
                 <p>Dette er en beskrivelse. <a href="#"><b>Læs mere!</b></a></p>
                 <p class="tilfoj">45 kr. pr. <button id="tilfojknap" onclick="tilfojRet('YAKITORI', 45)">Tilføj</button></p>
             </article>
         </section>
     </section>
-    
+
+
     <aside class="order-box">
         <div class="order-content">
             <h2>DIN BESTILLING</h2>

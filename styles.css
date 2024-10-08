@@ -41,7 +41,7 @@ header {
 /* Styling h1 - Titler*/
 h1{
     text-align: center;
-    font-size: 64px;
+    font-size: 40px; /* kan eventuelt være 45? hvis 40 er for småt*/
     font-family: 'Dela Gothic One';
     font-style: normal;
     font-weight: 400;
@@ -49,11 +49,9 @@ h1{
 }
 
 /* Styling h2 - Overskrifter*/
-
 h2 {
     font-family: 'Nagomi', 'Times New Roman', Times, serif;
 }
-
 
 /* Styling h3 - Alle underoverskrifter*/
 h3 {
@@ -130,6 +128,25 @@ h3 {
 }
 
 
+
+
+/* ---- 404 - SIDE ----- */
+
+/* Styling - Generelt for sidens indhold*/
+.side-404 {
+    align-items: center; /* Vertikal justering af billede */
+    text-align: center;/* Vertikal justering af tekst */
+}
+
+/* Styling - den tomme kasse img */
+.fejlside-kasse  {
+    width: 450px; /* Størrelse på billede af den tomme kasse*/
+    padding: 40px 0 40px;
+}
+
+
+
+
 /* ---- FORSIDE ---- */
 
 /* Placering - forside flex */
@@ -167,6 +184,32 @@ h3 {
     line-height: 1.5; /*Linjehøjde*/
 }
 
+/* STYLING AF OM OS OG SÆSONENS MÅLTIDER */
+.beskrivendeTekst{ /* placerer indholdet midt på skærmen */
+    justify-content: center;
+    display: flex;
+}
+
+.tekstIndhold {
+    width: 800px; /* placerer indholdet i midten af skærmen */
+    word-spacing: 5px; /* skaber en god afstand mellem hver ord, så skriften er lettere at tyde */
+    line-height: 2.5; /* skaber en god afstand mellem linjerne, så skriften er lettere at læse */
+    font-size: 20px; /* gør skriften lidt større, så det er lettere at læse*/
+}
+
+/* STYLING AF SÆSONENS MÅLTIDER */
+
+/* placerer overskrift og billede i midten og ovenpå hinanden */
+#topSaesonensMaaltider{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* styling af billedet på siden */
+#saesonensBilledeId {
+    width: 350px;
+}
 
 
 /* ---- FOOTER ---- */
@@ -174,6 +217,7 @@ h3 {
 /* Styling - generelt*/
 footer {
     border-top: solid var(--sekundaereFarve) 0.3px; /* Streg, der viser her starter footer*/
+    margin-top: 50px;
 }
 
 /* Styling - footer */
