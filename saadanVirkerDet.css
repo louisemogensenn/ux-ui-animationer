@@ -225,24 +225,66 @@ p{
 .indsend{
     width: 500px;
     height: 100px;
-    background-color: bisque;
+    background-color: #F1EAD6;
     color: black;
     font-size: 30px;
     font: 'Nagomi';
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    padding: 30px; /*eller skriv position: relative; */
-    transition: .3s ease-in-out;
+    position: relative; 
+    overflow: hidden;
 }
 
+.indsend.submiting {
+    background: linear-gradient(to right, #7B0005 50%, #F1EAD6 50%); /* Gradient fra mørkerød til lys beige */
+    background-size: 200% 100%; /* Dobbelt størrelse for at muliggøre animation */
+    animation: loading 1s linear infinite; /* Kald animationen */
+}
+
+/* Definition af loading animationen */
+@keyframes loading {
+    0% {
+        background-position: 100% 0; /* Startposition for animationen */
+    }
+    100% {
+        background-position: 0 0; /* Slutposition for animationen */
+    }
+}
+
+/*
 .indsend:hover{
-    opacity: .9;
+    o pacity: .9;
 }
 
-.indsend.submiting{
-    height: 28px;
+/*
+.indsend.submiting::before{
+    content:"INDSEND";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute; /*eller skriv position:absolute;*/ /*
+    width: 500px;
+    height: 100px;
+    background-color:#7B0005;
+    left: 0px;
+    top: 0px;
+    opacity: 1;
+    animation: move 1s infinite ease-in-out;
 }
+
+*/
+/*
+
+@keyframes move {
+    50%{
+        opacity: 1;
+    }
+    to{
+        left: 300px;
+    }
+    }
+
 
 /* ---- FOOTER ---- */
 

@@ -12,3 +12,13 @@ window.addEventListener('scroll', () => {
 
 
 // Forsøg med CTA knapper
+
+const indsend = document.querySelector(".indsend");
+indsend.addEventListener("click",()=> {
+    indsend.classList.add("submiting");
+    indsend.innerHTML="";
+    setTimeout(()=>{
+        indsend.classList.remove("submiting");
+        indsend.innerHTML = "SENDT!";
+    },3000)
+});
