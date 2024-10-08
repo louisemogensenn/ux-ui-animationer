@@ -143,29 +143,26 @@ h3 {
     
 }
 
+/* Placering - Forside tekst */
 #text{
-    width: 550px;
-    padding-top: 200px;
+    width: 550px; /*Placering på skærm*/
+    padding-top: 200px; /*Afstand fra top*/
+    text-align: right; /*Højrestiller teksten*/
 }
 
-.shape {
-	width: 700px;
-	height: 700px;
-    position: absolute;
-    top: 150px;
-    left: -10%;
-	background:var(--sekundaereFarve);
-    border-radius: 50%; /* Gør den rund */
-    z-index: 0;
-}
-
+/* Placering - Måltidskassen, stor*/
 #billede img{
-    width: 120%;
+    width: 120%; /*Hvis siden skal være responsiv, skal dette ændres til eks. px*/
+    padding-bottom: 50px; /*Luft under kassen, før footer*/
 }
 
+/* Placering - Knap*/
 button{
-    display: flex;
+    display: flex; /* Følger id "text"*/
 }
+
+
+
 
 /* ---- FOOTER ---- */
 
