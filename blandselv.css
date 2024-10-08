@@ -165,9 +165,10 @@ h3 {
     padding-bottom: 50px;
 }
 
-#hjerte{
+.hjerte {
     max-width: 25px;
     max-height: 25px;
+    cursor: pointer; /* Markøren ændres til en hånd for at indikere, at det er klikbart */
 }
 
 .column img{
@@ -242,4 +243,41 @@ p.tilfoj {
 #tilfojknap:hover {
     background-color: #7B0005; /* Skifter baggrunden til rød ved hover */
     color: #FEF6E1; /* Skifter tekstfarven til en lys farve ved hover */
+}
+
+.remove-button {
+    background: none;
+    border: none;
+    color: #7B0005;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.remove-button:hover {
+    color: #FF0000;
+}
+
+.filterikon{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.filterikon img{
+    max-width: 40px;
+    max-height: 30px;
+}
+
+.hidden {
+    display: none;
+}
+
+#filterForm {
+    background: var(--primaereFarve);
+    padding: 10px;
+    border: 1px solid #6b6b6b;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 200px;
 }
