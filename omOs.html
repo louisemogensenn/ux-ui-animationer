@@ -93,58 +93,17 @@
 
 <style>
 #indholdOmOs {
-    /* font-family: 'Epilogue'; */
-    /* font-style: normal; */
-    /* font-weight: 400; */
     width: 800px; /* placerer indholdet i midten af skærmen */
     word-spacing: 5px; /* skaber en god afstand mellem hver ord, så skriften er lettere at tyde */
     line-height: 2.5; /* skaber en god afstand mellem linjerne, så skriften er lettere at læse */
     font-size: 20px; /* gør skriften lidt større, så det er lettere at læse*/
 }
 
-/*
-br{  
-    content: "A";
-    display: block ;
-    margin-bottom: 1.7em ;
-}
-    */
-
 #omostext{ /* placerer indholdet midt på skærmen */
-justify-content: center;
-display: flex;
-padding-bottom: 50px;
+    justify-content: center;
+    display: flex;
 }
 
-.progress-bar-container {
-    position: fixed; /* Fast positionering */
-    left: 200px; /* Placeret lidt væk fra venstre side */
-    top: 200px;
-    width: 2px; /* Smal bredde */
-    background-color: #000; /* Farve på linjen */
-    height: 100%; /* Strækker sig over hele siden */
-    z-index: 100; /* Sørger for at den ligger over alt indhold */
-}
-
-/* Progress-bar - fyldes ikke, men fungerer som baggrundslinje */
-.progress-bar {
-    width: 100%;
-    height: 100%; /* Fuld højde af containeren */
-    background-color: #000;
-    position: absolute;
-}
-
-/* Cirklen, der bevæger sig langs linjen */
-.progress-circle {
-    position: absolute; /* Placeres relativt til progress-bar-container */
-    left: 50%; /* Centrerer cirklen på linjen */
-    transform: translateX(-50%); /* Justerer for centreringen */
-    width: 12px; /* Cirklen's bredde */
-    height: 12px; /* Cirklen's højde */
-    background-color: #000; /* Cirklen's farve */
-    border-radius: 50%; /* Gør den rund */
-    transition: top 0.25s; /* Glat overgang når cirklen bevæger sig */
-}
 </style>
 
 
