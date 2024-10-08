@@ -106,13 +106,6 @@ header {
 }
 
 
-
-@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap'); /* Overskrift */
-@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap'); /* Brødtekst */
-/* IMPORTER NAGOMI-FONT HER - FONT TIL CTA-KNAPPER */
-
-
-
 /* BASIS FOR HTML */
 html{
  background-color: var(--primaereFarve);
@@ -173,11 +166,17 @@ h3 {
 }
 
 #hjerte{
-    width: 30px;
+    max-width: 25px;
+    max-height: 25px;
+}
+
+.column img{
+    width: 200px;
+    height: 200px;
 }
 
 .kort p {
-    font-size: 10px;
+    font-size: 12px;
     margin: 5px 0;
 }
 
@@ -196,9 +195,11 @@ h3 {
     flex-direction: column;
 }
 
-.order-content {
-    /* Indholdet øverst i boksen */
+.tilfoj{
+    display: flex;
+    justify-content: space-between;
 }
+
 
 .nederest {
     display: flex;
@@ -221,4 +222,24 @@ h3 {
 .order-button:hover {
     background-color: var(--primaereFarve);
     transform: scale(1.05);
+}
+
+p.tilfoj {
+    font-size: 20px;
+}
+
+#tilfojknap {
+    background-color: transparent; /* Gør baggrunden gennemsigtig */
+    border: 1px solid #7B0005; /* En tynd kant med en mørkerød farve */
+    color: #7B0005; /* Farve på teksten, samme som kantfarven */
+    padding: 5px 15px; /* Giver lidt luft omkring teksten */
+    font-size: 12px; /* Størrelse på teksten */
+    font-family: 'Epilogue', sans-serif; /* Matcher fonten til resten af siden */
+    cursor: pointer; /* Gør det tydeligt, at knappen kan klikkes */
+    transition: background-color 0.3s, color 0.3s; /* Glidende overgang ved hover */
+}
+
+#tilfojknap:hover {
+    background-color: #7B0005; /* Skifter baggrunden til rød ved hover */
+    color: #FEF6E1; /* Skifter tekstfarven til en lys farve ved hover */
 }
