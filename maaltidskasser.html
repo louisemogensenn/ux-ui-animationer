@@ -37,16 +37,16 @@
     <h1>MÅLTIDSKASSER</h1>
     <section id="maaltidskasser">
         <article id="seasons">
-            <h2>SÆSONS</h2>
-            <img src="images/seasonsmaaltidskasse.webp" alt="Seasons Måltidskasser">
+            <h2 class="maaltidskasseOverskrift">SÆSONENS</h2>
+            <img class="maaltidskasserBilleder" src="images/seasonsmaaltidskasse.webp" alt="Seasons Måltidskasser">
             <h3>Lad dig overraske</h3>
-            <button>Læs mere</button>
+            <a href="saesonensMaaltider.html"><button class="laesMereKnap">Læs mere</button></a>
         </article>
-        <article id="blandselv">
-            <h2>BLAND SELV</h2>
-            <img src="images/blandselv.webp" alt="Bland selv Måltidskasser">
+        <article>
+            <h2 class="maaltidskasseOverskrift">BLAND SELV</h2>
+            <img class="maaltidskasserBilleder" src="images/blandselv.webp" alt="Bland selv Måltidskasser">
             <h3>Vælg selv dine retter</h3>
-            <button>Læs mere</button>
+            <a href="Testerigang.html"><button type="button" class="laesMereKnap">Læs mere</button></a>
         </article>
     </section>
 
@@ -91,44 +91,25 @@
 </body>
 
 <style>
-    h1{
-    text-align: center;
-    font-size: 64px;
-    font-family: 'Dela Gothic One';
-    font-style: normal;
-    font-weight: 400;
-    color: var(--skriftfarve);
-}
-
-h2 {
-    text-align: center;
-    font-size: 40px;
-    font-family: 'Epilogue';
-    font-style: normal;
-    font-weight: 300;
-}
-
-h3 {
-    font-family: 'Epilogue';
-    font-style: normal;
-    font-weight: 300;
-}
-
-.navigationImage {
-    width:auto;
-    height: auto;
+.maaltidskasseOverskrift {
+    font-size: 40px; /* størrelsen for skriften */
+    font-weight: 300; /* gør skriften tyndere */
 }
 
 #maaltidskasser{
-    display: flex; /* viser dem vandret */
-    justify-content: center;
-    align-items: center;
-    padding-top: 1%;
+    display: flex; /* viser dem på række */
+    justify-content: center; /* placerer indholdet i midten */
+    padding-top: 2vh; /* sætter en afstand mellem de mindre overskrifter til overskiften */
     justify-content: space-evenly; /* giver white space mellem boksne */
+    text-align: center; /* tekst og knap placeret midt i dens kasse */
 }
 
-img{
-    width: 350px; /* giver billederne en bredte */
+.maaltidskasserBilleder{
+    width: 350px; /* giver billederne en bredte*/
+}
+
+.laesMereKnap {
+    
 }
 </style>
 
