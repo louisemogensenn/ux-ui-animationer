@@ -233,6 +233,7 @@ footer {
     justify-content: center; /* Centrer teksten vandret*/
     align-items: center; /* Centrer teksten vertikalt*/
     padding-top: 60px; /*Afstand til ovenforstående bokse*/
+    padding-bottom: 20px;
 }
 
 /* Styling - bundtekst, ninja ikon*/
