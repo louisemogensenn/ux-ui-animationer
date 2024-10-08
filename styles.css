@@ -41,7 +41,7 @@ header {
 /* Styling h1 - Titler*/
 h1{
     text-align: center;
-    font-size: 64px;
+    font-size: 40px; /* kan eventuelt være 45? hvis 40 er for småt*/
     font-family: 'Dela Gothic One';
     font-style: normal;
     font-weight: 400;

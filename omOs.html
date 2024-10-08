@@ -37,8 +37,8 @@
     <h1>OM OS</h1>
 
 
-    <section id="omostext">
-        <p id="indholdOmOs">
+    <section class="beskrivendeTekst">
+        <p class="tekstIndhold">
             Leder du efter en måltidskasse, der gør din <b>hverdag lettere?</b> Eller måske søger du ny <b>inspiration</b> til smagsoplevelser – uden at blive fanget i et <b>besværligt abonnement?</b><br>
 
             Hos Nippon har vi gjort det til vores mål at levere <b>autentiske japanske</b> retter, der ikke kun forenkler din hverdag, men også giver dig mulighed for at udforske nye, <b>spændende smage.</b><br>
@@ -92,17 +92,19 @@
 </body>
 
 <style>
-#indholdOmOs {
+.beskrivendeTekst{ /* placerer indholdet midt på skærmen */
+    justify-content: center;
+    display: flex;
+}
+
+.tekstIndhold {
     width: 800px; /* placerer indholdet i midten af skærmen */
     word-spacing: 5px; /* skaber en god afstand mellem hver ord, så skriften er lettere at tyde */
     line-height: 2.5; /* skaber en god afstand mellem linjerne, så skriften er lettere at læse */
     font-size: 20px; /* gør skriften lidt større, så det er lettere at læse*/
 }
 
-#omostext{ /* placerer indholdet midt på skærmen */
-    justify-content: center;
-    display: flex;
-}
+
 
 </style>
 
