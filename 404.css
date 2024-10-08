@@ -4,7 +4,27 @@
 
 
 
+/* BASIS FOR HTML */
+html{
+ background-color: var(--primaereFarve);
+}
 
+:root {
+    --primaereFarve: #FEF6E1;
+    --sekundaereFarve: #7B0005;
+    --skriftfarve: #401A16;
+}
+
+a {
+    text-decoration: none; /* fjerner streger under links */
+    color: inherit; /* bevarer den definerede tekstfarve */
+}
+
+header {
+    display: flex;
+    justify-content: center; 
+    width: 100%; /* Sikrer, at navigationsbaren er placeret midt på skærmen */
+}
 
 
 
@@ -75,11 +95,12 @@
 
 h1{
     text-align: center;
-    font-size: 64px;
+    font-size: 124px;
     font-family: 'Dela Gothic One';
     font-style: normal;
     font-weight: 400;
     color: var(--skriftfarve);
+    margin: 0;
 }
 
 h2 {
@@ -89,7 +110,7 @@ h2 {
     font-weight: 400;
     word-spacing: 1%;
     line-height: 1.5;
-    text-align: right;
+    text-align: center;
 }
 
 h3 {
@@ -99,38 +120,23 @@ h3 {
 }
 
 
-#top{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-top: 2%;
-    
-}
-
-#text{
-    width: 550px;
-    padding-top: 200px;
-}
-
-.shape {
-	width: 700px;
-	height: 700px;
-    position: absolute;
-    top: 150px;
-    left: -10%;
-	background:var(--sekundaereFarve);
-    border-radius: 50%; /* Gør den rund */
-    z-index: -1;
-}
-
-img{
-    width: 120%;
-}
-
 .navigationImage{
     width: auto;
 }
 
-button{
+.skrift{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img{
+    width: 400px;
+}
+
+#tomkasse{
+
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
 }
