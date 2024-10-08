@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nippon måltidskasser ~ måltidskasser </title> <!-- Titel i faneblad -->
     <meta name="description" content="Nippon tilbyder måltidskasser med inspiration fra det japanske køkken. Få smagen af Japan leveret direkte til din dør med Nippon måltidskasser!"> <!-- SEO beskrivelse, vises i søgeresultatet-->
-    <link rel="stylesheet" href="maaltidskasser.css"> <!-- Linkter til den samlede CSS -->
+    <link rel="stylesheet" href="styles.css"> <!-- Linkter til den samlede CSS -->
     <link rel="icon" href="images/nippon-logo.webp" type="image/x-icon"/> <!-- Lille ikon i tab -->
 </head>
 
@@ -50,46 +50,87 @@
         </article>
     </section>
 
-    
+    <footer><!-- FOOTER-->
+        
+        <aside class="footer-generelt">
+            <!-- Logo section -->
+            <figure class="footer-logo"><!-- Logo - som linker til forsiden -->
+                <a href="index.html"><img class="navigationImage" src="images/nippon-logo.webp" alt="Nippons Logo"></a>
+            </figure>
+            
+            <!-- Kolonne - Måltidskasser -->
+            <figure class="kolonne">
+                <h3 class="layout-streg"><a href="maaltidskasser.html">MÅLTIDSKASSER</a></h3>
+                <p><a href="saesonensMaaltider.html">Sæsonens</a></p>
+                <p><a href="blandSelv.html">Bland selv</a></p>
+            </figure>
+            
+            <!-- Kolonne - Om os -->
+            <figure class="kolonne">
+                <h3 class="layout-streg"><a href="omOs.html">OM OS</a></h3>
+                <p><a href="omOs.html">Mission</a></p>
+                <p><a href="omOs.html">Vision</a></p>
+                <p><a href="omOs.html">Værdier</a></p>
+            </figure>
+            
+            <!-- Kolonne - Sådan virker det -->
+            <figure class="kolonne">
+                <h3 class="layout-streg"><a href="saadanVirkerDet.html">SÅDAN VIRKER DET</a></h3>
+                <p><a href="saadanVirkerDet.html">Trin guide</a></p>
+                <p><a href="saadanVirkerDet.html">FAQ</a></p>
+                <p><a href="saadanVirkerDet.html">Kontakt os</a></p>
+            </figure>
+        </aside>
+
+        <!-- Bundtekst & ninja -->
+        <aside class="footer-bundtekst">
+            <p>2024, NIPPON <img src="images/konto.webp" alt="Konto-ikon"></p>
+        </aside>
+
+    </footer>
 </body>
 
+<style>
+    h1{
+    text-align: center;
+    font-size: 64px;
+    font-family: 'Dela Gothic One';
+    font-style: normal;
+    font-weight: 400;
+    color: var(--skriftfarve);
+}
 
-<footer>
-    <aside class="footer-generelt">
-        <!-- Logo section -->
-        <figure class="footer-logo"><!-- Logo - som linker til forsiden -->
-            <a href="index.html"><img class="navigationImage" src="images/nippon-logo.webp" alt="Nippons Logo"></a>
-        </figure>
-        
-        <!-- Kolonne - Måltidskasser -->
-        <figure class="kolonne">
-            <h3 class="layout-streg"><a href="maaltidskasser.html">MÅLTIDSKASSER</a></h3>
-            <p><a href="saesonensMaaltider.html">Sæsonens</a></p>
-            <p><a href="blandSelv.html">Bland selv</a></p>
-        </figure>
-        
-        <!-- Kolonne - Om os -->
-        <figure class="kolonne">
-            <h3 class="layout-streg"><a href="omOs.html">OM OS</a></h3>
-            <p><a href="omOs.html">Mission</a></p>
-            <p><a href="omOs.html">Vision</a></p>
-            <p><a href="omOs.html">Værdier</a></p>
-        </figure>
-        
-        <!-- Kolonne - Sådan virker det -->
-        <figure class="kolonne">
-            <h3 class="layout-streg"><a href="saadanVirkerDet.html">SÅDAN VIRKER DET</a></h3>
-            <p><a href="saadanVirkerDet.html">Trin guide</a></p>
-            <p><a href="saadanVirkerDet.html">FAQ</a></p>
-            <p><a href="saadanVirkerDet.html">Kontakt os</a></p>
-        </figure>
-    </aside>
+h2 {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 300;
+}
 
-    <!-- Bundtekst -->
-    <aside class="footer-bundtekst">
-        <p>2024, NIPPON <img src="images/konto.webp" alt="Konto-ikon"></p>
-    </aside>
+h3 {
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 300;
+}
 
-</footer>
+.navigationImage {
+    width:auto;
+    height: auto;
+}
+
+#maaltidskasser{
+    display: flex; /* viser dem vandret */
+    justify-content: center;
+    align-items: center;
+    padding-top: 1%;
+    justify-content: space-evenly; /* giver white space mellem boksne */
+}
+
+img{
+    width: 350px; /* giver billederne en bredte */
+}
+</style>
+
 
 </html>
