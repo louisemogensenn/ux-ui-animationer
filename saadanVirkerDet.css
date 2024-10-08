@@ -167,7 +167,7 @@ p{
 }
 
 /*Placering*/
-#saadanvirkerdet, #oftestilledespoergesmaal{
+.saadanvirkerdet, .oftestilledespoergesmaal{
     display: flex; /*Bruger flexbox til at arrangere elementerne*/
     margin: 5% 0 5% 5%; /*Tilføjer margener omkring sektionen*/
     gap: 7%; /* Tilføjer en afstand på 7% mellem de enkelte flex-elementer */
@@ -175,11 +175,11 @@ p{
     max-width: 50%; /* Begrænser bredden af kontaktsektionen til 60% */
 }
 
-#saadanvirkerdet h2{
+.saadanvirkerdet h2{
     padding-top: 2%; /* Tilføjer 2% padding ovenfor h2-overskriften*/
 }
 
-#kontaktos{
+.kontaktos{
     padding-left: 19%; /*Tilføjer venstre padding*/
     display: flex;
     flex-direction: column; /* Arrangere elementerne lodret*/
@@ -187,7 +187,7 @@ p{
     text-align: center;
 }
 
-#kontaktos p{
+.kontaktos p{
     text-align: center; /*Centrerer teksten*/
     padding-bottom: 5%; /*Tilføjer padding under teksten*/
 }
@@ -199,7 +199,7 @@ p{
     max-width: 50%; /*Begrænser bredden af inputfelterne */
 }
 
-/*Styling*/
+/*Styling - styler #besked seperat, da den skal se anderledes ud*/
 #Besked {
     padding: 25px;
     padding-bottom: 150px; /*Tilføjer ekstra padding i bunden, så det indikerer er mere skrive plads*/
