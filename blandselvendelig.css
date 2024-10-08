@@ -147,7 +147,7 @@ h3 {
     font-size: 30px;
 }
 
-.row {
+.rowbland {
     padding-top: 5%;
     padding-left: 10%;
     display: flex;
@@ -155,12 +155,12 @@ h3 {
     justify-content: flex-start; /* Fordeler kolonnerne jævnt */
 }
 
-.column {
+.columnbland {
 
     padding: 10px;
 }
 
-.kort{
+.kortbland{
     justify-content: center;
     padding-bottom: 50px;
 }
@@ -171,12 +171,12 @@ h3 {
     cursor: pointer; /* Markøren ændres til en hånd for at indikere, at det er klikbart */
 }
 
-.column img{
+.columnbland img{
     width: 200px;
     height: 200px;
 }
 
-.kort p {
+.kortbland p {
     font-size: 12px;
     margin: 5px 0;
 }
