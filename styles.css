@@ -135,6 +135,7 @@ h3 {
 
 /* ---- FORSIDE ---- */
 
+/* Placering - forside flex */
 #top{
     display: flex;
     align-items: center;
@@ -146,19 +147,20 @@ h3 {
 /* Placering - Forside tekst */
 #text{
     width: 550px; /*Placering på skærm*/
-    padding-top: 200px; /*Afstand fra top*/
+    padding-top: 180px; /*Afstand fra top*/
     text-align: right; /*Højrestiller teksten*/
 }
 
 /* Placering - Måltidskassen, stor*/
 #billede img{
-    width: 120%; /*Hvis siden skal være responsiv, skal dette ændres til eks. px*/
+    width: 115%; /*Hvis siden skal være responsiv, skal dette ændres til eks. px*/
     padding-bottom: 50px; /*Luft under kassen, før footer*/
 }
 
 /* Placering - Knap*/
 button{
     display: flex; /* Følger id "text"*/
+
 }
 
 
