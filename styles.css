@@ -41,7 +41,7 @@ header {
 /* Styling h1 - Titler*/
 h1{
     text-align: center;
-    font-size: 64px;
+    font-size: 45px;
     font-family: 'Dela Gothic One';
     font-style: normal;
     font-weight: 400;
@@ -168,12 +168,12 @@ h3 {
 }
 
 
-
 /* ---- FOOTER ---- */
 
 /* Styling - generelt*/
 footer {
     border-top: solid var(--sekundaereFarve) 0.3px; /* Streg, der viser her starter footer*/
+    margin-top: 50px;
 }
 
 /* Styling - footer */
