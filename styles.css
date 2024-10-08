@@ -163,16 +163,6 @@ button{
 
 }
 
-.shape {
-    width: 700px;
-    height: 700px;
-    position: absolute;
-    top: 150px;
-    left: -10%;
-    background:var(--sekundaereFarve);
-    border-radius: 50%; /* Gør den rund */
-    z-index: -1;
-}
 
 
 
