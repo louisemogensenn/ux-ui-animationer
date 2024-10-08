@@ -17,8 +17,6 @@
     font-family:'Epilogue'; /* Som standard font */
 }
 
-
-
 /* ---- GENERELT ---- */
 
 /* Farvepalette */
@@ -51,6 +49,10 @@ h1{
 }
 
 /* Styling h2 - Overskrifter*/
+
+h2 {
+    font-family: 'Nagomi', 'Times New Roman', Times, serif;
+}
 
 
 /* Styling h3 - Alle underoverskrifter*/
