@@ -141,24 +141,21 @@ h2 {
 }
 
 .kortbland h3 {
-    font-family: 'Epilogue';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 25px;
-    display: flex;
-    justify-content: space-between;
+    font-weight: 300; /* gør overskrifterne tyndere */
+    font-size: 25px; /* gør overskrifterne større */
+    /*display: flex; */
+    /* justify-content: space-between; */
 }
 
 .rowbland {
-    padding-top: 5%;
-    padding-left: 10%;
-    display: flex;
+    padding-top: 5%; /* skaber afstand mellem de tre øverste retter og overskriften + filterikonet */
+    padding-left: 10%; /* rykker retterne 10% ind i siden */
+    display: flex; /* placerer alle retter på række, så de står tre ved siden af hinanden*/
     gap: 5%; /* Mellemrum mellem kolonner */
     justify-content: flex-start; /* Fordeler kolonnerne jævnt */
 }
 
 .columnbland {
-
     padding: 10px;
 }
 
