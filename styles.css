@@ -174,21 +174,19 @@ h3 {
 }
 
 /* Placering - Knap*/
-
 .knap{
     /* display: flex;  Følger id "text"
     width: 100px;*/
 
 /*forsøg med CTA KNAPPER*/
-    margin: 1% 0% 4% 25%; /* Tilføjer margin */
-    max-width: 56%; /*Angiver max bredde */
-    width: 500px; /* Giver knappen en bredde */
+    margin: 2% 0% 4% 25%; /* Tilføjer margin */
+    max-width: 50%; /*Angiver max bredde */
+    width: 300px; /* Giver knappen en bredde */
     height: 50px; /*Giver knappen en højde */
     background-color: #F1EAD6;
-    font-size: 20px;
+    font-size: 27px;
     font-family: 'Nagomi', 'Times New Roman', Times, serif;
     border: none;
-    border-radius: 8px;
     cursor: pointer;
     overflow: hidden;
     transition: background 1s;
@@ -208,8 +206,6 @@ h3 {
     background-position: 100% 0; /* Slutposition for baggrund
 } 
  */
-
-
 
 
 
@@ -290,7 +286,8 @@ h3 {
 .kontaktos p{
     text-align: center; /*Centrerer teksten*/
     padding-bottom: 5%; /*Tilføjer padding under teksten*/
-
+    padding-left: 15%; /* Tilføjer 20% padding til venstre */
+    max-width: 80%; /* Begrænser bredden af kontaktsektionen */
 }
 
 /* Styling*/
@@ -314,20 +311,20 @@ h3 {
 /* Styler knappen */
 .indsend{
     padding: 30px;
-    width: 200px; /* Giver knappen en bredde */
-    height: 60px; /*Giver knappen en højde */
     background-color: #F1EAD6; /* Giver knappen en farve */
-    font-size: 30px;
+    font-size: 27px;
+    font-family: 'Nagomi', 'Times New Roman', Times, serif;
+    max-width: 200px; /*fitter teksten*/
+    height: 50px; /*Giver knappen en højde */
     border: none; /* Fjerner kant om knappen */
-    border-radius: 8px; /* Gør hjørnerne runde med */
     cursor: pointer; /* Skifter musens markør til en 'hånd', når man holder musen over knappen */
     overflow: hidden; /* Sørger for man ikke kan se knappen/farven der 'rykker sig' */
     transition: background 1s; /*Tilføjer en transition*/
     background-position: 200% 0; /* Indstiller baggrundens startposition til at være langt ude til højre for at kunne flytte ved animation */
-    margin-left: 40%;
     display: flex; /*Gør det muligt at centrere teksten, i knappen*/
     justify-content: center; /* Centrerer teksten vandret */
     align-items: center; /* Centrerer teksten lodret */
+    margin-left: 40%;
 }
 
 .indsend.submiting {
