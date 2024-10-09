@@ -143,8 +143,8 @@ h2 {
 .kortbland h3 {
     font-weight: 300; /* gør overskrifterne tyndere */
     font-size: 25px; /* gør overskrifterne større */
-    display: flex; 
-    justify-content: space-between;
+    display: flex; /* hjerterne og overskiften står på række */
+    justify-content: space-between; /* hjerter og overskrift stå med mellemrum */
 }
 
 .rowbland {
@@ -156,93 +156,96 @@ h2 {
 }
 
 .columnbland {
-    padding: 10px;
+    padding: 10px; /* placerer 'kortene' med god mellemrum til hinanden */
 }
 
 .kortbland{
-    justify-content: center;
-    padding-bottom: 50px;
+    /* justify-content: center; */
+    padding-bottom: 50px; /* skaber afstanden til det nedstående kort */
 }
 
 .hjerte {
     max-width: 25px;
     max-height: 25px;
     cursor: pointer; /* Markøren ændres til en hånd for at indikere, at det er klikbart */
-    padding-top: 2px;
+    padding-top: 2px; /* placerer hjertet på linje med overskriften */
 }
 
-.columnbland img{
+.columnbland img{ /* angiver størrelsen på alle billeder af retterne */
     width: 200px;
     height: 200px;
 }
 
 .kortbland p {
-    font-size: 12px;
-    margin: 5px 0;
+    font-size: 12px; /* skriften under billedet gøres mindre */
+    margin: 5px 0; /* sætter en margin i top og bund til 5px og i siderne 0 */
 }
 
 .order-box {
-    position: fixed;
-    top: 150px; 
+    position: fixed; /* sørger for, at bestillingsoversigten altid er synlig*/
+    top: 150px; /* synliggører bestillingsoversigten */
     right: 40px; /* Placerer boksen lidt væk fra højre side */
-    background-color: #FEF6E1;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* background-color: #FEF6E1; */
+    border: 1px solid #ddd; /* giver en kant på bestillingslisten */
+    border-radius: 8px; /* giver blødere kanter til bestillingsoversigten */
+    padding: 20px; /* giver whitespace i bestillingslisten, så indholder står lidt væk fra kanten*/
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* giver en svag skygge til listen, så den står mere frem*/
     width: 300px; /* Fast bredde */
     height: 500px; /* Fast højde */
-    display: flex;
-    flex-direction: column;
+    display: flex; /* indholdet er på række */
+    flex-direction: column; /* indholdet står i kolonne */
 }
 
 .tilfoj{
-    display: flex;
-    justify-content: space-between;
+    display: flex; /* placerer tilføj-knappen til højre i kortet */
+    justify-content: space-between; /* skaber afstand til prisen pr. enhed*/
 }
 
 
-.nederest {
+.nederest { /* styling at bestil-knappen i bestillingslisten */
     display: flex;
     justify-content: space-between; /* Sørger for, at teksten og prisen står på hver sin side */
     margin-top: auto; /* Skubber sektionen ned til bunden */
     margin-bottom: 10px; /* Afstand til knappen */
 }
 
-.order-button {
-    background-color: var(--primaereFarve);
+.order-button { /* styling af selve bestil-knappen */
     border: 1px solid #7B0005;
-    padding: 10px;
-    text-align: center;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
+    padding: 10px; /* skaber whitespace omkring teksten i knappen */
+    text-align: center; /* teksten placeres i midten */
+    font-size: 16px; /* størrelsen på skriften i knappen */
+    border-radius: 5px; /* giver en runding til knappen */
+    cursor: pointer; /* ændrer musen ved hover */
+    transition: background-color 0.3s, transform 0.3s; 
 }
 
 .order-button:hover {
-    background-color: var(--primaereFarve);
-    transform: scale(1.05);
+    transform: scale(1.05); /* knappen zoomer ind */
 }
 
+/*
 p.tilfoj {
     font-size: 20px;
 }
+    */
 
 .filterikon{
-    width: 200px;
+    position: fixed; /* alle kortene rykekr sig ikke, når ikonet er fixed */
+    width: 400px; /* størrelsen på ikonet */
     display: flex;
-    justify-content: flex-end;
-    right: 200px;
+    justify-content: center;
+}
+
+.filterikon img{
+    max-width: 40px;
+    max-height: 30px;
 }
 
 .tilfojknap {
-    background-color: transparent; /* Gør baggrunden gennemsigtig */
     border: 1px solid #7B0005; /* En tynd kant med en mørkerød farve */
     color: #7B0005; /* Farve på teksten, samme som kantfarven */
     padding: 5px 15px; /* Giver lidt luft omkring teksten */
     font-size: 12px; /* Størrelse på teksten */
-    font-family: 'Epilogue', sans-serif; /* Matcher fonten til resten af siden */
     cursor: pointer; /* Gør det tydeligt, at knappen kan klikkes */
     transition: background-color 0.3s, color 0.3s; /* Glidende overgang ved hover */
 }
@@ -253,31 +256,19 @@ p.tilfoj {
 }
 
 .remove-button {
-    background: none;
-    border: none;
-    color: #7B0005;
-    font-size: 16px;
-    cursor: pointer;
-    margin-left: 10px;
+    /* background: none; */
+    border: none; /* fjerner kanten fra kanten */
+    color: #7B0005; /* farven på krydset */
+    font-size: 16px; /* gør krydset lidt større */
+    cursor: pointer; /* ændrer musen ved hover */
 }
 
 .remove-button:hover {
-    color: #FF0000;
+    font-weight: bold; /* krydset bliver federe ved hover */
 }
 
-.filterikon{
-    width: 400px;
-    display: flex;
-    justify-content: center;
-}
-
-.filterikon img{
-    max-width: 40px;
-    max-height: 30px;
-}
-
-.hidden {
-    display: none;
+.hidden { 
+    display: none; /* filtrer-funktionen er skjult i default */
 }
 
 #filterForm {
