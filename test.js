@@ -50,7 +50,7 @@ function toggleFilterForm() {
 
 function applyPriceFilter() {
     const maxPrice = document.getElementById('priceFilter').value; //henter pris fra som er intastet i formen
-    const allDishes = document.querySelectorAll('.kort'); //henter alle kort til all dish
+    const allDishes = document.querySelectorAll('.kortbland'); //henter alle kort til all dish
 
     allDishes.forEach(dish => {
         const price = parseInt(dish.getAttribute('data-price'), 10); //henter prisen fra retterne 
