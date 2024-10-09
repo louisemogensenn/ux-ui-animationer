@@ -171,8 +171,10 @@ h3 {
 }
 
 /* Placering - Knap*/
-#knap.forside {
+.knap-forside {
     display: flex; /* Følger id "text"*/
+    width: 100px;
+
 }
 
 
@@ -198,7 +200,9 @@ h3 {
     font-size: 20px; /* gør skriften lidt større, så det er lettere at læse*/
 }
 
-/* STYLING AF SÆSONENS MÅLTIDER */
+
+
+/* ---- STYLING AF SÆSONENS MÅLTIDER ---- */
 
 /* placerer overskrift og billede i midten og ovenpå hinanden */
 #topSaesonensMaaltider{
