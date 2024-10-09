@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="loadingIkonBody">
+
+    <section class="loadingIkon">
+        <img class="oeversteFisk" src="images/loadingIkonKoiFisk.webp" alt="">
+    </section>
+    
+    
+</body>
+
+<style>
+    #loadingIkonBody {
+        display: flex; /* gør det muligt at placere elementer horisontalt */
+        justify-content: center; /* placerer indholdet i midten */
+        align-items: center; /* placerer indholdet i midten vertikalt*/
+        height: 50%;
+    }
+
+    .loadingIkon {
+        position: relative; 
+        width: 150px;
+        height: 150px;
+        padding-top: 20%;
+    }
+
+    .loadingIkon img {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        animation: rotate 2s linear infinite;
+    }
+
+    .oeversteFisk {
+        left: 50%; /* billedet placeres øverst */
+        transform: translateX(-50%);
+    }
+
+    @keyframes rotate {
+        0% {
+            transform: translateX(-50%) rotate(0deg);
+        }
+        100% {
+            transform: translateX(-50%) rotate(360deg);
+        }
+    }
+</style>
+</html>
