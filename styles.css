@@ -150,8 +150,8 @@ p {
 
 /* Styling - den tomme kasse img */
 .fejlside-kasse  {
-    width: 450px; /* Størrelse på billede af den tomme kasse*/
-    padding: 40px 0 40px;
+    width: 400px; /* Størrelse på billede af den tomme kasse*/
+    padding: 40px 0 30px;
 }
 
 
@@ -241,6 +241,7 @@ p {
 /* styling af billedet på siden */
 #saesonensBilledeId {
     width: 350px;
+    padding-bottom: 30px;
 }
 
 
