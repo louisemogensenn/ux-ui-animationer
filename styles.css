@@ -32,6 +32,7 @@ a {
     text-decoration: none; /* fjerner streger under links */
     color: inherit; /* bevarer den definerede tekstfarve */
 }
+
 /* Placering - navigationsbar*/
 header {
     display: flex;
@@ -174,13 +175,15 @@ h3 {
 
 /* Placering - Knap*/
 .knap-forside {
-    padding: 15px 30px;
+    margin-top: 10px; /*Afstand til ovenfor stående element*/
+    padding: 15px 50px;
     background-color: var(--skyggefarve); /* Farven på knappen */
-    color: ; /* Tekstfarven */
-    border: none;
+    color: var(--skriftfarve); /* Tekstfarven */
+    font-family: 'Nagomi', 'Times New Roman', Times, serif; /*Font for knap*/
+    font-size: 20px; /*Skriftstørrelse i knap*/
+    border: none; /*Kant på knap fjernet*/
     cursor: pointer;
     text-align: center; /* Centrerer teksten vandret */
-    line-height: 1.2; /* Højde på tekstlinjen */
     display: inline-block; /*Sikrer elementets placering, i henhold til id "text"*/
     justify-content: center; /* Centrerer teksten vandret */
     align-items: center; /* Centrerer teksten lodret */
