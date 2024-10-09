@@ -228,6 +228,7 @@ p {
 
 
 
+
 /* ---- STYLING AF SÆSONENS MÅLTIDER ---- */
 
 /* placerer overskrift og billede i midten og ovenpå hinanden */
@@ -244,12 +245,12 @@ p {
 
 
 
+
 /* ---- MÅLTIDSKASSER - HTML ----*/
 
 .maaltidskasseOverskrift {
-    font-size: 40px; /* størrelsen for skriften */
+    font-size: 30px; /* størrelsen for skriften */
     font-weight: 300; /* gør skriften tyndere */
-    font-family: 'Nagomi', 'Times New Roman', Times, serif;
 }
 
 #maaltidskasser{
@@ -260,7 +261,7 @@ p {
 }
 
 .maaltidskasserBilleder{
-    width: 350px; /* giver billederne en bredte*/
+    width: 300px; /* giver billederne en bredte*/
 }
 
 .styling-tekst-under {
