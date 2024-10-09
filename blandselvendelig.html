@@ -51,91 +51,115 @@
     <section class="rowbland">
         <section class="columnbland">
             <article class="kortbland" data-price="30"> <!-- data-price angiver prisen for hver ret -->
-                <h3>RAMEN <img id="hjerte1" class="hjerte" src="images/favoritter.webp" alt="hjerte" onclick="toggleHjerte('hjerte1')"></h3>
+                <h3>YUZU SPINAT <img id="hjerte1" class="hjerte" src="images/favoritter.webp" alt="hjerte" onclick="toggleHjerte('hjerte1')"></h3>
                 <img src="images/ret1.webp" alt="ramenret">
-                <p>Dette er en beskrivelse. <a href="#"><b>Læs mere!</b></a></p>
-                <p class="tilfoj">30 kr. pr. <button id="tilfojknap" onclick="tilfojRet('RAMEN', 30)">Tilføj</button></p>
+                <p>Dette er en beskrivelse. <a href="#" onclick="openModal('modal1')"><b>Læs mere!</b></a></p>
+                <p class="tilfoj">30 kr. pr. <button class="tilfojknap" onclick="tilfojRet('YUZU SPINAT', 30)">Tilføj</button></p>
             </article>
+
+            <section id="modal1" class="modal skjult">
+                <article class="modal-indhold">
+                    <h3>YUZU SPINAT <span onclick="closeModal('modal1')" class="luk-knap">&times;</span></h3>
+                    <p>Stegte ris er den mest anvendte tilberedning af ris i Asien – og Japan er ingen undtagelse. Den tørrede frisk og grøntsagerne i sin egen version giver et sundt udtryk og kan nemt serveres med den friske salat som tilbehør.</p>
+                    <p class="ingrediens-info">Indhold: Frisk spinat, yuzu-saft, sesamolie, ristet sesam.</p>
+                </article>
+            </section>
     
             <article class="kortbland" data-price="45">
-                <h3>SUSHI <img id="hjerte2" class="hjerte" src="images/favoritter.webp" alt="hjerte" onclick="toggleHjerte('hjerte2')"></h3>
+                <h3>KIKÆRTE SALAT <img id="hjerte2" class="hjerte" src="images/favoritter.webp" alt="hjerte" onclick="toggleHjerte('hjerte2')"></h3>
                 <img src="images/ret2.webp" alt="sushiret">
                 <p>Dette er en beskrivelse. <a href="#"><b>Læs mere!</b></a></p>
-                <p class="tilfoj">45 kr. pr. <button id="tilfojknap" onclick="tilfojRet('SUSHI', 45)">Tilføj</button></p>
+                <p class="tilfoj">45 kr. pr. <button class="tilfojknap" onclick="tilfojRet('KIKÆRTE SALAT', 45)">Tilføj</button></p>
             </article>
     
             <article class="kortbland" data-price="50">
-                <h3>TEMPURA <img id="hjerte3" class="hjerte" src="images/favoritter.webp" alt="hjerte" onclick="toggleHjerte('hjerte3')"></h3>
+                <h3>GRØN SUPPE <img id="hjerte3" class="hjerte" src="images/favoritter.webp" alt="hjerte" onclick="toggleHjerte('hjerte3')"></h3>
                 <img src="images/ret3.webp" alt="tempuraret">
                 <p>Dette er en beskrivelse. <a href="#"><b>Læs mere!</b></a></p>
-                <p class="tilfoj">50 kr. pr. <button id="tilfojknap" onclick="tilfojRet('TEMPURA', 50)">Tilføj</button></p>
+                <p class="tilfoj">50 kr. pr. <button class="tilfojknap" onclick="tilfojRet('GRØN SUPPE', 50)">Tilføj</button></p>
             </article>
     
             <article class="kortbland" data-price="25">
                 <h3>TONKATSU <img id="hjerte4" class="hjerte" src="images/favoritter.webp" alt="hjerte" onclick="toggleHjerte('hjerte4')"></h3>
                 <img src="images/ret4.webp" alt="tonkatsuret">
                 <p>Dette er en beskrivelse. <a href="#"><b>Læs mere!</b></a></p>
-                <p class="tilfoj">25 kr. pr. <button id="tilfojknap" onclick="tilfojRet('TONKATSU', 25)">Tilføj</button></p>
+                <p class="tilfoj">25 kr. pr. <button class="tilfojknap" onclick="tilfojRet('TONKATSU', 25)">Tilføj</button></p>
             </article>
         </section>
     
         <section class="columnbland">
             <article class="kortbland" data-price="40">
-                <h3>UDON <img id="hjerte5" class="hjerte" src="images/favoritter.webp" alt="hjerte" onclick="toggleHjerte('hjerte5')"></h3>
+                <h3>TUFO <img id="hjerte5" class="hjerte" src="images/favoritter.webp" alt="hjerte" onclick="toggleHjerte('hjerte5')"></h3>
                 <img src="images/ret5.webp" alt="udonret">
-                <p>Dette er en beskrivelse. <a href="#"><b>Læs mere!</b></a></p>
-                <p class="tilfoj">40 kr. pr. <button id="tilfojknap" onclick="tilfojRet('UDON', 40)">Tilføj</button></p>
+                <p>Dette er en beskrivelse. <a href="#" onclick="openModal('modalTufo')"><b>Læs mere!</b></a></p>
+                <p class="tilfoj">40 kr. pr. <button class="tilfojknap" onclick="tilfojRet('TUFO', 40)">Tilføj</button></p>
             </article>
+
+            <section id="modalTufo" class="modal skjult">
+                <article class="modal-indhold">
+                    <h3>SEKS SMAGSOPLEVELSER MED TOFU <span onclick="closeModal('modalTufo')" class="luk-knap">&times;</span></h3>
+                    <p>Med denne opskrift får du mulighed for at udfolde din kreative evner inden for tofu og den smagsnuancer. Mariner og tilbered din tofu som du ønsker og oplev forskellen. Be creative!</p>
+                    <p class="ingrediens-info">Indhold: riseddike, lys soya, sesamolie, rød chili-olie, edamamebønner, kål, tomat, cha tsai, sesam, tofu.</p>
+                </article>
+            </section>
     
             <article class="kortbland" data-price="45">
                 <h3>OKONOMIYAKI <img id="hjerte6" class="hjerte" src="images/favoritter.webp" alt="hjerte" onclick="toggleHjerte('hjerte6')"></h3>
                 <img src="images/ret6.webp" alt="okonomiyakiret">
                 <p>Dette er en beskrivelse. <a href="#"><b>Læs mere!</b></a></p>
-                <p class="tilfoj">47 kr. pr. <button id="tilfojknap" onclick="tilfojRet('OKONOMIYAKI', 45)">Tilføj</button></p>
+                <p class="tilfoj">47 kr. pr. <button class="tilfojknap" onclick="tilfojRet('OKONOMIYAKI', 45)">Tilføj</button></p>
             </article>
     
             <article class="kortbland" data-price="29">
                 <h3>KARAAGE <img id="hjerte7" class="hjerte" src="images/favoritter.webp" alt="hjerte" onclick="toggleHjerte('hjerte7')"></h3>
                 <img src="images/ret7.webp" alt="karaageret">
                 <p>Dette er en beskrivelse. <a href="#"><b>Læs mere!</b></a></p>
-                <p class="tilfoj">29 kr. pr. <button id="tilfojknap" onclick="tilfojRet('KARAAGE', 29)">Tilføj</button></p>
+                <p class="tilfoj">29 kr. pr. <button class="tilfojknap" onclick="tilfojRet('KARAAGE', 29)">Tilføj</button></p>
             </article>
     
             <article class="kortbland" data-price="15">
-                <h3>GYOZA <img id="hjerte8" class="hjerte" src="images/favoritter.webp" alt="hjerte" onclick="toggleHjerte('hjerte8')"></h3>
+                <h3>MISORAMEN <img id="hjerte8" class="hjerte" src="images/favoritter.webp" alt="hjerte" onclick="toggleHjerte('hjerte8')"></h3>
                 <img src="images/ret8.webp" alt="gyozaret">
                 <p>Dette er en beskrivelse. <a href="#"><b>Læs mere!</b></a></p>
-                <p class="tilfoj">15 kr. pr. <button id="tilfojknap" onclick="tilfojRet('GYOZA', 15)">Tilføj</button></p>
+                <p class="tilfoj">15 kr. pr. <button class="tilfojknap" onclick="tilfojRet('MISORAMEN', 15)">Tilføj</button></p>
             </article>
         </section>
     
         <section class="columnbland">
             <article class="kortbland" data-price="59">
-                <h3>DONBURI <img id="hjerte9" class="hjerte" src="images/favoritter.webp" alt="hjerte" onclick="toggleHjerte('hjerte9')"></h3>
-                <img src="images/ret9.webp" alt="donburiret">
-                <p>Dette er en beskrivelse. <a href="#"><b>Læs mere!</b></a></p>
-                <p class="tilfoj">59 kr. pr. <button id="tilfojknap" onclick="tilfojRet('DONBURI', 59)">Tilføj</button></p>
+                <h3>SMASHED TOFU <img id="hjerte9" class="hjerte" src="images/favoritter.webp" alt="hjerte" onclick="toggleHjerte('hjerte9')"></h3>
+                <img src="images/ret12.webp" alt="donburiret">
+                <p>Dette er en beskrivelse. <a href="#" onclick="openModal('modalSmashedTofu')"><b>Læs mere!</b></a></p>
+                <p class="tilfoj">59 kr. pr. <button class="tilfojknap" onclick="tilfojRet('SMASHED TOFU', 59)">Tilføj</button></p>
             </article>
+
+            <section id="modalSmashedTofu" class="modal skjult">
+                <article class="modal-indhold">
+                    <h3>GREEN BEAN AND SMASHED TOFU <span onclick="closeModal('modalSmashedTofu')" class="luk-knap">&times;</span></h3>
+                    <p>Sprøde bønner og cremet smuldret tofu er det perfekte match. Du kan nemt tilføje noget farve til retten med nogle saltindsmurte gulerødder eller give retten noget protein – såsom tynd skiver grisekød. Alt efter ønske kan du tilberede denne ret præcis efter dine behov!</p>
+                    <p class="ingrediens-info">Indhold: japansk tofu, grønne bønner, friteret tofu, sesam, mirin, lys soya.</p>
+                </article>
+            </section>
     
             <article class="kortbland" data-price="25">
                 <h3>MISO SUPPE <img id="hjerte10" class="hjerte" src="images/favoritter.webp" alt="hjerte" onclick="toggleHjerte('hjerte10')"></h3>
                 <img src="images/ret10.webp" alt="misosupperet">
                 <p>Dette er en beskrivelse. <a href="#"><b>Læs mere!</b></a></p>
-                <p class="tilfoj">25 kr. pr. <button id="tilfojknap" onclick="tilfojRet('MISO SUPPE', 25)">Tilføj</button></p>
+                <p class="tilfoj">25 kr. pr. <button class="tilfojknap" onclick="tilfojRet('MISO SUPPE', 25)">Tilføj</button></p>
             </article>
     
             <article class="kortbland" data-price="50">
                 <h3>TAMAGOYAKI <img id="hjerte11" class="hjerte" src="images/favoritter.webp" alt="hjerte" onclick="toggleHjerte('hjerte11')"></h3>
                 <img src="images/ret11.webp" alt="tamagoyakiret">
                 <p>Dette er en beskrivelse. <a href="#"><b>Læs mere!</b></a></p>
-                <p class="tilfoj">50 kr. pr. <button id="tilfojknap" onclick="tilfojRet('TAMAGOYAKI', 50)">Tilføj</button></p>
+                <p class="tilfoj">50 kr. pr. <button class="tilfojknap" onclick="tilfojRet('TAMAGOYAKI', 50)">Tilføj</button></p>
             </article>
     
             <article class="kortbland" data-price="45">
                 <h3>YAKITORI <img id="hjerte12" class="hjerte" src="images/favoritter.webp" alt="hjerte" onclick="toggleHjerte('hjerte12')"></h3>
-                <img src="images/ret12.webp" alt="yakitoriret">
+                <img src="images/ret9.webp" alt="yakitoriret">
                 <p>Dette er en beskrivelse. <a href="#"><b>Læs mere!</b></a></p>
-                <p class="tilfoj">45 kr. pr. <button id="tilfojknap" onclick="tilfojRet('YAKITORI', 45)">Tilføj</button></p>
+                <p class="tilfoj">45 kr. pr. <button class="tilfojknap" onclick="tilfojRet('YAKITORI', 45)">Tilføj</button></p>
             </article>
         </section>
     </section>

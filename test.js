@@ -73,3 +73,16 @@ function toggleHjerte(hjerteId) {
         hjerteElement.src = 'images/favoritter.webp'; // Skift tilbage til det tomt hjerte
     }
 }
+
+function openModal(modalId) {
+    document.getElementById(modalId).classList.remove('skjult');
+    document.body.insertAdjacentHTML('beforeend', '<div class="modal-overlay" onclick="closeModal(\'' + modalId + '\')"></div>');
+}
+
+function closeModal(modalId) {
+    document.getElementById(modalId).classList.add('skjult');
+    const overlay = document.querySelector('.modal-overlay');
+    if (overlay) {
+        overlay.remove();
+    }
+}
