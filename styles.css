@@ -178,12 +178,12 @@ h3 {
     max-width: 56%; /*Angiver max bredde */
     width: 500px; /* Giver knappen en bredde */
     height: 50px; /*Giver knappen en højde */
-    background-color: #F1EAD6;
-    font-size: 27px;
-    font-family: 'Nagomi', 'Times New Roman', Times, serif;
-    border: none;
-    cursor: pointer;
-    transition: background 1s;
+    background-color: #F1EAD6; /* Giver kassen en baggrundsfarve*/
+    font-size: 27px; /* Vælger font størrelsen */
+    font-family: 'Nagomi', 'Times New Roman', Times, serif; /*Vælger fonten*/
+    border: none; /*Fjerner rammen rundt om knappen */
+    cursor: pointer; /* Tilføjer en pointer så musen bliver en hånd, når man køre henover den*/
+    transition: background 1s; /*Sætter transitionen til at vare 1 sek*/
     background-position: 200% 0; /*Startpositionen for baggrunden*/
 }
 
@@ -191,6 +191,7 @@ h3 {
     background: linear-gradient(to right, #F1EAD6 50%, #7B0005 50%); /* Gradient fra mørkerød til lys beige */
     background-size: 200% 100%; /* Dobbelt størrelse for at muliggøre animationen/transitionen */
     background-position: 100% 0; /* Slutposition for baggrund */
+    /* color:#FFFFFF; */
 }
 
 
@@ -232,6 +233,10 @@ h3 {
     width: 350px;
 }
 
+/* Placerer tilbage pilen oppe i venstre hjørne */
+.tilbagePil{
+    margin-left: 10%;
+}
 
 
 /* ---SÅDAN VIRKER DET & OFTE STILLEDE SPØRGSMÅL--- */
