@@ -49,6 +49,7 @@ h1{
     font-weight: 400;
     color: var(--skriftfarve);
     padding-top: 10px;
+    padding-bottom: 15px;
 }
 
 /* Styling h2 - Overskrifter*/
@@ -176,7 +177,7 @@ h3 {
 /* Placering - Knap*/
 .knap{
     max-width: 56%; /*Angiver max bredde */
-    width: 500px; /* Giver knappen en bredde */
+    width: 400px; /* Giver knappen en bredde */
     height: 50px; /*Giver knappen en højde */
     background-color: #F1EAD6;
     font-size: 27px;
@@ -191,6 +192,7 @@ h3 {
     background: linear-gradient(to right, #F1EAD6 50%, #7B0005 50%); /* Gradient fra mørkerød til lys beige */
     background-size: 200% 100%; /* Dobbelt størrelse for at muliggøre animationen/transitionen */
     background-position: 100% 0; /* Slutposition for baggrund */
+    color: var(--primaereFarve);
 }
 
 
@@ -203,7 +205,12 @@ h3 {
     line-height: 1.5; /*Linjehøjde*/
 }
 
-/* STYLING AF OM OS OG SÆSONENS MÅLTIDER */
+#forside-tekst {
+    padding-bottom: 15px; /*Afstand under tekst, til knap*/
+}
+
+/* ---- STYLING AF OM OS OG SÆSONENS MÅLTIDER----*/
+
 .beskrivendeTekst{ /* placerer indholdet midt på skærmen */
     justify-content: center;
     display: flex;
@@ -231,6 +238,34 @@ h3 {
 #saesonensBilledeId {
     width: 350px;
 }
+
+
+
+/* ---- MÅLTIDSKASSER - HTML ----*/
+
+.maaltidskasseOverskrift {
+    font-size: 40px; /* størrelsen for skriften */
+    font-weight: 300; /* gør skriften tyndere */
+    font-family: 'Nagomi', 'Times New Roman', Times, serif;
+}
+
+#maaltidskasser{
+    display: flex; /* viser dem på række */
+    justify-content: center; /* placerer indholdet i midten */
+    padding-top: 2vh; /* sætter en afstand mellem de mindre overskrifter til overskiften */
+    text-align: center; /* tekst og knap placeret midt i dens kasse */
+}
+
+.maaltidskasserBilleder{
+    width: 350px; /* giver billederne en bredte*/
+}
+
+.styling-tekst-under {
+    padding: 30px 0 20px;
+}
+
+
+
 
 
 

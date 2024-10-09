@@ -7,7 +7,7 @@
     <meta name="description" content="Nippon tilbyder måltidskasser med inspiration fra det japanske køkken. Få smagen af Japan leveret direkte til din dør med Nippon måltidskasser!"> <!-- SEO beskrivelse, vises i søgeresultatet-->
     <link rel="stylesheet" href="styles.css"> <!-- Linkter til den samlede CSS -->
     <link rel="icon" href="images/nippon-logo.webp" type="image/x-icon"/> <!-- Lille ikon i tab -->
-    <script src="omos.js" defer></script> <!--Linker til javascript-->
+    <script src="omos.js" defer></script>
 </head>
 
 <!-- Når noter er angivet med store bogstaver, er det en overskrift. Overskriften henviser, til tilhørende samme overskrift, i CSS -->
@@ -37,17 +37,24 @@
 
     <h1>MÅLTIDSKASSER</h1>
     <section id="maaltidskasser">
+        <!--Sæsonens-->
         <article id="seasons">
             <h2 class="maaltidskasseOverskrift">SÆSONENS</h2>
-            <img class="maaltidskasserBilleder" src="images/seasonsmaaltidskasse.webp" alt="Seasons Måltidskasser">
-            <h3>Lad dig overraske</h3>
-            <a href="saesonensMaaltider.html"><button class="knap">Læs mere</button></a>
+            <a href="saesonensMaaltider.html"><!-- gør billedet klikbart og videresender til html "sæsonens"-->
+            <img class="maaltidskasserBilleder" src="images/seasonsmaaltidskasse.webp" alt="Seasons Måltidskasser"></a>
+           
+            <h3 class="styling-tekst-under">Lad dig overraske</h3>
+            <a href="saesonensMaaltider.html"><button class="knap">LÆS MERE</button></a>
         </article>
+
+        <!-- Bland selv -->
         <article>
             <h2 class="maaltidskasseOverskrift">BLAND SELV</h2>
-            <img class="maaltidskasserBilleder" src="images/blandselv.webp" alt="Bland selv Måltidskasser">
-            <h3>Vælg selv dine retter</h3>
-            <a href="blandselvendelig.html"><button type="button" class="knap">Læs mere</button></a>
+            <a href="blandselvendelig.html"><!-- gør billedet klikbart og videresender til html "bland selv"-->
+            <img class="maaltidskasserBilleder" src="images/blandselv.webp" alt="Bland selv Måltidskasser"></a>
+
+            <h3 class="styling-tekst-under">Vælg selv dine retter</h3>
+            <a href="blandselvendelig.html"><button type="button" class="knap">LÆS MERE</button></a>
         </article>
     </section>
 
@@ -91,30 +98,6 @@
     </footer>
 </body>
 
-<style>
-.maaltidskasseOverskrift {
-    font-size: 40px; /* størrelsen for skriften */
-    font-weight: 300; /* gør skriften tyndere */
-    font-family: 'Nagomi', 'Times New Roman', Times, serif;
-}
-
-#maaltidskasser{
-    display: flex; /* viser dem på række */
-    justify-content: center; /* placerer indholdet i midten */
-    padding-top: 2vh; /* sætter en afstand mellem de mindre overskrifter til overskiften */
-    justify-content: space-evenly; /* giver white space mellem boksne */
-    text-align: center; /* tekst og knap placeret midt i dens kasse */
-}
-
-.maaltidskasserBilleder{
-    width: 350px; /* giver billederne en bredte*/
-}
-
-.laesMereKnap {
-    font-family: 'Nagomi', 'Times New Roman', Times, serif;
-    /* her skal der indsættes knap - brug den fra indsend på kontakt os-siden*/
-}
-</style>
 
 
 </html>
