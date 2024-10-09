@@ -205,7 +205,12 @@ h3 {
     line-height: 1.5; /*Linjehøjde*/
 }
 
-/* STYLING AF OM OS OG SÆSONENS MÅLTIDER */
+#forside-tekst {
+    padding-bottom: 15px; /*Afstand under tekst, til knap*/
+}
+
+/* ---- STYLING AF OM OS OG SÆSONENS MÅLTIDER----*/
+
 .beskrivendeTekst{ /* placerer indholdet midt på skærmen */
     justify-content: center;
     display: flex;
