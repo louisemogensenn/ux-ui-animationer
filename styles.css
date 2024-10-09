@@ -247,15 +247,8 @@ p {
 /* Placerer tilbage pilen oppe i venstre hjørne */
 .tilbagePil{
     margin-left: 10%;
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
 }
 
-/*Styler teksten*/
-.tilbagePil p{
-    font-size: 17px;
-}
 
 
 
