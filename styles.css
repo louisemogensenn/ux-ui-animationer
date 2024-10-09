@@ -192,6 +192,7 @@ h3 {
     background: linear-gradient(to right, #F1EAD6 50%, #7B0005 50%); /* Gradient fra mørkerød til lys beige */
     background-size: 200% 100%; /* Dobbelt størrelse for at muliggøre animationen/transitionen */
     background-position: 100% 0; /* Slutposition for baggrund */
+    color: var(--primaereFarve);
 }
 
 
