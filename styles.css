@@ -49,6 +49,7 @@ h1{
     font-weight: 400;
     color: var(--skriftfarve);
     padding-top: 10px;
+    padding-bottom: 15px;
 }
 
 /* Styling h2 - Overskrifter*/
@@ -231,6 +232,29 @@ h3 {
 #saesonensBilledeId {
     width: 350px;
 }
+
+
+
+/* ---- MÅLTIDSKASSER - HTML ----*/
+
+.maaltidskasseOverskrift {
+    font-size: 40px; /* størrelsen for skriften */
+    font-weight: 300; /* gør skriften tyndere */
+    font-family: 'Nagomi', 'Times New Roman', Times, serif;
+}
+
+#maaltidskasser{
+    display: flex; /* viser dem på række */
+    justify-content: center; /* placerer indholdet i midten */
+    padding-top: 2vh; /* sætter en afstand mellem de mindre overskrifter til overskiften */
+    text-align: center; /* tekst og knap placeret midt i dens kasse */
+}
+
+.maaltidskasserBilleder{
+    width: 350px; /* giver billederne en bredte*/
+}
+
+
 
 
 
