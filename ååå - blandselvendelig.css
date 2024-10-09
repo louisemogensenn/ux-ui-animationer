@@ -16,8 +16,6 @@
     font-family:'Epilogue'; /* Som standard font */
 }
 
-
-
 /* ---- GENERELT ---- */
 
 /* Farvepalette */
@@ -210,7 +208,7 @@ h2 {
 }
 
 .order-button { /* styling af selve bestil-knappen */
-    border: 1px solid #7B0005;
+    border: 1px solid var(--sekundaereFarve);
     padding: 10px; /* skaber whitespace omkring teksten i knappen */
     text-align: center; /* teksten placeres i midten */
     font-size: 16px; /* størrelsen på skriften i knappen */
@@ -223,14 +221,7 @@ h2 {
     transform: scale(1.05); /* knappen zoomer ind */
 }
 
-/*
-p.tilfoj {
-    font-size: 20px;
-}
-    */
-
 .filterikon{
-    position: fixed; /* alle kortene rykekr sig ikke, når ikonet er fixed */
     width: 400px; /* størrelsen på ikonet */
     display: flex;
     justify-content: center;
@@ -242,8 +233,8 @@ p.tilfoj {
 }
 
 .tilfojknap {
-    border: 1px solid #7B0005; /* En tynd kant med en mørkerød farve */
-    color: #7B0005; /* Farve på teksten, samme som kantfarven */
+    border: 1px solid var(--sekundaereFarve); /* En tynd kant med en mørkerød farve */
+    color: var(--sekundaereFarve); /* Farve på teksten, samme som kantfarven */
     padding: 5px 15px; /* Giver lidt luft omkring teksten */
     font-size: 12px; /* Størrelse på teksten */
     cursor: pointer; /* Gør det tydeligt, at knappen kan klikkes */
@@ -251,14 +242,14 @@ p.tilfoj {
 }
 
 .tilfojknap:hover {
-    background-color: #7B0005; /* Skifter baggrunden til rød ved hover */
+    background-color: var(--sekundaereFarve); /* Skifter baggrunden til rød ved hover */
     color: #FEF6E1; /* Skifter tekstfarven til en lys farve ved hover */
 }
 
-.remove-button {
+.remove-button { /* det lille kryds i bestillingslisten */
     /* background: none; */
     border: none; /* fjerner kanten fra kanten */
-    color: #7B0005; /* farven på krydset */
+    color: var(--sekundaereFarve); /* farven på krydset */
     font-size: 16px; /* gør krydset lidt større */
     cursor: pointer; /* ændrer musen ved hover */
 }
@@ -272,55 +263,58 @@ p.tilfoj {
 }
 
 #filterForm {
-    background: var(--primaereFarve);
-    padding: 10px;
-    border: 1px solid #999999;
-    border-radius: 0px;
-    margin-top: 10px;
-    width: 200px;
+    /* background: var(--primaereFarve); */
+    padding: 10px; /* skaber whitespace i filterboksen */
+    border: 1px solid var(--sekundaereFarve);
+    margin-top: 10px; /* skubber indholdet minimalt ned */
+    width: 200px; /* sætter bredden filterboksen */
     margin-left: 10px;
 }
 
-.skjult {
+.skjult { /* beskrivelsesboksen er skjult i default */
     display: none;
 }
 
-.modal {
-    position: fixed;
+.modal { /* styling af beskrivelsesboksen*/
+    position: fixed; /* placerer boken i midten */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: var(--primaereFarve);
-    border: 1px solid #000;
-    padding: 20px;
-    max-width: 400px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
+    border: 1px solid var(--sekundaereFarve);
+    padding: 20px; /* giver plads omkring teksten i boksen */
+    /* max-width: 400px; */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    z-index: 1000; /* placerer boksen forrest*/
 }
 
 .modal-indhold {
-    padding: 10px;
+    padding: 10px; /* danner ekstra afstand mellem tekst og bokse-kanter*/
 }
 
 .modal-indhold h3 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 20px;
+    display: flex; /* krydset og overskriften er på linje */
+    justify-content: space-between; /* skaber afstanden mellem overskrift og kryds*/
+    /* align-items: center; */
+    padding-bottom: 20px; /* giver plads fra overskrift og kryds ned til tekst*/
 }
 
 p.ingrediens-info {
-    font-size: 13px;
-    padding-top: 20px;
+    font-size: 13px; /* skriften er mindre*/
+    padding-top: 20px; /* giver afstand mellem beskrivelsestekst og indholdatekst*/
 }
 
 .luk-knap {
-    cursor: pointer;
-    font-size: 20px;
-    font-weight: bold;
+    cursor: pointer; /* ændrer musen ved hover */
+    font-size: 20px; /* størrelsen på krydset */
+    font-weight: lighter; /* tykkelsen på fonten */
+    color: var(--sekundaereFarve); /* farven på krydset */
 }
 
-.modal-overlay {
+.luk-knap:hover {
+    font-weight: bold; /* krydset bliver fed ved hover */
+}
+
+.modal-overlay { /* danner den bagvedliggende skygge */
     position: fixed;
     top: 0;
     left: 0;
@@ -331,21 +325,20 @@ p.ingrediens-info {
 }
 
 .prisInput {
-    width: 47%; /* Fylder hele bredden af containeren */
     padding: 5px 5px; /* Giver lidt luft omkring teksten */
     border: 1px solid #7B0005; /* Samme farve som knapperne */
     font-size: 14px; /* Størrelse på teksten */
     font-family: 'Epilogue', sans-serif; /* Matcher fonten til resten af siden */
     background-color: #FEF6E1; /* Lys baggrund, der matcher siden */
-    color: #7B0005; /* Tekstfarve */
+    color: var(--sekundaereFarve); /* Tekstfarve */
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Let indre skygge for dybde */
     transition: border-color 0.3s, box-shadow 0.3s; /* Glidende overgang ved fokus */
     margin-bottom: 10px;
     margin-top: 5px;
 }
 
-.prisInput:focus {
-    border-color: #4A0003; /* Skifter kantfarve til en lidt mørkere rød ved fokus */
+.prisInput:focus { /* :focus er når man trykker på input-feltet */
+    border-color: var(--sekundaereFarve); /* Skifter kantfarve til en lidt mørkere rød ved fokus */
     box-shadow: 0 0 5px rgba(122, 0, 5, 0.3); /* Giver en let ydre skygge ved fokus */
     outline: none; /* Fjerner standard outline for et renere look */
 }
