@@ -177,7 +177,7 @@ h3 {
 /* Placering - Knap*/
 .knap{
     max-width: 56%; /*Angiver max bredde */
-    width: 500px; /* Giver knappen en bredde */
+    width: 400px; /* Giver knappen en bredde */
     height: 50px; /*Giver knappen en højde */
     background-color: #F1EAD6;
     font-size: 27px;
