@@ -141,24 +141,21 @@ h2 {
 }
 
 .kortbland h3 {
-    font-family: 'Epilogue';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 25px;
-    display: flex;
+    font-weight: 300; /* gør overskrifterne tyndere */
+    font-size: 25px; /* gør overskrifterne større */
+    display: flex; 
     justify-content: space-between;
 }
 
 .rowbland {
-    padding-top: 5%;
-    padding-left: 10%;
-    display: flex;
+    padding-top: 5%; /* skaber afstand mellem de tre øverste retter og overskriften + filterikonet */
+    padding-left: 10%; /* rykker retterne 10% ind i siden */
+    display: flex; /* placerer alle retter på række, så de står tre ved siden af hinanden*/
     gap: 5%; /* Mellemrum mellem kolonner */
     justify-content: flex-start; /* Fordeler kolonnerne jævnt */
 }
 
 .columnbland {
-
     padding: 10px;
 }
 
@@ -232,6 +229,13 @@ p.tilfoj {
     font-size: 20px;
 }
 
+.filterikon{
+    width: 200px;
+    display: flex;
+    justify-content: flex-end;
+    right: 200px;
+}
+
 .tilfojknap {
     background-color: transparent; /* Gør baggrunden gennemsigtig */
     border: 1px solid #7B0005; /* En tynd kant med en mørkerød farve */
@@ -279,10 +283,11 @@ p.tilfoj {
 #filterForm {
     background: var(--primaereFarve);
     padding: 10px;
-    border: 1px solid #6b6b6b;
-    border-radius: 5px;
+    border: 1px solid #999999;
+    border-radius: 0px;
     margin-top: 10px;
     width: 200px;
+    margin-left: 10px;
 }
 
 .skjult {
@@ -332,4 +337,24 @@ p.ingrediens-info {
     bottom: 0;
     background: rgba(0, 0, 0, 0.5);
     z-index: 999;
+}
+
+.prisInput {
+    width: 47%; /* Fylder hele bredden af containeren */
+    padding: 5px 5px; /* Giver lidt luft omkring teksten */
+    border: 1px solid #7B0005; /* Samme farve som knapperne */
+    font-size: 14px; /* Størrelse på teksten */
+    font-family: 'Epilogue', sans-serif; /* Matcher fonten til resten af siden */
+    background-color: #FEF6E1; /* Lys baggrund, der matcher siden */
+    color: #7B0005; /* Tekstfarve */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Let indre skygge for dybde */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Glidende overgang ved fokus */
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.prisInput:focus {
+    border-color: #4A0003; /* Skifter kantfarve til en lidt mørkere rød ved fokus */
+    box-shadow: 0 0 5px rgba(122, 0, 5, 0.3); /* Giver en let ydre skygge ved fokus */
+    outline: none; /* Fjerner standard outline for et renere look */
 }

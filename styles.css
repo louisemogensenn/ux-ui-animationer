@@ -24,6 +24,7 @@
     --primaereFarve: #FEF6E1;
     --sekundaereFarve: #7B0005;
     --skriftfarve: #401A16;
+    --skyggefarve: #F1EAD6; /*bruges til knapper*/
 }
 
 /* Styling - a-tags/links */
@@ -31,6 +32,7 @@ a {
     text-decoration: none; /* fjerner streger under links */
     color: inherit; /* bevarer den definerede tekstfarve */
 }
+
 /* Placering - navigationsbar*/
 header {
     display: flex;
@@ -206,6 +208,10 @@ h3 {
     background-position: 100% 0; /* Slutposition for baggrund
 } 
  */
+
+
+
+
 
 /* Styling - H2 forside, speciel*/
 #text h2 {
