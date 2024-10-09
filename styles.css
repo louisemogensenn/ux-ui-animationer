@@ -278,10 +278,8 @@ h3 {
 /* Styler knappen */
 .indsend{
     padding: 30px;
-    margin: 1% 0% 4% 25%; /* Tilføjer margin */
-    max-width: 56%; /*Angiver max bredde */
-    width: 500px; /* Giver knappen en bredde */
-    height: 100px; /*Giver knappen en højde */
+    width: 200px; /* Giver knappen en bredde */
+    height: 60px; /*Giver knappen en højde */
     background-color: #F1EAD6; /* Giver knappen en farve */
     font-size: 30px;
     border: none; /* Fjerner kant om knappen */
@@ -290,6 +288,10 @@ h3 {
     overflow: hidden; /* Sørger for man ikke kan se knappen/farven der 'rykker sig' */
     transition: background 1s; /*Tilføjer en transition*/
     background-position: 200% 0; /* Indstiller baggrundens startposition til at være langt ude til højre for at kunne flytte ved animation */
+    margin-left: 40%;
+    display: flex; /*Gør det muligt at centrere teksten, i knappen*/
+    justify-content: center; /* Centrerer teksten vandret */
+    align-items: center; /* Centrerer teksten lodret */
 }
 
 .indsend.submiting {
