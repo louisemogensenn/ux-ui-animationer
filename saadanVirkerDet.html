@@ -44,9 +44,7 @@
 
     <!-- 'SÅDAN VIRKER DET' - Delen -->
 
-    <h1>
-        SÅDAN VIRKER DET
-    </h1>
+    <h1>SÅDAN VIRKER DET</h1>
 
     <!--Inddeler det i sektioner for at kunne style det nemmere efter
     Giver sektionerne samme class-navn, da de skal styles ens-->
@@ -92,69 +90,67 @@
 
     <!-- 'OFTE STILLEDE SPØRGSMÅL' - delen -->
 
-    <h1>
-        OFTE STILLEDE SPØRGSMÅL
-    </h1>
+    <h1 class="styling-overskrifter" > FAQ </h1>
 
     <!--Inddeler det i sektioner for at kunne style det nemmere efter
     Giver sektionerne samme class-navn, da de skal styles ens-->
     <section class="oftestilledespoergesmaal">
 
-        <h2>
-            ?
-        </h2>
+        <h3> ?</h3>
         <article>
-            <h2>Er der abonnementsbetignelser?</h2>
-            <p>Server dit færdige måltid og nyd smagen af hjemmelavet japansk mad, helt uden besvær.</p>
+            <h3 class="styling-afsnit">Er der abonnementsbetignelser?</h3>
+            <p>Ja, Nippon har abonnementsbetingelser. Du kan læse dem i detaljer på vores betingelsesside, hvor vi forklarer alle vilkår, herunder betalingsplaner, opsigelse og fornyelse.</p>
         </article>
     </section>
 
     <section class="oftestilledespoergesmaal">
-        <h2>
-            ?
-        </h2>
+        <h3>?</h3>
         <article>
-            <h2>Hvordan framelder jeg mig måltidskassen?</h2>
-            <p>Server dit færdige måltid og nyd smagen af hjemmelavet japansk mad, helt uden besvær.</p>
+            <h3 class="styling-afsnit">Hvordan framelder jeg mig måltidskassen?</h3>
+            <p>For at framelde dig måltidskassen, skal du logge ind på din konto på Nippon's hjemmeside, gå til "Min profil" og vælge "Opsig abonnement".</p>
         </article>
     </section>
 
 
     <section class="oftestilledespoergesmaal">
-        <h2>
+        <h3>
             ?
-        </h2>
+        </h3>
         <article>
-            <h2>Er der en bindingsperiode?</h2>
-            <p>Server dit færdige måltid og nyd smagen af hjemmelavet japansk mad, helt uden besvær.</p>
+            <h3 class="styling-afsnit">Er der en bindingsperiode?</h3>
+            <p>Nej, der er ingen bindingsperiode hos Nippon. Du kan til enhver tid opsige dit abonnement, så længe det sker inden for vores opsigelsesfrist for den næste levering.</p>
         </article>
     </section>
 
     <section class="oftestilledespoergesmaal">
-        <h2>
+        <h3>
             ?
-        </h2>
+        </h3>
 
         <article>
-            <h2>Jeg er allergisk overfor X - Hvad gør jeg?</h2>
-            <p>Server dit færdige måltid og nyd smagen af hjemmelavet japansk mad, helt uden besvær.</p>
+            <h3 class="styling-afsnit">Jeg er allergisk overfor X - Hvad gør jeg?</h3>
+            <p>Hvis du har allergier kan du angive dem, når du bestiller din måltidskasse. Vi sørger for at tilpasse indholdet, og alle retter har detaljerede ingredienslister, så du kan undgå uønskede ingredienser.</p>
         </article>
     </section>
 
 
     <!-- 'KONTAKT OS' - delen -->
 
-    <h1>KONTAKT OS</h1>
+    <h1 class="styling-overskrifter" >KONTAKT OS</h1>
 
     <!--Indsætter det i en sektion med en class så jeg kan style den-->
     <section class="kontaktos">
-        <p>Hvis du skulle være i tvivl om noget står vi altid klar til at hjælpe! Udfyld blot formularen herunder - så vender vi tilbage inden for 24 timer.</p>
+        <p>Hvis du skulle være i tvivl om noget, står vi altid klar til at hjælpe! Udfyld blot formularen herunder - så vender vi tilbage inden for 24 timer.</p>
+
+        <!--Indtast navn-->
         <label for="Navn">DIT NAVN</label>
         <input type="text" placeholder="Indsæt navn her" name="navn" id="Navn">
-
+        
+        <!--Indtast e-mail--> 
         <label for="E-mail">DIN E-MAIL</label>
         <input type="email" placeholder="Indsæt din E-mail her" name="e-mail" id="E-mail">
 
+        <!--Indtast besked-->
         <label for="Besked">DIN BESKED</label>
         <input type="text" placeholder="Indsæt din besked her" name="besked" id="Besked">
 
@@ -201,107 +197,4 @@
     </footer>
 
 </body>
-
-
-<style>
-
-/* ---- 'BODY-DELEN' ---- */
-
-/* Placerering og styling */
-h1{
-    text-align: center; /* Placerer teksten i midten */
-    padding: 10% 0% 2% 0%; /* Giver dem padding */
-    font-size: 64px; /* Definerer font størrelsen */
-    font-family: 'Dela Gothic One'; /*Definerer fonten*/
-    font-style: normal; /*Sætter stylen til normal*/
-    font-weight: 400; /* Sætter vægten til 400*/
-    color: var(--skriftfarve); /* Vælger en tidligere defineret CSS variabel til at bestemme farven på teksten*/
-}
-
-h2 {
-    font-size: 30px;
-    font-family: 'Epilogue';
-    font-style: normal;
-    font-weight: 300;
-}
-
-p{
-    font-family: 'Epilogue';
-    font-style: normal;
-}
-
-/* ---SÅDAN VIRKER DET & OFTE STILLEDE SPØRGSMÅL--- */
-
-/*Placering*/
-.saadanvirkerdet, .oftestilledespoergesmaal{
-    display: flex; /*Bruger flexbox til at arrangere elementerne*/
-    margin: 5% 0 5% 5%; /*Tilføjer margener omkring sektionen*/
-    gap: 7%; /* Tilføjer en afstand på 7% mellem de enkelte flex-elementer */
-    padding-left: 20%; /* Tilføjer 20% padding til venstre */
-    max-width: 50%; /* Begrænser bredden af kontaktsektionen til 60% */
-}
-
-.saadanvirkerdet h2{
-    padding-top: 2%; /* Tilføjer 2% padding ovenfor h2-overskriften*/
-}
-
-
-/* ---KONTAKT OS--- */
-
-.kontaktos{
-    padding-left: 19%; /*Tilføjer venstre padding*/
-    display: flex;
-    flex-direction: column; /* Arrangere elementerne lodret*/
-    max-width: 60%; 
-    text-align: center;
-}
-
-.kontaktos p{
-    text-align: center; /*Centrerer teksten*/
-    padding-bottom: 5%; /*Tilføjer padding under teksten*/
-}
-
-/* Styling*/
-#Navn, #E-mail{
-    padding: 25px;
-    background: none;/* Fjerner standard baggrunden*/
-    margin: 1% 0% 4% 25%;
-    max-width: 50%; /*Begrænser bredden af inputfelterne */
-}
-
-/*Styling - styler #besked seperat, da den skal se anderledes ud*/
-#Besked {
-    padding: 25px;
-    padding-bottom: 150px; /*Tilføjer ekstra padding i bunden, så det indikerer er mere skrive plads*/
-    background: none;
-    margin: 1% 0% 4% 25%;
-    max-width: 50%;
-}
-
-
-/* Styler knappen */
-.indsend{
-    padding: 30px;
-    margin: 1% 0% 4% 25%; /* Tilføjer margin */
-    max-width: 56%; /*Angiver max bredde */
-    width: 500px; /* Giver knappen en bredde */
-    height: 100px; /*Giver knappen en højde */
-    background-color: #F1EAD6; /* Giver knappen en farve */
-    font-size: 30px;
-    border: none; /* Fjerner kant om knappen */
-    border-radius: 8px; /* Gør hjørnerne runde med */
-    cursor: pointer; /* Skifter musens markør til en 'hånd', når man holder musen over knappen */
-    overflow: hidden; /* Sørger for man ikke kan se knappen/farven der 'rykker sig' */
-    transition: background 1s; /*Tilføjer en transition*/
-    background-position: 200% 0; /* Indstiller baggrundens startposition til at være langt ude til højre for at kunne flytte ved animation */
-}
-
-.indsend.submiting {
-    background: linear-gradient(to right, #F1EAD6 50%, #7B0005 50%); /* Gradient fra mørkerød til lys beige */
-    background-size: 200% 100%; /* Dobbelt størrelse for at muliggøre animation */
-    background-position: 100% 0; /* Slutposition for baggrund - flytter den til venstre, så man kan se den røde farve*/
-}
-
-</style>
-
 </html>

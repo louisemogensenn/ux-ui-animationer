@@ -46,6 +46,7 @@ h1{
     font-style: normal;
     font-weight: 400;
     color: var(--skriftfarve);
+    padding-top: 10px;
 }
 
 /* Styling h2 - Overskrifter*/
@@ -171,7 +172,7 @@ h3 {
 }
 
 /* Placering - Knap*/
-#knap.forside {
+.knap-forside {
     display: flex; /* Følger id "text"*/
 }
 
@@ -198,7 +199,9 @@ h3 {
     font-size: 20px; /* gør skriften lidt større, så det er lettere at læse*/
 }
 
-/* STYLING AF SÆSONENS MÅLTIDER */
+
+
+/* ---- STYLING AF SÆSONENS MÅLTIDER ---- */
 
 /* placerer overskrift og billede i midten og ovenpå hinanden */
 #topSaesonensMaaltider{
@@ -211,6 +214,93 @@ h3 {
 #saesonensBilledeId {
     width: 350px;
 }
+
+
+
+/* ---SÅDAN VIRKER DET & OFTE STILLEDE SPØRGSMÅL--- */
+
+/*Placering*/
+.saadanvirkerdet, .oftestilledespoergesmaal{
+    display: flex; /*Bruger flexbox til at arrangere elementerne*/
+    margin: 3% 0 5% 5%; /*Tilføjer margener omkring sektionen*/
+    gap: 7%; /* Tilføjer en afstand på 7% mellem de enkelte flex-elementer */
+    padding-left: 20%; /* Tilføjer 20% padding til venstre */
+    max-width: 50%; /* Begrænser bredden af kontaktsektionen til 60% */
+}
+
+.saadanvirkerdet h2{
+    padding-top: 2%; /* Tilføjer 2% padding ovenfor h2-overskriften*/
+}
+
+.styling-afsnit {
+    padding-bottom: 10px; /*Afstand til næste afsnit*/
+}
+
+.styling-overskrifter {
+    padding-top: 60px; /*Justerer afstanden til næste afsnit/overskrift*/
+}
+
+/* ---KONTAKT OS--- */
+
+.kontaktos{
+    margin: 2.5% 0 5% 5%; /*Tilføjer margener omkring sektionen*/
+    padding-left: 13%; /* Tilføjer padding til venstre */
+    display: flex;
+    flex-direction: column; /* Arrangere elementerne lodret*/
+    max-width: 60%; 
+    text-align: center;
+}
+
+.kontaktos p{
+    text-align: center; /*Centrerer teksten*/
+    padding-bottom: 5%; /*Tilføjer padding under teksten*/
+
+}
+
+/* Styling*/
+#Navn, #E-mail{
+    padding: 25px;
+    background: none;/* Fjerner standard baggrunden*/
+    margin: 1% 0% 4% 25%;
+    max-width: 50%; /*Begrænser bredden af inputfelterne */
+}
+
+/*Styling - styler #besked seperat, da den skal se anderledes ud*/
+#Besked {
+    padding: 25px;
+    padding-bottom: 150px; /*Tilføjer ekstra padding i bunden, så det indikerer er mere skrive plads*/
+    background: none;
+    margin: 1% 0% 4% 25%;
+    max-width: 50%;
+}
+
+
+/* Styler knappen */
+.indsend{
+    padding: 30px;
+    width: 200px; /* Giver knappen en bredde */
+    height: 60px; /*Giver knappen en højde */
+    background-color: #F1EAD6; /* Giver knappen en farve */
+    font-size: 30px;
+    border: none; /* Fjerner kant om knappen */
+    border-radius: 8px; /* Gør hjørnerne runde med */
+    cursor: pointer; /* Skifter musens markør til en 'hånd', når man holder musen over knappen */
+    overflow: hidden; /* Sørger for man ikke kan se knappen/farven der 'rykker sig' */
+    transition: background 1s; /*Tilføjer en transition*/
+    background-position: 200% 0; /* Indstiller baggrundens startposition til at være langt ude til højre for at kunne flytte ved animation */
+    margin-left: 40%;
+    display: flex; /*Gør det muligt at centrere teksten, i knappen*/
+    justify-content: center; /* Centrerer teksten vandret */
+    align-items: center; /* Centrerer teksten lodret */
+}
+
+.indsend.submiting {
+    background: linear-gradient(to right, #F1EAD6 50%, #7B0005 50%); /* Gradient fra mørkerød til lys beige */
+    background-size: 200% 100%; /* Dobbelt størrelse for at muliggøre animation */
+    background-position: 100% 0; /* Slutposition for baggrund - flytter den til venstre, så man kan se den røde farve*/
+}
+
+
 
 
 /* ---- FOOTER ---- */
