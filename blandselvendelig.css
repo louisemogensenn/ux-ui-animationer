@@ -140,11 +140,13 @@ h2 {
     font-weight: 300;
 }
 
-h3 {
+.kortbland h3 {
     font-family: 'Epilogue';
     font-style: normal;
     font-weight: 300;
-    font-size: 30px;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .rowbland {
@@ -169,6 +171,7 @@ h3 {
     max-width: 25px;
     max-height: 25px;
     cursor: pointer; /* Markøren ændres til en hånd for at indikere, at det er klikbart */
+    padding-top: 2px;
 }
 
 .columnbland img{
@@ -229,7 +232,7 @@ p.tilfoj {
     font-size: 20px;
 }
 
-#tilfojknap {
+.tilfojknap {
     background-color: transparent; /* Gør baggrunden gennemsigtig */
     border: 1px solid #7B0005; /* En tynd kant med en mørkerød farve */
     color: #7B0005; /* Farve på teksten, samme som kantfarven */
@@ -240,7 +243,7 @@ p.tilfoj {
     transition: background-color 0.3s, color 0.3s; /* Glidende overgang ved hover */
 }
 
-#tilfojknap:hover {
+.tilfojknap:hover {
     background-color: #7B0005; /* Skifter baggrunden til rød ved hover */
     color: #FEF6E1; /* Skifter tekstfarven til en lys farve ved hover */
 }
@@ -280,4 +283,53 @@ p.tilfoj {
     border-radius: 5px;
     margin-top: 10px;
     width: 200px;
+}
+
+.skjult {
+    display: none;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--primaereFarve);
+    border: 1px solid #000;
+    padding: 20px;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.modal-indhold {
+    padding: 10px;
+}
+
+.modal-indhold h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+p.ingrediens-info {
+    font-size: 13px;
+    padding-top: 20px;
+}
+
+.luk-knap {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
 }
