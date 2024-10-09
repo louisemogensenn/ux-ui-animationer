@@ -46,6 +46,7 @@ h1{
     font-style: normal;
     font-weight: 400;
     color: var(--skriftfarve);
+    padding-top: 10px;
 }
 
 /* Styling h2 - Overskrifter*/
@@ -215,12 +216,13 @@ h3 {
 }
 
 
+
 /* ---SÅDAN VIRKER DET & OFTE STILLEDE SPØRGSMÅL--- */
 
 /*Placering*/
 .saadanvirkerdet, .oftestilledespoergesmaal{
     display: flex; /*Bruger flexbox til at arrangere elementerne*/
-    margin: 5% 0 5% 5%; /*Tilføjer margener omkring sektionen*/
+    margin: 3% 0 5% 5%; /*Tilføjer margener omkring sektionen*/
     gap: 7%; /* Tilføjer en afstand på 7% mellem de enkelte flex-elementer */
     padding-left: 20%; /* Tilføjer 20% padding til venstre */
     max-width: 50%; /* Begrænser bredden af kontaktsektionen til 60% */
@@ -230,11 +232,19 @@ h3 {
     padding-top: 2%; /* Tilføjer 2% padding ovenfor h2-overskriften*/
 }
 
+.styling-afsnit {
+    padding-bottom: 10px; /*Afstand til næste afsnit*/
+}
+
+.styling-overskrifter {
+    padding-top: 60px; /*Justerer afstanden til næste afsnit/overskrift*/
+}
 
 /* ---KONTAKT OS--- */
 
 .kontaktos{
-    padding-left: 19%; /*Tilføjer venstre padding*/
+    margin: 2.5% 0 5% 5%; /*Tilføjer margener omkring sektionen*/
+    padding-left: 13%; /* Tilføjer padding til venstre */
     display: flex;
     flex-direction: column; /* Arrangere elementerne lodret*/
     max-width: 60%; 
@@ -244,6 +254,7 @@ h3 {
 .kontaktos p{
     text-align: center; /*Centrerer teksten*/
     padding-bottom: 5%; /*Tilføjer padding under teksten*/
+
 }
 
 /* Styling*/
