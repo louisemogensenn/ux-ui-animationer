@@ -8,7 +8,7 @@ const indsend = document.querySelector(".indsend"); // Vælger knappen med klass
         indsend.classList.remove("submiting"); //Fjerner submiting igen for at stoppe animationen
         indsend.innerHTML = "SENDT!"; // Ændrer teksten til "SENDT"!
         indsend.style.backgroundColor = "#7B0005"; //Ændrer baggrundsfarven
-        indsend.style.color = "#FFFFFF";
+        indsend.style.color = "var(--primaereFarve)";
     },1000) // Sætter timeout varigheden til 1 sek
 });
 
