@@ -143,8 +143,8 @@ h2 {
 .kortbland h3 {
     font-weight: 300; /* gør overskrifterne tyndere */
     font-size: 25px; /* gør overskrifterne større */
-    display: flex; 
-    justify-content: space-between;
+    display: flex; /* hjerterne og overskiften står på række */
+    justify-content: space-between; /* hjerter og overskrift stå med mellemrum */
 }
 
 .rowbland {
@@ -156,29 +156,29 @@ h2 {
 }
 
 .columnbland {
-    padding: 10px;
+    padding: 10px; /* placerer 'kortene' med god mellemrum til hinanden */
 }
 
 .kortbland{
-    justify-content: center;
-    padding-bottom: 50px;
+    /* justify-content: center; */
+    padding-bottom: 50px; /* skaber afstanden til det nedstående kort */
 }
 
 .hjerte {
     max-width: 25px;
     max-height: 25px;
     cursor: pointer; /* Markøren ændres til en hånd for at indikere, at det er klikbart */
-    padding-top: 2px;
+    padding-top: 2px; /* placerer hjertet på linje med overskriften */
 }
 
-.columnbland img{
+.columnbland img{ /* angiver størrelsen på alle billeder af retterne */
     width: 200px;
     height: 200px;
 }
 
 .kortbland p {
-    font-size: 12px;
-    margin: 5px 0;
+    font-size: 12px; /* skriften under billedet gøres mindre */
+    margin: 5px 0; /* sætter en margin i top og bund til 5px og i siderne 0 */
 }
 
 .order-box {
