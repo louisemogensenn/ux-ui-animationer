@@ -24,6 +24,7 @@
     --primaereFarve: #FEF6E1;
     --sekundaereFarve: #7B0005;
     --skriftfarve: #401A16;
+    --skyggefarve: #F1EAD6; /*bruges til knapper*/
 }
 
 /* Styling - a-tags/links */
@@ -173,8 +174,21 @@ h3 {
 
 /* Placering - Knap*/
 .knap-forside {
-    display: flex; /* Følger id "text"*/
+    padding: 15px 30px;
+    background-color: var(--skyggefarve); /* Farven på knappen */
+    color: ; /* Tekstfarven */
+    border: none;
+    cursor: pointer;
+    text-align: center; /* Centrerer teksten vandret */
+    line-height: 1.2; /* Højde på tekstlinjen */
+    display: inline-block; /*Sikrer elementets placering, i henhold til id "text"*/
+    justify-content: center; /* Centrerer teksten vandret */
+    align-items: center; /* Centrerer teksten lodret */
 }
+
+
+
+
 
 
 /* Styling - H2 forside, speciel*/
