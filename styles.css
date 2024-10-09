@@ -181,15 +181,12 @@ h3 {
     color: var(--skriftfarve); /* Tekstfarven */
     font-family: 'Nagomi', 'Times New Roman', Times, serif; /*Font for knap*/
     font-size: 20px; /*Skriftstørrelse i knap*/
-    border: none; /*Kant på knap fjernet*/
-    cursor: pointer;
     text-align: center; /* Centrerer teksten vandret */
     display: inline-block; /*Sikrer elementets placering, i henhold til id "text"*/
     justify-content: center; /* Centrerer teksten vandret */
     align-items: center; /* Centrerer teksten lodret */
+    border: none; /*Kant på knap fjernet*/
 }
-
-
 
 
 
