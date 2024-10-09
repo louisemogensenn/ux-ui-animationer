@@ -171,10 +171,32 @@ h3 {
 }
 
 /* Placering - Knap*/
-.knap-forside {
-    display: flex; /* Følger id "text"*/
-    width: 100px;
+.knap-forside{
+    /* display: flex;  Følger id "text"
+    width: 100px;*/
 
+/*forsøg med CTA KNAPPER*/
+    padding: 30px;
+    margin: 1% 0% 4% 25%; /* Tilføjer margin */
+    max-width: 56%; /*Angiver max bredde */
+    width: 500px; /* Giver knappen en bredde */
+    height: 50px; /*Giver knappen en højde */
+    background-color: #F1EAD6;
+    font-size: 20px;
+    font-family: 'Nagomi', 'Times New Roman', Times, serif;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: background 1s;
+    background-position: 200% 0; /*Startpositionen for baggrunden*/
+}
+
+/*forsøg med CTA KNAPPER*/
+.knap-forside.submiting{
+    background: linear-gradient(to right, #F1EAD6 50%, #7B0005 50%); /* Gradient fra mørkerød til lys beige */
+    background-size: 200% 100%; /* Dobbelt størrelse for at muliggøre animation */
+    background-position: 100% 0; /* Slutposition for baggrund */
 }
 
 
