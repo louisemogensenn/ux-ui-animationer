@@ -12,7 +12,7 @@
     margin: 0; /*fjerner alt margin, som basis*/
     padding: 0; /*fjerner alt padding, som basis*/
     color: var(--skriftfarve); /* angiver basis tekst-farve*/
-    line-height: 1.5; /* angiver linjeafstand for alt tekst*/
+    line-height: 2; /* angiver linjeafstand for alt tekst*/
     background-color: var(--primaereFarve); /*angiver basis baggrundsfarve*/
     font-family:'Epilogue'; /* Som standard font */
 }
@@ -61,10 +61,16 @@ h2 {
 h3 {
     font-family: 'Epilogue';
     font-style: normal;
-    font-weight: 300;
+    font-weight: 500;
 }
 
-/* Styling p - brødtekst */
+p {
+    font-size: 17px;
+    font-family: 'Epilogue';
+    font-weight: 350;
+}
+
+
 
 
 /* ---- NAVIGATION ---- */
@@ -217,10 +223,7 @@ h3 {
 }
 
 .tekstIndhold {
-    width: 800px; /* placerer indholdet i midten af skærmen */
-    word-spacing: 5px; /* skaber en god afstand mellem hver ord, så skriften er lettere at tyde */
-    line-height: 2.5; /* skaber en god afstand mellem linjerne, så skriften er lettere at læse */
-    font-size: 20px; /* gør skriften lidt større, så det er lettere at læse*/
+    width: 680px; /* placerer indholdet i midten af skærmen */
 }
 
 
