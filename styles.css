@@ -13,7 +13,7 @@
     padding: 0; /*fjerner alt padding, som basis*/
     color: var(--skriftfarve); /* angiver basis tekst-farve*/
     line-height: 2; /* angiver linjeafstand for alt tekst*/
-    background-color: var(--primaereFarve); /*angiver basis baggrundsfarve*/
+   
     font-family:'Epilogue'; /* Som standard font */
 }
 
@@ -69,7 +69,6 @@ p {
     font-family: 'Epilogue';
     font-weight: 350;
 }
-
 
 
 
@@ -169,7 +168,7 @@ p {
 /* Placering - Forside tekst */
 #text{
     width: 850px; /*Placering på skærm*/
-    padding-top: 180px; /*Afstand fra top*/
+    padding-top: 220px; /*Afstand fra top*/
     padding-right: 100px;
     text-align: right; /*Højrestiller teksten*/
 }
