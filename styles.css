@@ -185,12 +185,12 @@ p {
     max-width: 56%; /*Angiver max bredde */
     width: 400px; /* Giver knappen en bredde */
     height: 50px; /*Giver knappen en højde */
-    background-color: #F1EAD6;
-    font-size: 27px;
-    font-family: 'Nagomi', 'Times New Roman', Times, serif;
-    border: none;
-    cursor: pointer;
-    transition: background 1s;
+    background-color: #F1EAD6; /* Giver kassen en baggrundsfarve*/
+    font-size: 27px; /* Vælger font størrelsen */
+    font-family: 'Nagomi', 'Times New Roman', Times, serif; /*Vælger fonten*/
+    border: none; /*Fjerner rammen rundt om knappen */
+    cursor: pointer; /* Tilføjer en pointer så musen bliver en hånd, når man køre henover den*/
+    transition: background 1s; /*Sætter transitionen til at vare 1 sek*/
     background-position: 200% 0; /*Startpositionen for baggrunden*/
 }
 
@@ -244,6 +244,10 @@ p {
     padding-bottom: 30px;
 }
 
+/* Placerer tilbage pilen oppe i venstre hjørne */
+.tilbagePil{
+    margin-left: 10%;
+}
 
 
 
