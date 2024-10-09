@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,82 +12,81 @@
 
 <!-- Når noter er angivet med store bogstaver, er det en overskrift. Overskriften henviser, til tilhørende samme overskrift, i CSS -->
 
+    <body>
+        <header> <!-- NAVIGATION -->
+            <nav> <!-- ul og li anvendes, for at sikre elementernes placering i forhold til hinanden retmæssigt -->
+                <ul class="nav-styling">
+                    <li><a href="maaltidskasser.html">MÅLTIDSKASSER</a></li>
+                    <li><a href="omOs.html">OM OS</a></li>
 
-<body>
-    <header> <!-- NAVIGATION -->
-        <nav> <!-- ul og li anvendes, for at sikre elementernes placering i forhold til hinanden retmæssigt -->
-            <ul class="nav-styling">
-                <li><a href="maaltidskasser.html">MÅLTIDSKASSER</a></li>
-                <li><a href="omOs.html">OM OS</a></li>
+                    <li><a href="index.html"><img class="navigationImage" src="images/nippon-logo.webp" alt="Nippons Logo"></a></li> <!-- Logo i midten -->
 
-                <li><a href="index.html"><img class="navigationImage" src="images/nippon-logo.webp" alt="Nippons Logo"></a></li> <!-- Logo i midten -->
+                    <li><a href="saadanVirkerDet.html">SÅDAN VIRKER DET</a></li>
+                    <li>
+                        <a href="404.html">LOG IND</a>
+                            <ul class="dropdown">
+                                <li><a href="404.html"><img src="images/kurv.webp" alt="Kurv ikon"> KURV</a></li>
+                                <li><a href="404.html"><img src="images/konto.webp" alt="Konto ikon"> KONTO</a></li>
+                                <li><a href="404.html"><img src="images/favoritter.webp" alt="Favoritter ikon"> FAVORITTER</a></li>
+                            </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
-                <li><a href="saadanVirkerDet.html">SÅDAN VIRKER DET</a></li>
-                <li>
-                    <a href="404.html">LOG IND</a>
-                        <ul class="dropdown">
-                            <li><a href="404.html"><img src="images/kurv.webp" alt="Kurv ikon"> KURV</a></li>
-                            <li><a href="404.html"><img src="images/konto.webp" alt="Konto ikon"> KONTO</a></li>
-                            <li><a href="404.html"><img src="images/favoritter.webp" alt="Favoritter ikon"> FAVORITTER</a></li>
-                        </ul>
-                </li>
-            </ul>
-        </nav>
-    </header>
+        <section> <!-- 404-SIDE -->
+            <article class="side-404">
 
-    <section> <!-- 404-SIDE -->
-        <article class="side-404">
+                <h1>Denne side findes ikke</h1><br>
 
-            <h1>Denne side findes ikke</h1><br>
+                <h3>Vi arbejder på at få pakket denne side færdig til dig - den er næsten klar!</h3>
+                
+                <img class="fejlside-kasse" src="images/tomkasse.webp" alt="indhold på vej">
+                
+                <p style="padding-bottom: 20px;">... Indtil da kan du finde vores spændende måltidskasser lige her:</p>
 
-            <h3>Vi arbejder på at få pakket denne side færdig til dig - den er næsten klar!</h3>
-            
-            <img class="fejlside-kasse" src="images/tomkasse.webp" alt="indhold på vej">
-            
-            <p>... Indtil da kan du finde vores spændende måltidskasser lige her:</p>
+                <a href="maaltidskasser.html"><button type="button" class="knap">Måltidskasser</button></a>
+            </article>
+        </section>
 
-            <a href="maaltidskasser.html"><button type="button" class="knap">Måltidskasser</button></a>
-           
-        </article>
-    </section>
+        <footer><!-- FOOTER-->
+                
+            <aside class="footer-generelt">
+                <!-- Logo section -->
+                <figure class="footer-logo"><!-- Logo - som linker til forsiden -->
+                    <a href="index.html"><img class="navigationImage" src="images/nippon-logo.webp" alt="Nippons Logo"></a>
+                </figure>
+                
+                <!-- Kolonne - Måltidskasser -->
+                <figure class="kolonne">
+                    <h3 class="layout-streg"><a href="maaltidskasser.html">MÅLTIDSKASSER</a></h3>
+                    <p><a href="saesonensMaaltider.html">Sæsonens</a></p>
+                    <p><a href="blandSelv.html">Bland selv</a></p>
+                </figure>
+                
+                <!-- Kolonne - Om os -->
+                <figure class="kolonne">
+                    <h3 class="layout-streg"><a href="omOs.html">OM OS</a></h3>
+                    <p><a href="omOs.html">Mission</a></p>
+                    <p><a href="omOs.html">Vision</a></p>
+                    <p><a href="omOs.html">Værdier</a></p>
+                </figure>
+                
+                <!-- Kolonne - Sådan virker det -->
+                <figure class="kolonne">
+                    <h3 class="layout-streg"><a href="saadanVirkerDet.html">SÅDAN VIRKER DET</a></h3>
+                    <p><a href="saadanVirkerDet.html">Trin guide</a></p>
+                    <p><a href="saadanVirkerDet.html">FAQ</a></p>
+                    <p><a href="saadanVirkerDet.html">Kontakt os</a></p>
+                </figure>
+            </aside>
 
-    <footer><!-- FOOTER-->
-            
-        <aside class="footer-generelt">
-            <!-- Logo section -->
-            <figure class="footer-logo"><!-- Logo - som linker til forsiden -->
-                <a href="index.html"><img class="navigationImage" src="images/nippon-logo.webp" alt="Nippons Logo"></a>
-            </figure>
-            
-            <!-- Kolonne - Måltidskasser -->
-            <figure class="kolonne">
-                <h3 class="layout-streg"><a href="maaltidskasser.html">MÅLTIDSKASSER</a></h3>
-                <p><a href="saesonensMaaltider.html">Sæsonens</a></p>
-                <p><a href="blandSelv.html">Bland selv</a></p>
-            </figure>
-            
-            <!-- Kolonne - Om os -->
-            <figure class="kolonne">
-                <h3 class="layout-streg"><a href="omOs.html">OM OS</a></h3>
-                <p><a href="omOs.html">Mission</a></p>
-                <p><a href="omOs.html">Vision</a></p>
-                <p><a href="omOs.html">Værdier</a></p>
-            </figure>
-            
-            <!-- Kolonne - Sådan virker det -->
-            <figure class="kolonne">
-                <h3 class="layout-streg"><a href="saadanVirkerDet.html">SÅDAN VIRKER DET</a></h3>
-                <p><a href="saadanVirkerDet.html">Trin guide</a></p>
-                <p><a href="saadanVirkerDet.html">FAQ</a></p>
-                <p><a href="saadanVirkerDet.html">Kontakt os</a></p>
-            </figure>
-        </aside>
+            <!-- Bundtekst & ninja -->
+            <aside class="footer-bundtekst">
+                <p>2024, NIPPON <img src="images/konto.webp" alt="Konto-ikon"></p>
+            </aside>
+        </footer>
+        
+    </body>
 
-        <!-- Bundtekst & ninja -->
-        <aside class="footer-bundtekst">
-            <p>2024, NIPPON <img src="images/konto.webp" alt="Konto-ikon"></p>
-        </aside>
-    </footer>
-    
-</body>
 </html>
