@@ -179,15 +179,14 @@ h3 {
     width: 100px;*/
 
 /*forsøg med CTA KNAPPER*/
-    margin: 1% 0% 4% 25%; /* Tilføjer margin */
-    max-width: 56%; /*Angiver max bredde */
-    width: 500px; /* Giver knappen en bredde */
+    margin: 2% 0% 4% 25%; /* Tilføjer margin */
+    max-width: 50%; /*Angiver max bredde */
+    width: 300px; /* Giver knappen en bredde */
     height: 50px; /*Giver knappen en højde */
     background-color: #F1EAD6;
-    font-size: 20px;
+    font-size: 27px;
     font-family: 'Nagomi', 'Times New Roman', Times, serif;
     border: none;
-    border-radius: 8px;
     cursor: pointer;
     overflow: hidden;
     transition: background 1s;
@@ -255,10 +254,14 @@ h3 {
 /*Placering*/
 .saadanvirkerdet, .oftestilledespoergesmaal{
     display: flex; /*Bruger flexbox til at arrangere elementerne*/
-    margin: 2% 0 5% 5%; /*Tilføjer margener omkring sektionen*/
+    margin: 3% 0 5% 5%; /*Tilføjer margener omkring sektionen*/
     gap: 7%; /* Tilføjer en afstand på 7% mellem de enkelte flex-elementer */
     padding-left: 20%; /* Tilføjer 20% padding til venstre */
     max-width: 50%; /* Begrænser bredden af kontaktsektionen til 60% */
+}
+
+.saadanvirkerdet h2{
+    padding-top: 2%; /* Tilføjer 2% padding ovenfor h2-overskriften*/
 }
 
 .styling-afsnit {
@@ -272,16 +275,19 @@ h3 {
 /* ---KONTAKT OS--- */
 
 .kontaktos{
+    margin: 2.5% 0 5% 5%; /*Tilføjer margener omkring sektionen*/
+    padding-left: 13%; /* Tilføjer padding til venstre */
     display: flex;
     flex-direction: column; /* Arrangere elementerne lodret*/
-    max-width: 50%; 
+    max-width: 60%; 
     text-align: center;
 }
 
 .kontaktos p{
     text-align: center; /*Centrerer teksten*/
     padding-bottom: 5%; /*Tilføjer padding under teksten*/
-
+    padding-left: 15%; /* Tilføjer 20% padding til venstre */
+    max-width: 80%; /* Begrænser bredden af kontaktsektionen */
 }
 
 /* Styling*/
@@ -306,7 +312,10 @@ h3 {
 .indsend{
     padding: 30px;
     background-color: #F1EAD6; /* Giver knappen en farve */
-    font-size: 30px;
+    font-size: 27px;
+    font-family: 'Nagomi', 'Times New Roman', Times, serif;
+    max-width: 200px; /*fitter teksten*/
+    height: 50px; /*Giver knappen en højde */
     border: none; /* Fjerner kant om knappen */
     cursor: pointer; /* Skifter musens markør til en 'hånd', når man holder musen over knappen */
     overflow: hidden; /* Sørger for man ikke kan se knappen/farven der 'rykker sig' */
@@ -315,6 +324,7 @@ h3 {
     display: flex; /*Gør det muligt at centrere teksten, i knappen*/
     justify-content: center; /* Centrerer teksten vandret */
     align-items: center; /* Centrerer teksten lodret */
+    margin-left: 40%;
 }
 
 .indsend.submiting {
