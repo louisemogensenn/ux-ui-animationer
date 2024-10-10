@@ -191,6 +191,7 @@ p {
     cursor: pointer; /* Tilføjer en pointer så musen bliver en hånd, når man køre henover den*/
     transition: background 1s; /*Sætter transitionen til at vare 1 sek*/
     background-position: 200% 0; /*Startpositionen for baggrunden*/
+    padding: 10px 40px; /*Padding omkring tekst - i "knap"*/
 }
 
 .knap:hover{
@@ -255,7 +256,7 @@ p {
     font-weight: 300; /* gør skriften tyndere */
 }
 
-#maaltidskasser{
+.maaltidskasser{
     display: flex; /* viser dem på række */
     justify-content: center; /* placerer indholdet i midten */
     padding-top: 2vh; /* sætter en afstand mellem de mindre overskrifter til overskiften */
