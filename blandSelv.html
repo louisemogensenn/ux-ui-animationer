@@ -175,19 +175,7 @@
             <p>I ALT</p>
             <p id="totalPrice">0,-</p>
         </section>
-        <button id="bestilKnap" class="order-button">BESTIL</button>
-    </aside>
-
-    <!-- bestillingsboks -- endnu ikke valideret --> 
-
-    <aside id="bestillingsPopUpBesked" class="bestillingsPopUp">
-        <section class="popUpIndhold">
-            <h1 style="text-align: center;">TAK FOR DIN BESTILLING</h1>
-
-            <section class="loadingIkon">
-                <img class="fiskeAnimation" src="images/loadingIkonKoiFisk.webp" alt="Nippons koifisk">
-            </section>
-        </section>
+        <button class="order-button">BESTIL</button>
     </aside>
 
     <footer><!-- FOOTER-->
@@ -230,59 +218,6 @@
     </footer>
 
 </body>
-
-<style>
-
-    .bestillingsPopUp {
-        display: none; /* boksen er skjult i default */
-        position: fixed;
-        z-index: 1; /* boksen placeres forrest */
-        left: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
-        /* overflow: auto; */
-        background-color: rgb(0,0,0);
-        background-color: rgba(0,0,0,0.4); /* gennemsigtig baggrund */
-    }
-
-    .popUpIndhold {
-        background-color: #fefefe; /* ændres til primær farve */
-        margin: 15% auto;
-        padding: 20px;
-        border: 1px solid #888; /* ændres til sekundær farve*/
-        width: 30%; /* boksen fylder 50% af skærmens bredde */
-        height: 30%;
-    }
-
-    /* STYLING AF LOADINGIKON*/
-
-    .loadingIkon {
-        position: relative; /* hvad gør denne linje? */
-    }
-
-    .loadingIkon img {
-        position: absolute; /* hvad gør position absolute i denne sammenhæng? */
-        width: 200px;
-        height: 200px;
-        animation: rotate 2s linear infinite; /* tiden billedet bruger på at dreje hele vejen rundt om sin akse og at den gør det uendeligt*/
-    }
-
-    .fiskeAnimation { /* gør denne linje noget? stylingen af billedet ligger ovenover */
-        left: 50%; /* billedet placeres i midten */
-        transform: translateX(-50%);
-    }
-
-    @keyframes rotate {
-        0% {
-            transform: translateX(-50%) rotate(0deg);
-        }
-        100% {
-            transform: translateX(-50%) rotate(360deg);
-        }
-    }
-
-</style>
 
 </html>
 
