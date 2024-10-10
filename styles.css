@@ -344,7 +344,7 @@ p {
     border: none; /* Fjerner kant om knappen */
     cursor: pointer; /* Skifter musens markør til en 'hånd', når man holder musen over knappen */
     overflow: hidden; /* Sørger for man ikke kan se knappen/farven der 'rykker sig' */
-    transition: background 1s; /*Tilføjer en transition*/
+    transition: 1s; /*Tilføjer en transition*/
     background-position: 200% 0; /* Indstiller baggrundens startposition til at være langt ude til højre for at kunne flytte ved animation */
     display: flex; /*Gør det muligt at centrere teksten, i knappen*/
     justify-content: center; /* Centrerer teksten vandret */
