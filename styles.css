@@ -357,7 +357,7 @@ p {
 }
 
 /*Effekt - skifter ved klik*/
-.indsend.submiting {
+.indsend.submitting {
     background: linear-gradient(to right, #F1EAD6 50%, #7B0005 50%); /* Gradient fra mørkerød til lys beige */
     background-size: 200% 100%; /* Dobbelt størrelse for at muliggøre animation */
     background-position: 100% 0; /* Slutposition for baggrund - flytter den til venstre, så man kan se den røde farve*/

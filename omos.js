@@ -3,7 +3,7 @@ const indsend = document.querySelector(".indsend"); // Vælger knappen med klass
     indsend.addEventListener("click", function(){ //Tilføjer klik-'event'
     indsend.classList.add("submiting"); // Når knappen klikkes, tilføjes klassen 'submiting' for at starte animationen
     setTimeout(function(){ 
-        indsend.classList.remove("submiting"); //Fjerner submiting igen for at stoppe animationen
+        indsend.classList.remove("submitting"); //Fjerner submiting igen for at stoppe animationen
         indsend.innerHTML = "SENDT!"; // Ændrer teksten til "SENDT"!
         indsend.style.backgroundColor = "#7B0005"; //Ændrer baggrundsfarven
         indsend.style.color = "var(--primaereFarve)";
