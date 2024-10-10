@@ -388,7 +388,7 @@ footer {
 /* Styling - logo i footer*/
 .footer-logo img {
     max-height: 110px; /*Angiver størrelse på img*/
-    max-width: auto;
+    width: auto;
 }
 
 /* Placering - kolonnerne med tekst*/
