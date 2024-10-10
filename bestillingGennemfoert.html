@@ -94,8 +94,15 @@ Denne side implementeres i bland selv og skal slettes som sin individuelle html-
 
     var btn = document.getElementById("bestilKnap"); // indholdet i det, der har id'et bestilKnap gemmes i en variabel 'btn'
 
-    btn.onclick = visPopUpBesked() { /* når btn, der refererer til knappen bestilKnap starter det funktionen visPopUpBesked() */
-        modal.style.display = "block"; /* funktionen ændrer indholdet i bestillingsboksen til at blive vist */
+    btn.onclick = visPopUp; // når btn, der refererer til knappen bestilKnap kalder det på funktionen visPopUp - uden parenteser
+    /* visPopUp står ovenover uden parenteser. hvis der havde været parenteser på havde funktionen kørt med det samme.
+        resultatet havde altså været, at popUp-beskeden kører allerede inden der trykkes bestil - og det ønsker vi ikke. 
+        Derfor er der ikke parenteser på
+        https://www.w3schools.com/js/js_functions.asp - i afsnittet 'The () Operator'
+    */
+
+    function visPopUp() {
+        modal.style.display = "block"; // funktionen ændrer indholdet i bestillingsboksen til at blive vist i stedet for at være skjult
     }
 
 </script>
