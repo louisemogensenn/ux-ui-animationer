@@ -6,14 +6,17 @@
 
 
 /* BASIS FOR HTML */
+/*
 *,
 *::before,
 *::after {
+*/
+*
+{
     margin: 0; /*fjerner alt margin, som basis*/
     padding: 0; /*fjerner alt padding, som basis*/
     color: var(--skriftfarve); /* angiver basis tekst-farve*/
     line-height: 2; /* angiver linjeafstand for alt tekst*/
-   
     font-family:'Epilogue'; /* Som standard font */
 }
 
@@ -189,7 +192,7 @@ p {
     font-family: 'Nagomi', 'Times New Roman', Times, serif; /*Vælger fonten*/
     border: none; /*Fjerner rammen rundt om knappen */
     cursor: pointer; /* Tilføjer en pointer så musen bliver en hånd, når man køre henover den*/
-    transition: background 1s; /*Sætter transitionen til at vare 1 sek*/
+    transition: 1s; /*Sætter transitionen til at vare 1 sek*/
     background-position: 200% 0; /*Startpositionen for baggrunden*/
     padding: 10px 40px; /*Padding omkring tekst - i "knap"*/
 }
@@ -265,6 +268,7 @@ p {
 
 .maaltidskasserBilleder{
     width: 300px; /* giver billederne en bredte*/
+    padding: 0px 20px;
 }
 
 .styling-tekst-under {
@@ -393,7 +397,7 @@ footer {
 
 /* Placering - kolonnerne med tekst*/
 .kolonne {
-    flex: 1; /*Sikrer at elementet vil vokse til at fylde al tilgængelig plads i boksen*/
+    flex: 1; /*Sikrer at elementet vil vokse til at fylde al tilgængelig plads i boksen og at hver boks fylder lige meget */
     text-align: left; /* Venstrejusterer kolonnerne */
     padding: 0 40px 0 25px;
 }

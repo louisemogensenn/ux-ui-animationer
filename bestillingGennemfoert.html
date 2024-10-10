@@ -78,31 +78,31 @@ Denne side implementeres i bland selv og skal slettes som sin individuelle html-
         transform: translateX(-50%);
     }
 
-    @keyframes rotate {
+    @keyframes rotate { /* @keyframes bruger vi til at specificere animationer ved at ændre indhold fra en type css til en anden (w3schools, 2024) */
         0% {
-            transform: translateX(-50%) rotate(0deg);
+            transform: translateX(-50%) rotate(0deg); /* billedet centreres horizontalt og drejes 0 grader (w3school, 2024) */
         }
         100% {
-            transform: translateX(-50%) rotate(360deg);
+            transform: translateX(-50%) rotate(360deg); /* billedet centreres horizontalt og drejes 360 grader (ibid) */
         }
     }
 
-    /*
-    @keyframes rotate er en CSS-animation, der definerer, hvordan et element skal rotere over tid. Her er en gennemgang af, hvad den gør:
-
-0%: Animationen starter med, at elementet er placeret 50% til venstre for sit normale sted på X-aksen (det, der er translateX(-50%)) og ikke har nogen rotation (dvs. rotate(0deg)).
-100%: Ved slutningen af animationen har elementet roteret fuldt rundt (360 grader), men forbliver 50% til venstre for sin normale position på X-aksen.
-Sammenlagt betyder det, at elementet vil rotere en fuld omgang, mens det forbliver forskudt 50% til venstre.
-    */
 </style>
 
 <script>
-    var modal = document.getElementById("myModal");
+    var modal = document.getElementById("myModal"); // indholdet i det, der har id'et myModal gemmes i en variabel 'modal'
 
-    var btn = document.getElementById("bestilKnap");
+    var btn = document.getElementById("bestilKnap"); // indholdet i det, der har id'et bestilKnap gemmes i en variabel 'btn'
 
-    btn.onclick = function() {
-        modal.style.display = "block";
+    btn.onclick = visPopUp; // når btn, der refererer til knappen bestilKnap kalder det på funktionen visPopUp - uden parenteser
+    /* visPopUp står ovenover uden parenteser. hvis der havde været parenteser på havde funktionen kørt med det samme.
+        resultatet havde altså været, at popUp-beskeden kører allerede inden der trykkes bestil - og det ønsker vi ikke. 
+        Derfor er der ikke parenteser på
+        https://www.w3schools.com/js/js_functions.asp - i afsnittet 'The () Operator'
+    */
+
+    function visPopUp() {
+        modal.style.display = "block"; // funktionen ændrer indholdet i bestillingsboksen til at blive vist i stedet for at være skjult
     }
 
 </script>
