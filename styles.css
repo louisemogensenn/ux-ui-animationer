@@ -265,6 +265,7 @@ p {
 
 .maaltidskasserBilleder{
     width: 300px; /* giver billederne en bredte*/
+    padding: 0px 20px;
 }
 
 .styling-tekst-under {
