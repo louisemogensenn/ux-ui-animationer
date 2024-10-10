@@ -272,9 +272,6 @@ p {
 
 
 
-
-
-
 /* ---SÅDAN VIRKER DET & OFTE STILLEDE SPØRGSMÅL--- */
 
 /*Placering*/
@@ -297,6 +294,8 @@ p {
 .styling-overskrifter {
     padding-top: 60px; /*Justerer afstanden til næste afsnit/overskrift*/
 }
+
+
 
 /* ---KONTAKT OS--- */
 
@@ -333,7 +332,6 @@ p {
     max-width: 50%;
 }
 
-
 /* Styler knappen */
 .indsend{
     padding: 30px;
@@ -353,6 +351,7 @@ p {
     margin-left: 40%;
 }
 
+/*Effekt - skifter ved klik*/
 .indsend.submiting {
     background: linear-gradient(to right, #F1EAD6 50%, #7B0005 50%); /* Gradient fra mørkerød til lys beige */
     background-size: 200% 100%; /* Dobbelt størrelse for at muliggøre animation */
@@ -441,8 +440,9 @@ footer {
     margin-left: 5px; /*Afstand mellem billede og tekst*/
 }
 
-/* STYLING AF BLAND SELV */
 
+
+/* ---- STYLING AF BLAND SELV ---- */
 
 #dinBestillingId {
     text-align: center; /* placerer teksten imidten */
@@ -500,7 +500,7 @@ footer {
     border: 1px solid #ddd; /* giver en kant på bestillingslisten */
     border-radius: 8px; /* giver blødere kanter til bestillingsoversigten */
     padding: 20px; /* giver whitespace i bestillingslisten, så indholder står lidt væk fra kanten*/
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* giver en svag skygge til listen, så den står mere frem*/
+    
     width: 300px; /* Fast bredde */
     height: 500px; /* Fast højde */
     display: flex; /* indholdet er på række */
@@ -510,10 +510,11 @@ footer {
 .tilfoj{
     display: flex; /* placerer tilføj-knappen til højre i kortet */
     justify-content: space-between; /* skaber afstand til prisen pr. enhed*/
+    
 }
 
-
-.nederest { /* styling at bestil-knappen i bestillingslisten */
+/* styling at bestil-knappen i bestillingslisten */
+.nederest { 
     display: flex;
     justify-content: space-between; /* Sørger for, at teksten og prisen står på hver sin side */
     margin-top: auto; /* Skubber sektionen ned til bunden */
@@ -551,7 +552,8 @@ footer {
     padding: 5px 15px; /* Giver lidt luft omkring teksten */
     font-size: 12px; /* Størrelse på teksten */
     cursor: pointer; /* Gør det tydeligt, at knappen kan klikkes */
-    transition: background-color 0.3s, color 0.3s; /* Glidende overgang ved hover */
+    transition: var(--primaereFarve) 0.3s, color 0.3s; /* Glidende overgang ved hover */
+    background: var(--primaereFarve); /*Sikrer at knappen er samme farve som resten af skærmen - primære baggrundsfarve*/
 }
 
 .tilfojknap:hover {
