@@ -1,5 +1,3 @@
-
-
 // Ændrer tekst og farve ved klik
 const indsend = document.querySelector(".indsend"); // Vælger knappen med klassen 'indsend' og gemmer den i variablen 'indsend'
     indsend.addEventListener("click", function(){ //Tilføjer klik-'event'
