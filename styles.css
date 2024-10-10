@@ -397,7 +397,7 @@ footer {
 
 /* Placering - kolonnerne med tekst*/
 .kolonne {
-    flex: 1; /*Sikrer at elementet vil vokse til at fylde al tilgængelig plads i boksen*/
+    flex: 1; /*Sikrer at elementet vil vokse til at fylde al tilgængelig plads i boksen og at hver boks fylder lige meget */
     text-align: left; /* Venstrejusterer kolonnerne */
     padding: 0 40px 0 25px;
 }
