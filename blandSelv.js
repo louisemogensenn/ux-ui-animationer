@@ -86,3 +86,12 @@ function closeModal(modalId) {
         overlay.remove();
     }
 }
+
+// JAVASCRIPT TIL POPUP BESKED
+var modalBestilling = document.getElementById("bestillingsPopUpBesked");
+
+    var btn = document.getElementById("bestilKnap");
+
+    btn.onclick = function() {
+        modalBestilling.style.display = "block";
+    }

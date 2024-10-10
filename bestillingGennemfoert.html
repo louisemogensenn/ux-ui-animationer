@@ -1,3 +1,9 @@
+
+<!-- 
+Denne side er et udkast til bestillingspopuppe, hvor animationen med fisk snurrer rundt. 
+Denne side implementeres i bland selv og skal slettes som sin individuelle html-side.
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +17,7 @@
 
     <aside id="myModal" class="modal">
         <section class="modal-content">
-            <h1>TAK FOR DIN BESTILLING</h1>
+            <h1 style="text-align: center;">TAK FOR DIN BESTILLING</h1>
 
             <section class="loadingIkon">
                 <img class="fiskeAnimation" src="images/loadingIkonKoiFisk.webp" alt="Nippons koifisk">
@@ -23,7 +29,7 @@
 <style>
 
     .modal {
-        display: none; /* boksen er skjult */
+        display: none; /* boksen er skjult i default */
         position: fixed;
         z-index: 1; /* boksen placeres forrest */
         left: 0;
@@ -40,7 +46,8 @@
         margin: 15% auto;
         padding: 20px;
         border: 1px solid #888; /* ændres til sekundær farve*/
-        width: 80%;
+        width: 30%; /* boksen fylder 50% af skærmens bredde */
+        height: 30%;
     }
 
     /* STYLING AF LOADINGIKON*/
@@ -53,21 +60,21 @@
 
     .loadingIkon {
         position: relative; /* hvad gør denne linje? */
-        width: 150px; /* hvad gør denne linje? */
-        height: 150px; /* hvad gør denne linje? */
-        padding-top: 20%; /* sætter afstanden ellem top og containeren, hvori billedet ligger */
+        /* width: 150px; /* hvad gør denne linje? */
+        /* height: 150px; /* hvad gør denne linje? */
+        /* padding-top: 20%; /* sætter afstanden ellem top og containeren, hvori billedet ligger */
         /* kan paddingen ligge direkte på billedet? er containeren nødvendig for animationen? ja!! hvorfor?*/
     }
 
     .loadingIkon img {
         position: absolute; /* hvad gør position absolute i denne sammenhæng? */
-        width: 300px;
-        height: 300px;
+        width: 200px;
+        height: 200px;
         animation: rotate 2s linear infinite; /* tiden billedet bruger på at dreje hele vejen rundt om sin akse og at den gør det uendeligt*/
     }
 
     .fiskeAnimation { /* gør denne linje noget? stylingen af billedet ligger ovenover */
-        left: 50%; /* billedet placeres øverst */
+        left: 50%; /* billedet placeres i midten */
         transform: translateX(-50%);
     }
 
