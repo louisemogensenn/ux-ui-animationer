@@ -78,12 +78,12 @@ Denne side implementeres i bland selv og skal slettes som sin individuelle html-
         transform: translateX(-50%);
     }
 
-    @keyframes rotate {
+    @keyframes rotate { /* @keyframes bruger vi til at specificere animationer ved at ændre indhold fra en type css til en anden (w3schools, 2024) */
         0% {
-            transform: translateX(-50%) rotate(0deg);
+            transform: translateX(-50%) rotate(0deg); /* billedet centreres horizontalt og drejes 0 grader (w3school, 2024) */
         }
         100% {
-            transform: translateX(-50%) rotate(360deg);
+            transform: translateX(-50%) rotate(360deg); /* billedet centreres horizontalt og drejes 360 grader (ibid) */
         }
     }
 
