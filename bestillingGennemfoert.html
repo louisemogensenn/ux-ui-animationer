@@ -87,22 +87,15 @@ Denne side implementeres i bland selv og skal slettes som sin individuelle html-
         }
     }
 
-    /*
-    @keyframes rotate er en CSS-animation, der definerer, hvordan et element skal rotere over tid. Her er en gennemgang af, hvad den gør:
-
-0%: Animationen starter med, at elementet er placeret 50% til venstre for sit normale sted på X-aksen (det, der er translateX(-50%)) og ikke har nogen rotation (dvs. rotate(0deg)).
-100%: Ved slutningen af animationen har elementet roteret fuldt rundt (360 grader), men forbliver 50% til venstre for sin normale position på X-aksen.
-Sammenlagt betyder det, at elementet vil rotere en fuld omgang, mens det forbliver forskudt 50% til venstre.
-    */
 </style>
 
 <script>
-    var modal = document.getElementById("myModal");
+    var modal = document.getElementById("myModal"); // indholdet i det, der har id'et myModal gemmes i en variabel 'modal'
 
-    var btn = document.getElementById("bestilKnap");
+    var btn = document.getElementById("bestilKnap"); // indholdet i det, der har id'et bestilKnap gemmes i en variabel 'btn'
 
-    btn.onclick = function() {
-        modal.style.display = "block";
+    btn.onclick = visPopUpBesked() { /* når btn, der refererer til knappen bestilKnap starter det funktionen visPopUpBesked() */
+        modal.style.display = "block"; /* funktionen ændrer indholdet i bestillingsboksen til at blive vist */
     }
 
 </script>
