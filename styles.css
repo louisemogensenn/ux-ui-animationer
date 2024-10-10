@@ -500,7 +500,7 @@ footer {
     border: 1px solid #ddd; /* giver en kant på bestillingslisten */
     border-radius: 8px; /* giver blødere kanter til bestillingsoversigten */
     padding: 20px; /* giver whitespace i bestillingslisten, så indholder står lidt væk fra kanten*/
-    
+    background: var(--primaereFarve); /*Sikrer at knappen er samme farve som resten af skærmen - primære baggrundsfarve*/
     width: 300px; /* Fast bredde */
     height: 500px; /* Fast højde */
     display: flex; /* indholdet er på række */
