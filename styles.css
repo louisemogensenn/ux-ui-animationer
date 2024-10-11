@@ -210,7 +210,6 @@ p {
     font-size: 28px; /*Størrelse*/
     font-family: 'Epilogue';
     font-weight: 320; /*Tykkelse*/
-    word-spacing: 1%; /*Afstand mellem ord*/
     line-height: 1.5; /*Linjehøjde*/
 }
 
